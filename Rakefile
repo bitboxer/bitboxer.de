@@ -1,6 +1,10 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require 'time'
+require 'tzinfo'
+require 'rake/minify'
+require 'time'
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -25,8 +29,9 @@ posts_dir       = "_posts"    # directory for blog files
 themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
-server_port     = "4000"      # port for preview server eg. localhost:4000
-
+timezone        = 'Europe/Berlin'     # default time and date used to local timezone
+server_host     = ENV['OCTOPRESS_IP']   || '0.0.0.0'   # host ip address for preview server
+server_port     = ENV['OCTOPRESS_PORT'] || "4000"      # port for preview server eg. localhost:4000
 
 desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
 task :install, :theme do |t, args|
@@ -98,8 +103,9 @@ task :new_post, :title do |t, args|
     title = get_stdin("Enter a title for your post: ")
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
+  time = now_in_timezone(timezone) 
   mkdir_p "#{source_dir}/#{posts_dir}"
-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  filename = "#{source_dir}/#{posts_dir}/#{time.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -108,7 +114,7 @@ task :new_post, :title do |t, args|
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+    post.puts "date: #{time.iso8601}"
     post.puts "comments: true"
     post.puts "categories: "
     post.puts "---"
@@ -139,11 +145,12 @@ task :new_page, :filename do |t, args|
       abort("rake aborted!") if ask("#{file} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
     end
     puts "Creating new page: #{file}"
+    time = now_in_timezone(timezone) 
     open(file, 'w') do |page|
       page.puts "---"
       page.puts "layout: page"
       page.puts "title: \"#{title}\""
-      page.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+      page.puts "date: #{time.iso8601}"
       page.puts "comments: true"
       page.puts "sharing: true"
       page.puts "footer: true"
@@ -246,20 +253,40 @@ end
 
 desc "deploy public directory to github pages"
 multitask :push do
-  puts "## Deploying branch to Github Pages "
-  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
-  Rake::Task[:copydot].invoke(public_dir, deploy_dir)
-  puts "\n## copying #{public_dir} to #{deploy_dir}"
-  cp_r "#{public_dir}/.", deploy_dir
-  cd "#{deploy_dir}" do
-    system "git add ."
-    system "git add -u"
-    puts "\n## Commiting: Site updated at #{Time.now.utc}"
-    message = "Site updated at #{Time.now.utc}"
-    system "git commit -m \"#{message}\""
-    puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch} --force"
-    puts "\n## Github Pages deploy complete"
+  if File.directory?(deploy_dir)
+    puts "## Deploying branch to GitHub Pages "
+    (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
+    puts "Attempting pull, to sync local deployment repository"
+    cd "#{deploy_dir}" do
+      system "git pull origin #{deploy_branch}"
+    end
+    puts "\n## copying #{public_dir} to #{deploy_dir}"
+    cp_r "#{public_dir}/.", deploy_dir
+    cd "#{deploy_dir}" do
+      File.new(".nojekyll", "w").close
+      system "git add ."
+      system "git add -u"
+      message = "Site updated at #{Time.now.utc}"
+      puts "\n## Commiting: #{message}"
+      system "git commit -m \"#{message}\""
+      puts "\n## Pushing generated #{deploy_dir} website"
+      if system "git push origin #{deploy_branch}"
+        puts "\n## GitHub Pages deploy complete"
+      else
+        remote = `git remote -v`
+        repo_url = case remote
+                   when /(http[^\s]+)/
+                     $1
+                   when /(git@[^\s]+)/
+                     $1
+                   else
+                     ""
+                   end
+        raise "\n## Octopress could not push to #{repo_url}"
+      end
+    end
+  else
+    puts "This project isn't configured for deploying to GitHub Pages\nPlease run `rake setup_github_pages[your-deployment-repo-url]`."
   end
 end
 
@@ -344,11 +371,75 @@ task :setup_github_pages, :repo do |t, args|
     system "git commit -m \"Octopress init\""
     system "git branch -m gh-pages" unless branch == 'master'
     system "git remote add origin #{repo_url}"
-    rakefile = IO.read(__FILE__)
-    rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
-    rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
-    File.open(__FILE__, 'w') do |f|
-      f.write rakefile
+    puts   "Attempting to pull from repository"
+    system "git pull origin #{branch}"
+    unless File.exist?('index.html')
+      system "echo 'My Octopress Page is coming soon &hellip;' > index.html"
+      system "git add ."
+      system "git commit -m \"Octopress init\""
+      system "git branch -m gh-pages" unless branch == 'master'
+    end
+  end
+
+  # Configure deployment setup in Rakefile
+  rakefile = IO.read(__FILE__)
+  rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
+  rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
+  File.open(__FILE__, 'w') do |f|
+    f.write rakefile
+  end
+
+  # Configure published url
+  jekyll_config = IO.read('_config.yml')
+  current_url = /^url:\s?(.*$)/.match(jekyll_config)[1]
+  has_cname = File.exists?("#{source_dir}/CNAME")
+  if current_url == 'http://yoursite.com'
+    jekyll_config.sub!(/^url:.*$/, "url: #{url}")
+    File.open('_config.yml', 'w') do |f|
+      f.write jekyll_config
+    end
+    current_url = url
+  end
+
+  puts "\n========================================================"
+  if has_cname
+    cname = IO.read("#{source_dir}/CNAME").chomp
+    current_short_url = /\/{2}(.*$)/.match(current_url)[1]
+    if cname != current_short_url
+      puts "!! WARNING: Your CNAME points to #{cname} but your _config.yml url is set to #{current_short_url} !!"
+      puts "For help with setting up a CNAME follow the guide at http://help.github.com/pages/#custom_domains"
+    else
+      puts "GitHub Pages will host your site at http://#{cname}"
+    end
+  else
+    puts "GitHub Pages will host your site at #{url}."
+    puts "To host at \"your-site.com\", configure a CNAME: `echo \"your-domain.com\" > #{source_dir}/CNAME`"
+    puts "Then change the url in _config.yml from #{current_url} to http://your-domain.com"
+    puts "Finally, follow the guide at http://help.github.com/pages/#custom_domains for help pointing your domain to GitHub Pages"
+  end
+  puts "Deploy to #{repo_url} with `rake deploy`"
+  puts "Note: generated content is copied into _deploy/ which is not in version control."
+  puts "If starting with a fresh clone of this project you should re-run setup_github_pages."
+  puts "========================================================"
+end
+
+# usage rake list_posts or rake list_posts[pub|unpub]
+desc "List all unpublished/draft posts"
+task :list_drafts do
+  posts = Dir.glob("#{source_dir}/#{posts_dir}/*.*") 
+  unpublished = get_unpublished(posts)
+  puts unpublished.empty? ? "There are no unpublished posts" : unpublished
+end
+
+def get_unpublished(posts, options={})
+  result = ""
+  message = options[:message] || "These Posts will not be published:"
+  posts.sort.each do |post|
+    file = File.read(post)
+    data = YAML.load file.match(/(^-{3}\n)(.+?)(\n-{3})/m)[2]
+    
+    if options[:no_future]
+      future = Time.now < Time.parse(data['date']) ? "future date: #{data['date']}" : false
     end
   end
   puts "\n---\n## Now you can deploy to #{url} with `rake deploy` ##"
@@ -374,6 +465,28 @@ def ask(message, valid_options)
     answer = get_stdin(message)
   end
   answer
+end
+
+def now_in_timezone(timezone)
+  time = Time.now
+  unless timezone.nil? || timezone.empty? || timezone == 'local'
+    tz = TZInfo::Timezone.get(timezone) #setup Timezone object
+    adjusted_time = tz.utc_to_local(time.utc) #time object without correct offset
+    #time object with correct offset
+    time = Time.new(
+      adjusted_time.year,
+      adjusted_time.month,
+      adjusted_time.day,
+      adjusted_time.hour,
+      adjusted_time.min,
+      adjusted_time.sec,
+      tz.period_for_utc(time.utc).utc_total_offset())
+    #convert offset to utc instead of just ±0 if that was specified
+    if ['utc','zulu','universal','uct','gmt','gmt0','gmt+0','gmt-0'].include? timezone.downcase
+      time = time.utc
+    end
+  end
+  time
 end
 
 desc "list tasks"
