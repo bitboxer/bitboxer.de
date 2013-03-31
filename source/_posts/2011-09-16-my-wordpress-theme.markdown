@@ -10,4 +10,6 @@ categories:
 - Software
 ---
 
-This week I was asked to publish my Wordpress theme and now I uploaded it to github. Basically it's a modified Twenty Ten Theme. You can find it [here](https://github.com/bitboxer/wp-bodos-theme). 
+This week I was asked to publish my Wordpress theme and now I uploaded it to
+github. Basically it's a modified Twenty Ten Theme. You can find it
+[here](https://github.com/bitboxer/wp-bodos-theme). 

@@ -11,7 +11,8 @@ My new #1 nerd shirt :) .
 
 ![](http://bitboxer.de/wp-content/uploads/61e21ee28d8111e18bb812313804a181_7.jpeg)
 
-Thanks to [@señordeveloper](http://www.twitter.com/senordeveloper). The shirts can be found [here](http://senordevelopershop.spreadshirt.net/).
+Thanks to [@señordeveloper](http://www.twitter.com/senordeveloper). The shirts
+can be found [here](http://senordevelopershop.spreadshirt.net/).
 
 **Update:**
 

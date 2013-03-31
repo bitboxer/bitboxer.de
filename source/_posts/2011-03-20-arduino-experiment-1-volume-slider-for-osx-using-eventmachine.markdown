@@ -9,13 +9,23 @@ categories:
 - Development
 ---
 
-At the moment I am experimenting a lot with [Arduino](http://www.arduino.cc/). Arduino is an open-source electronics prototyping platform that helps you to build hardware solutions in a very short time.
+At the moment I am experimenting a lot with [Arduino](http://www.arduino.cc/).
+Arduino is an open-source electronics prototyping platform that helps you to
+build hardware solutions in a very short time.
 
-Arduino can be used as a stand alone solution and can run software on a little chip that is onboard of the circuit. You can write a little weather station with it or create a little device that twitters messages if a certain input is triggered. There are tons of examples for this online. It's also possible to connect it to your pc and use it as an input device for your program.  One solution to react on input from the Arduino board is [Eventmachine](https://github.com/eventmachine/eventmachine/wiki), an event driven I/O framework for ruby.
+Arduino can be used as a stand alone solution and can run software on a little
+chip that is onboard of the circuit. You can write a little weather station
+with it or create a little device that twitters messages if a certain input is
+triggered. There are tons of examples for this online. It's also possible to
+connect it to your pc and use it as an input device for your program.  One
+solution to react on input from the Arduino board is
+[Eventmachine](https://github.com/eventmachine/eventmachine/wiki), an event
+driven I/O framework for ruby.
 
-This is a little program that reads data from the serial port and sets the volume of my mac:
+This is a little program that reads data from the serial port and sets the
+volume of my mac:
 
-`
+``` ruby
 require 'serialport'
 require 'rubygems'
 require 'eventmachine'
@@ -42,15 +52,22 @@ EventMachine::run do
 end
 
 sp.close
-`
+```
 
-Before you run it, you need to install the needed gems with [cci]gem install eventmachine serialport[/cci]. After that you can start the script with [cci]ruby example.rb /dev/tty.your-usbdevice[/cci]. 
+Before you run it, you need to install the needed gems with `gem install
+eventmachine serialport`. After that you can start the script with
+`ruby example.rb /dev/tty.your-usbdevice`.
 
-But what will it read? At the moment it doesn't read anything because the Arduino isn't transmitting data to it. We need a little program that runs on the Arduino and computes the input and sends a new volume to the serial port. That code is a little bit longer because it has to reduce the jitter from the data. You don't want the volume to constantly switch between 50% and 52%, am I right :) ?
+But what will it read? At the moment it doesn't read anything because the
+Arduino isn't transmitting data to it. We need a little program that runs on
+the Arduino and computes the input and sends a new volume to the serial port.
+That code is a little bit longer because it has to reduce the jitter from the
+data. You don't want the volume to constantly switch between 50% and 52%, am I
+right :) ?
 
-`
+``` cpp
 // analog pin used to connect the potentiometer
-#define POT_PIN        2  
+#define POT_PIN        2
 
 // READ_AVG is how many readings to average
 // set it to one less than the actual #
@@ -61,8 +78,8 @@ But what will it read? At the moment it doesn't read anything because the Arduin
 // is moving quickly
 #define READ_AVG       9
 
-// variable to read the value from the analog pin 
-int val;    
+// variable to read the value from the analog pin
+int val;
 
 // our current and previous potentiometer readings
 int cur_reading = 0;
@@ -128,26 +145,27 @@ int read_pot() {
     // increment our saved value # for the next loop
     steps++;
   }
-  
+
   return(post);
 }
 
-void loop() { 
+void loop() {
   // reads the value of the potentiometer and scale it to use it for volumes (between 0 and 7)
-  int newVal = map(read_pot(), 0, 1023, 7, 0);     
+  int newVal = map(read_pot(), 0, 1023, 7, 0);
 
   if (val != newVal) {
     val = newVal;
-    Serial.println(val); 
+    Serial.println(val);
   }
 
-} 
-`
+}
+```
 
-Now you have to compile and upload the code ( For details on how to do this, there is a good [documentation](http://arduino.cc/en/Guide/HomePage) about it ). 
+Now you have to compile and upload the code ( For details on how to do this,
+there is a good [documentation](http://arduino.cc/en/Guide/HomePage) about it
+).
 
-Connect a potentiometer to +5, GND and Pin 2 and after that it should look something like this:
+Connect a potentiometer to +5, GND and Pin 2 and after that it should look
+something like this:
 
-
-
-More links around Arduino can be found in my [delicious account](http://www.delicious.com/bodum/arduino).
+More links around Arduino can be found in my [delicious account](http://www.delicious.com/bitboxer/arduino).

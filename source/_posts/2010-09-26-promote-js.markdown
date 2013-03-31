@@ -11,8 +11,9 @@ tags:
 - Javascript
 ---
 
-[![JavaScript JS Documentation: JS Function arguments, JavaScript Function arguments, JS Function .arguments, JavaScript Function .arguments](http://static.jsconf.us/promotejshs.png)](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function) The search for javascript on google leads to very bad sites, "[promote js](http://www.promotejs.com/)" tries to change this by promoting people to link to the mozilla documentation.  
+[![JavaScript JS Documentation: JS Function arguments, JavaScript Function arguments, JS Function .arguments, JavaScript Function .arguments](http://static.jsconf.us/promotejshs.png)](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function)
+
+The search for javascript on google leads to very bad sites, "[promote js](http://www.promotejs.com/)"
+tries to change this by promoting people to link to the mozilla documentation.
 
 You should add this, too!
-
-

@@ -11,30 +11,30 @@ categories:
 
 ![](http://bitboxer.de/wp-content/uploads/IMG_0635.jpg)
 
-Another month, another [big event](http://sigint.ccc.de). It seems like Cologne is a real heaven for nerds right now. From my point of view its right behind Berlin as #2 best nerd place in Germany. [Hcking.de](http://hcking.de) is a good proof for that. Cologne should really get its act together and start to enhance its coolness factor. Stop that awkward "internet capital city" campaign and start a fresh new brand. Maybe [Made with love in Cologne](https://www.facebook.com/MadewithloveinCologne).
+Another month, another [big event](http://sigint.ccc.de). It seems like Cologne
+is a real heaven for nerds right now. From my point of view its right behind
+Berlin as #2 best nerd place in Germany. [Hcking.de](http://hcking.de) is a
+good proof for that. Cologne should really get its act together and start to
+enhance its coolness factor. Stop that awkward "internet capital city" campaign
+and start a fresh new brand. Maybe [Made with love in Cologne](https://www.facebook.com/MadewithloveinCologne).
 
-Most of the time I was sitting at the [cologne.rb](http://www.colognerb.de) usergroup booth to represent ruby.
+Most of the time I was sitting at the [cologne.rb](http://www.colognerb.de)
+usergroup booth to represent ruby.
 
+<blockquote class="twitter-tweet"><p>Want to try ruby? Meet @<a href="https://twitter.com/colognerb">colognerb</a> at @<a href="https://twitter.com/sigint">sigint</a><a href="http://t.co/rScTUs9Q" title="http://yfrog.com/h6kd7vwj">yfrog.com/h6kd7vwj</a></p>&mdash; Bodo Tasche (@bitboxer) <a href="https://twitter.com/bitboxer/status/203776128274542592">May 19, 2012</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+Sadly the booth area was not very accepted by the audience, but it was fun
+nevertheless. I tried lock picking at the neighbor booth by the [SSDeV Cologne](http://wiki.ssdev.org/wiki/K%C3%B6ln).
 
-> Want to try ruby? Meet @[colognerb](https://twitter.com/colognerb) at @[sigint](https://twitter.com/sigint)[yfrog.com/h6kd7vwj](http://t.co/rScTUs9Q)
-> 
-> -- Bodo Tasche (@bitboxer) [May 19, 2012](https://twitter.com/bitboxer/status/203776128274542592)
+<blockquote class="twitter-tweet"><p>Nerd achievement unlocked: lock picking, Level 1. <a href="http://t.co/GXx9eDAw" title="http://twitpic.com/9mygvi">twitpic.com/9mygvi</a></p>&mdash; Bodo Tasche (@bitboxer) <a href="https://twitter.com/bitboxer/status/203972325798985729">May 19, 2012</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+Besides having fun at the booth area I watched only a few talks. The best by
+far was the [Men who stare at bits](https://program.sigint.ccc.de/fahrplan/events/64.html),
+which hopefully can be found on the [media.ccc.de](http://media.ccc.de) webpage soon. Udo
+Vetter gave his famous talk on how to deal with police called "[Sie haben das Recht zu schweigen](http://media.ccc.de/browse/congress/2006/23C3-1346-de-sie_haben_das_recht_zu_schweigen.html)".
+If you haven't watched it by now, you really should.
 
-
-
-Sadly the booth area was not very accepted by the audience, but it was fun nevertheless. I tried lock picking at the neighbor booth by the [SSDeV Cologne](http://wiki.ssdev.org/wiki/K%C3%B6ln).
-
-
-
-> Nerd achievement unlocked: lock picking, Level 1. [twitpic.com/9mygvi](http://t.co/GXx9eDAw)
-> 
-> -- Bodo Tasche (@bitboxer) [May 19, 2012](https://twitter.com/bitboxer/status/203972325798985729)
-
-
-
-
-Besides having fun at the booth area I watched only a few talks. The best by far was the [Men who stare at bits](https://program.sigint.ccc.de/fahrplan/events/64.html), which hopefully can be found on the [media.ccc.de](http://media.ccc.de) webpage soon. Udo Vetter gave his famous talk on how to deal with police called "[Sie haben das Recht zu schweigen](http://media.ccc.de/browse/congress/2006/23C3-1346-de-sie_haben_das_recht_zu_schweigen.html)". If you haven't watched it by now, you really should.
-
-The next conference will be the [euruko](http://www.euruko2012.org/). Can't wait for it!
+The next conference will be the [euruko](http://www.euruko2012.org/). Can't
+wait for it!

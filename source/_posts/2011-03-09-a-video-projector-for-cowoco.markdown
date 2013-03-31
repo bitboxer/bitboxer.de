@@ -9,7 +9,11 @@ categories:
 - Events
 ---
 
-If you look at [hacking-cologne](http://hacking-cologne.de) you will see that a lot of user group meetups are in a location called [CoWoCo](http://www.coworkingcologne.de/). It's a really nice place with a lot of friendly people and enough Club Mate and Afri Cola for everyone. But one important thing is missing. A video projector.
+If you look at [hacking-cologne](http://hacking-cologne.de) you will see that a
+lot of user group meetups are in a location called
+[CoWoCo](http://www.coworkingcologne.de/). It's a really nice place with a lot
+of friendly people and enough Club Mate and Afri Cola for everyone. But one
+important thing is missing. A video projector.
 
 This has to be fixed! If you want to help us, please consider donating here:
 

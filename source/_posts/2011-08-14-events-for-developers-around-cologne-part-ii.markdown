@@ -10,9 +10,13 @@ categories:
 - Events
 ---
 
-[Last year](http://bitboxer.de/2010/08/17/events-for-developers-around-cologne/) I started [hacking-cologne.de](http://hacking-cologne.de), a calender for hacking events around cologen. Now it is time to go a step further. I replaced the google calender with a small rails app.
+[Last year](http://bitboxer.de/2010/08/17/events-for-developers-around-cologne/) I
+started [hacking-cologne.de](http://hacking-cologne.de), a calender for hacking
+events around cologen. Now it is time to go a step further. I replaced the
+google calender with a small rails app.
 
-At the moment it's only a small app with the railscast default layout, but this will change soon.
+At the moment it's only a small app with the railscast default layout, but this
+will change soon.
 
 And this is how it looks like:
 
