@@ -12,10 +12,12 @@ tags:
 - Hackers
 ---
 
-I was tired to search for events in Cologne that could interest me. Others might have the same problem, so I created a shared calendar:
+I was tired to search for events in Cologne that could interest me. Others
+might have the same problem, so I created a shared calendar:
 
+_UPDATE: This calendar was removed_
 
-
-If you know events in the Cologne area (including Düsseldorf and Bonn), feel free to leave me a [Note](mailto:bodo@bitboxer.de?subject=Events).
+If you know events in the Cologne area (including Düsseldorf and Bonn), feel
+free to leave me a [Note](mailto:bodo@bitboxer.de?subject=Events).
 
 **Update:** You can now find the calendar [on this site](http://hackers.bitboxer.de/).

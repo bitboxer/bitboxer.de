@@ -15,16 +15,18 @@ tags:
 - Ruby
 ---
 
-I use the redgreen gem for autotest to highlight errors in another color. Sadly that broke my autospec:
+I use the redgreen gem for autotest to highlight errors in another color. Sadly
+that broke my autospec:
 
-`
+``` bash
 invalid option: --autospec
 Test::Unit automatic runner.
 Usage: -e [options] [-- untouched arguments]
-`
+```
 
-If you want to use redgreen **and** have a working autospec, you should change your _.autotest_ file to this:
+If you want to use redgreen **and** have a working autospec, you should change
+your `.autotest` file to this:
 
-`
+``` ruby
 require 'redgreen/autotest' unless ENV['RSPEC']
-`
+```
