@@ -1,0 +1,99 @@
+---
+comments: true
+date: 2010-08-07 08:20:50
+layout: post
+slug: vim-and-i
+title: Vim and I
+wordpress_id: 240
+categories:
+- Development
+tags:
+- Textmate
+- Vi
+- Vim
+---
+
+A little over a week ago I posted this on twitter:
+
+
+
+> First day of switching from textmate to vim. Let's see if I still use macvim next week :) . Updated my dotfiles: [http://bit.ly/bFuAoi](http://bit.ly/bFuAoi)
+
+
+
+Today I am still using Vim. Am I a better developer now? Hell no. Choosing the best editor for your work is important. A craftsman has his hammer, we developers have our editor. You can hammer a nail in a wall with an average hammer. Nothing wrong with that. Maybe not as fast or as good as with the perfect hammer, but good enough. Am I a happier coder? Not quite yet. Will I stay with Vim? Yes, I think so.
+
+For the last few years I used Vim only for editing stuff on my servers. It was okay, but I never thought of using it as my main editor for my desktop. A few months ago ruby developers in my twitter timeline startet to migrate to Vim. Some because Textmate2 looks like the new Duke Nukem, some because they just wanted to try out another editor. A lot of them where happy about the switch and started to advertise it very aggressively. Last week I had enough. I wanted to find out why all of a sudden everyone is happy with Vim. 
+
+The first thing I did was to look at my current vim configuration I had and to compare it with the configurations others where using. After two days(!!) of rewriting it and adding of a few plugins, I was able to start going. And since then I only used Textmate for a few minor things.
+
+What I hate about Vim:
+
+
+
+
+	
+  * Bad defaults, you have to rewrite tons of stuff
+
+	
+  * You have to add a lot of 3rd party plugins to get it usable
+
+	
+  * Copy and paste is hard. Even when using MacVim with it's mac keyboard shortcuts its harder than what you are used to (But you can activate [Shift-Selection](http://stackoverflow.com/questions/2129723/using-shiftarrows-to-select-text-in-vim-macvim))
+
+	
+  * After I configured everything in MY way, nobody else is able to use my Vim and code on my desktop unless we all agree on a certain configuration
+
+
+
+What I love about Vim:
+
+
+	
+  * You can extend nearly everything and rewire nearly everything
+
+	
+  * A lot can be done without the mouse. Opening files, switching directories, copying and moving files between directories
+
+	
+  * You use the same editor on the remote server
+
+	
+  * It is very fast
+
+
+
+If you want to start using MacVim, you should definitely look at my [dotfiles](http://github.com/bitboxer/dotfiles) or at least look at my [vim delicious bookmarks](http://delicious.com/bodum/vim).
+
+But is it the ideal editor? No. Not for me. But it's close enough. What would my ideal editor look like? Something like this:
+
+
+
+
+	
+  * Command line mode to open/edit files without touching the mouse
+
+	
+  * Everything extensible : syntax highlighting, code completion, directory browser, command line commands, shortcuts
+
+	
+  * Fast and easy script language for the extension system. V8 comes to my mind here :)
+
+	
+  * Good default shortcuts for copy and paste and other standard operations. E.g. copy and paste should behave like in every other app
+
+	
+  * Good default for all other stuff. I don't want to configure my editor for two days to get it usable.
+
+	
+  * Easy way to record and replay macros
+
+	
+  * FAST ui. Redcar feels really slow compared to Textmate and MacVim. Using the JVM is a really bad decision in my opinion.
+
+	
+  * A real desktop app that has an own menu and stuff. Terminal windows are okay for servers, but my editor should have its own Icon and its own menubar on my desktop.
+
+
+
+So what would it take to get my ideal editor? Sadly I am not good enough in writing Cocoa Apps, but if you are, please write a thin Cocoa editor layer and put a good V8 extension system around it. After that I would love to help you code the extensions needed!

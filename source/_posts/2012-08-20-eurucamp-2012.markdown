@@ -1,0 +1,47 @@
+---
+comments: true
+date: 2012-08-20 18:36:32
+layout: post
+slug: eurucamp-2012
+title: Eurucamp 2012
+wordpress_id: 1108
+categories:
+- Events
+---
+
+[![](http://bitboxer.de/wp-content/uploads/eurucamp-2012.png)](http://2012.eurucamp.org/)
+
+Okay, this will be difficult. Last weekend I was at [eurucamp](http://2012.eurucamp.org/). The first one last year was a side conference for everyone who could not get a ticket to euruko. This year it was a stand alone conference. This time they tried to do a full blown conference. Will I go again next year? Hell yes, I will. Did I enjoy this year? Yes and no. Hopefully someone will read this and try to use this to make next year more awesome. Organizing a conference is a lot of work. A lot of stressfull work. And I fully respect that. For the 2nd conference they did it was really well organized. <!-- more -->
+
+**What was good?**
+
+The selection of the speakers and the order of the talks was brilliant. Sadly I could not see the keynote on friday night because I wanted to meet a few friends in Berlin. The talks on saturday and sunday have been great. Especially the talks from Konstantin, Florian, Isaac (and his wife ;) ) and Nick. The weather was fucking awesome and thankfully the conference room was airconditioned. The idea of selecting a location on a lake in August and having 35°C was great, too. On top of it the free time on saturday was great to get to talk and socialize with lots of people.
+
+**What was bad?**
+
+Sadly a lot. Let me begin with the most important thing:
+
+
+
+> Really love [@**agnoster**](https://twitter.com/agnoster) ´s Discussion/Talk about Art and Science at [@**eurucamp**](https://twitter.com/eurucamp) . Sad it is not recorded :(
+> 
+> -- Bodo Tasche (@bitboxer) [August 19, 2012](https://twitter.com/bitboxer/status/237099015286689792)
+
+
+
+
+No recordings. It is 2012. Please do your speakers the favour and record that stuff. Put it online. Let me rephrase that: **if it is not on youtube, it didn't happen**. The speakers use hours and hours to prepare their talks. And after 30 minutes of talking it will be gone. Forever. Why? Renting camera equipment is [pretty cheap](http://dv-kameraverleih.de). Like 40€ a day cheap. If you are planing a conference and you have no time or knowledge on how to setup that stuff, just ask for help. Especially if you advertise yourself as "community-organised". One tweet, one blog post would have been enough.
+
+The guy who did the webpage needs a little help in usability. The schedule does not link to the speakers or the description of the talks. You basically had to search on the speaker page for the talk. By hand. Why? Why no deep link with an anchor? The activity page had no "join this activity" link, instead you had to write the tweet yourself. And that was error-prone. One link like [this one](https://twitter.com/intent/tweet?text=This+is+a+example) and you would have helped everyone.
+
+The iPhone app? Even more confusing. And broken. It still shows a "1" new alert on the Icon. And I don't know how to get rid of that notification. Never worked very well. The guys behind OleaPark need to rewrite the complete UI with the help of an usability expert. Next time just use the Euruko App by Applicake. It showed that it works perfectly. And it even had the schedule of the event and locations onboard.
+
+I loved the goody bag. Tons of nice stickers and stuff. Some of them ended on my macbook :) . BUT the brochure about outsourcing? WTF?! The only thing that could have made that one worse would have been comic sans.
+
+Being one hour outside of Berlin on a lake could be a good Idea. It's a nice opportunity to keep the people together and let them socialize even more. But sadly there have been no events planned for the nights. And that let to the building of very small groups of people. Some went to Berlin, some went to the camping ground and some even went to bed at 22:00(!!). That was a huge lost opportunity. The time on saturday afternoon was great, but it could have been even better if it had been organized 1-2 weeks beforehand. Some people would have used the time to organize events or to bring more stuff with them. Next time the activity page should be online 2 weeks beforehand to make that possible.
+
+And now to the hotel. That was a huge letdown. Starting with "on a lake" which translated into: 15 min bike ride to a good beach. If you went into the lake right on the hotel, like I did, your feet would bleed because of the tons of sharp objects in the water. 5 out of 5 people I talked with who went in there had that experience. Next problem was the food. It was bad. Really bad. On Sunday it was a real miracle: it was cold. Cold spaghetti. On a 35° day. How did that happen? And even worse: the vegetarian lunch bags on saturday had fish in them. And they excused it with "cultural differences". There is no cultural difference in "vegetarian". If you don't know what that means, look it up. For a big hotel like that one it was pretty stupid to do that kind of stunt.
+
+The stop of resupply of water during the break on saturday was not a very smart move. Everyone only had the capri sun they got with their lunch bag. And running out of club mate in a location in Berlin was a first for me, too. Running out of it in Hannover or Osnabrück is understandable. But Berlin? The city where most of the stores have it on their shelfs?
+ 
+And as a closing note to the speakers: dark background means light colors for the fonts. Dark font on dark background is not readable. Maybe on your laptop with 100% brightness, but not in a conference room.

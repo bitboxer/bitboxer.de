@@ -1,0 +1,43 @@
+---
+comments: true
+date: 2012-06-03 08:57:30
+layout: post
+slug: euruko-2012
+title: Euruko 2012
+wordpress_id: 960
+categories:
+- Development
+- Events
+---
+
+And [Euruko](http://www.euruko2012.org/) did it again. This was my [second time](http://bitboxer.de/2011/05/30/thanks-euruko-crew/) at a Euruko conference and I am as impressed as I was last year in Berlin. The organizers here in Amsterdam have done a great job to make the conference a huge success. The [@tenderlove](http://twitter.com/tenderlove) friday hug should also considered to be a Euruko organizers hug ;) .
+
+[![](http://bitboxer.de/wp-content/uploads/AuS1uF5CAAA1T1b.jpeg)](http://bitboxer.de/wp-content/uploads/AuS1uF5CAAA1T1b.jpeg)  
+
+(Photo by [Terence Lee](https://twitter.com/hone02/status/208491286217490434/photo/1))
+
+Things I loved:
+
+- The Tuschinksi Theater was one of the most insane conference locations. Just look at the [photos](http://www.dieselpunks.org/profiles/blogs/dieselpunk-movie-theater). Unbelievable.
+- The party at the [roest](http://amsterdamroest.nl/) was a great closure for the event. Nice people, a fireplace and it was near my [airbnb apartment](http://de.airbnb.com/rooms/103527) ;) .
+- The talks where great. My list of stuff to investigate is pretty long now. Hopefully I will have time to try everything on the next weekend.
+- The people. The vibe was great. Okay, there where some haters, but sadly you can't have a conference of 600 people without them :( .
+- The fruits they handed out as snacks. Good Idea to keep us nerds on a healthy diet. Athens, can you do that, too?
+- The [bob ross theme](http://en.wikipedia.org/wiki/Bob_Ross) that [@roy](http://twitter.com/roy) added to the conference during his talk. (Btw: thanks again for the [sticker](https://twitter.com/bitboxer/status/208830209825325057), roy ;) )
+- The iPhone/Android app with push notifications for updates during the conference
+- The rfid checkin game
+
+And if you missed it, you can get the vibe of the first day in [this video](https://vimeo.com/43281923). There will be more videos and the talks uploaded soon.
+
+I can't wait to be in Athens next year. 
+
+
+
+> Zurich gave me chocolate, but euruko greek will give me a nice beach to hang around the days before/after [#euruko](https://twitter.com/search/%2523euruko) 2013. Let's go to athens!
+> 
+> -- Bodo Tasche (@bitboxer) [June 2, 2012](https://twitter.com/bitboxer/status/208855231189090306)
+
+
+
+
+And Athens, one little thing: can you make the voting process for the euruko 2013 better? Create a site where every attendee can vote, or use handsigns. The sound volume stuff is not good enough anymore.
