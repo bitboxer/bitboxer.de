@@ -16,10 +16,6 @@ I was tired to search for events in Cologne that could interest me. Others might
 
 
 
-Hallo
-
-Hallo
-
 If you know events in the Cologne area (including Düsseldorf and Bonn), feel free to leave me a [Note](mailto:bodo@bitboxer.de?subject=Events).
 
 **Update:** You can now find the calendar [on this site](http://hackers.bitboxer.de/).

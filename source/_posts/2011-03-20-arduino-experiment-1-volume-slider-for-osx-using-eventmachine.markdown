@@ -150,8 +150,4 @@ Connect a potentiometer to +5, GND and Pin 2 and after that it should look somet
 
 
 
-Hallo
-
-Hallo
-
 More links around Arduino can be found in my [delicious account](http://www.delicious.com/bodum/arduino).
