@@ -94,18 +94,44 @@ function flashVideoFallback(){
 }
 
 function wrapFlashVideos() {
-  $('object').each(function(object) {
-    object = $(object);
+  $('object').each(function(i, object) {
     if ( $('param[name=movie]', object).length ) {
-      var wrapper = object.before('<div class="flash-video"><div>').previous();
-      $(wrapper).children().append(object);
+      $(object).wrap('<div class="flash-video"/>')
     }
   });
-  $('iframe[src*=vimeo],iframe[src*=youtube]').each(function(iframe) {
-    iframe = $(iframe);
-    var wrapper = iframe.before('<div class="flash-video"><div>').previous();
-    $(wrapper).children().append(iframe);
+  $('iframe[src*=vimeo],iframe[src*=youtube]').wrap('<div class="flash-video"/>')
+}
+
+function flashPlayerFluidResize() {
+  var allVideos = [];
+  $("iframe[src*=vimeo],iframe[src*=youtube]").each(function(i, obj){
+    allVideos.push(obj);
   });
+
+  $('object').each(function(i, object) {
+    if ( $('param[name=movie]', object).length ) {
+      allVideos.push(object);
+    }
+  });
+
+  $.each(allVideos, function(i, val) {
+    $(val).attr('data-aspectRatio',val.height /val.width)
+      .removeAttr('height')
+      .removeAttr('width');
+  });
+
+  $(window).resize(function() {
+    $.each(allVideos, function(i, val) {
+      var el = $(val);
+      var newWidth = el.parent().width();
+      var newHeight = newWidth * el.attr('data-aspectRatio');
+      el.width(newWidth).height(newHeight);
+      $("embed", el).each(function() {
+        $(this).attr("width", newWidth);
+        $(this).attr("height", newHeight);
+      });
+    });
+  }).resize();
 }
 
 function renderDeliciousLinks(items) {
@@ -121,6 +147,7 @@ $('document').ready(function() {
   testFeatures();
   wrapFlashVideos();
   flashVideoFallback();
+  flashPlayerFluidResize();
   addCodeLineNumbers();
   getNav();
   addSidebarToggler();
@@ -147,10 +174,10 @@ $('document').ready(function() {
   }
 }(document));
 
-/*!	SWFObject v2.2 modified by Brandon Mathis to contain only what is necessary to dynamically embed flash objects
+/*!  SWFObject v2.2 modified by Brandon Mathis to contain only what is necessary to dynamically embed flash objects
   * Uncompressed source in javascripts/libs/swfobject-dynamic.js
   * <http://code.google.com/p/swfobject/>
-	released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
+  released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
 */
 var swfobject=function(){function s(a,b,d){var q,k=n(d);if(g.wk&&g.wk<312)return q;if(k){if(typeof a.id==l)a.id=d;if(g.ie&&g.win){var e="",c;for(c in a)if(a[c]!=Object.prototype[c])c.toLowerCase()=="data"?b.movie=a[c]:c.toLowerCase()=="styleclass"?e+=' class="'+a[c]+'"':c.toLowerCase()!="classid"&&(e+=" "+c+'="'+a[c]+'"');c="";for(var f in b)b[f]!=Object.prototype[f]&&(c+='<param name="'+f+'" value="'+b[f]+'" />');k.outerHTML='<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'+e+">"+c+
 "</object>";q=n(a.id)}else{f=i.createElement(o);f.setAttribute("type",m);for(var h in a)a[h]!=Object.prototype[h]&&(h.toLowerCase()=="styleclass"?f.setAttribute("class",a[h]):h.toLowerCase()!="classid"&&f.setAttribute(h,a[h]));for(e in b)b[e]!=Object.prototype[e]&&e.toLowerCase()!="movie"&&(a=f,c=e,h=b[e],d=i.createElement("param"),d.setAttribute("name",c),d.setAttribute("value",h),a.appendChild(d));k.parentNode.replaceChild(f,k);q=f}}return q}function n(a){var b=null;try{b=i.getElementById(a)}catch(d){}return b}
