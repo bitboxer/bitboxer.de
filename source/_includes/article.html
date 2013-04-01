@@ -8,9 +8,6 @@
     {% unless page.meta == false %}
       <p class="meta">
         {% include post/date.html %}{{ time }}
-        {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-         | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
-        {% endif %}
       </p>
     {% endunless %}
   </header>
@@ -22,6 +19,11 @@
     <footer>
       <a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
     </footer>
+  {% endif %}
+  {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+  <p>
+    <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+  </p>
   {% endif %}
 {% else %}
 <div class="entry-content">{{ content }}</div>
