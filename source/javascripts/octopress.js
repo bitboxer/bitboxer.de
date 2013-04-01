@@ -24,6 +24,7 @@ function addSidebarToggler() {
       } else {
         $('body').addClass('collapse-sidebar');
       }
+      flashPlayerResize();
     });
   }
   var sections = $('aside.sidebar > section');
@@ -102,8 +103,21 @@ function wrapFlashVideos() {
   $('iframe[src*=vimeo],iframe[src*=youtube]').wrap('<div class="flash-video"/>')
 }
 
-function flashPlayerFluidResize() {
-  var allVideos = [];
+var allVideos = [];
+function flashPlayerResize() {
+    $.each(allVideos, function(i, val) {
+      var el = $(val);
+      var newWidth = el.parent().width();
+      var newHeight = newWidth * el.attr('data-aspectRatio');
+      el.width(newWidth).height(newHeight);
+      $("embed", el).each(function() {
+        $(this).attr("width", newWidth);
+        $(this).attr("height", newHeight);
+      });
+    });
+}
+
+function flashPlayerAddFluidResize() {
   $("iframe[src*=vimeo],iframe[src*=youtube]").each(function(i, obj){
     allVideos.push(obj);
   });
@@ -121,17 +135,9 @@ function flashPlayerFluidResize() {
   });
 
   $(window).resize(function() {
-    $.each(allVideos, function(i, val) {
-      var el = $(val);
-      var newWidth = el.parent().width();
-      var newHeight = newWidth * el.attr('data-aspectRatio');
-      el.width(newWidth).height(newHeight);
-      $("embed", el).each(function() {
-        $(this).attr("width", newWidth);
-        $(this).attr("height", newHeight);
-      });
-    });
-  }).resize();
+    flashPlayerResize();
+  });
+  flashPlayerResize();
 }
 
 function renderDeliciousLinks(items) {
@@ -147,7 +153,7 @@ $('document').ready(function() {
   testFeatures();
   wrapFlashVideos();
   flashVideoFallback();
-  flashPlayerFluidResize();
+  flashPlayerAddFluidResize();
   addCodeLineNumbers();
   getNav();
   addSidebarToggler();
