@@ -16,10 +16,10 @@ Cologne. We are developing Germanys best music video streaming service:
 [putpat.tv](http://www.putpat.tv). Before working at TVRL I was a teamlead at
 LexisNexis Germany from 2006 till 2008.
 
-I love [open source](https://github.com/bitboxer) and talking with [other
-software developers](http://www.nerdhub.de). From 2006 - 2010 I was the project
-lead of [TV-Browser](http://www.tvbrowser.org), an open source tv guide written
-in Java.
+I love [open source](https://github.com/bitboxer) and talking with [other software developers](http://www.nerdhub.de).
+From 2006 - 2010 I was the project lead of
+[TV-Browser](http://www.tvbrowser.org), an open source tv guide written in
+Java.
 
 **You can also find me here:**    
 [![twitter](/images/networks/twitter.png)](http://www.twitter.com/bitboxer)
