@@ -12,7 +12,7 @@ tags:
 - ccc
 ---
 
-![29c3](http://bitboxer.de/wp-content/uploads/29c3.jpg)
+![29c3](http://bitboxer.de/wp-content/uploads/29c3.jpg)    
 ([cc-by-nc-sa 2.0](http://creativecommons.org/licenses/by-nc-sa/2.0/) by [tinowa](http://www.flickr.com/photos/tinowa/))
 
 Phew, I finally found some time to do a proper writeup of the
