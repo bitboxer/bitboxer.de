@@ -70,7 +70,7 @@ Pixel perfect layouts on Android devices? Forget it. You simply can't.
 Your GUI designer will not be very happy with the end result. Gaps where
 no gaps should have been, text not sitting perfectly where it belongs.
 And I even did not start to rant about the font rendering issues I saw
-and other stuff :(.
+and other stuff :( .
 
 Animations? On iOS you have something called CoreAnimation. On Android
 there is nothing that even comes close to that. Transitions for
