@@ -11,7 +11,7 @@ require 'time'
 ssh_user       = "bodo02@cygnus.uberspace.de"
 ssh_port       = "22"
 document_root  = "~/html/"
-rsync_delete   = false
+rsync_delete   = true
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
 
@@ -29,7 +29,7 @@ posts_dir       = "_posts"    # directory for blog files
 themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
-timezone        = 'local'     # default time and date used to local timezone
+timezone        = 'Europe/Berlin'     # default time and date used to local timezone
 server_host     = ENV['OCTOPRESS_IP']   || '0.0.0.0'   # host ip address for preview server
 server_port     = ENV['OCTOPRESS_PORT'] || "4000"      # port for preview server eg. localhost:4000
 
