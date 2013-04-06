@@ -7,7 +7,7 @@ title: About
 wordpress_id: 2
 ---
 
-![Bodo Tasche](http://blog.wannawork.de/wp-content/uploads/bodotasche.jpg)
+![Bodo Tasche](/images/bodotasche.jpg)
 
 ## About me
 
