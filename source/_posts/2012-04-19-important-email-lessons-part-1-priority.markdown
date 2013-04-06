@@ -13,7 +13,7 @@ categories:
 In every mail program you will find an option to set the priority of your
 emails. On a mac it looks like this:
 
-[![](/images/2012-04-19-important-email-lessons-part-1-priority/Bildschirmfoto-2012-04-19-um-06.06.41.png)](http://bitboxer.de/wp-content/uploads/Bildschirmfoto-2012-04-19-um-06.06.41.png)
+[![](/images/2012-04-19-important-email-lessons-part-1-priority/Bildschirmfoto-2012-04-19-um-06.06.41.png)](/images/2012-04-19-important-email-lessons-part-1-priority/Bildschirmfoto-2012-04-19-um-06.06.41.png)
 
 But what is it good for? If you think it is as a hint for the reader to explain
 how important this mail is, you are wrong ;) .
