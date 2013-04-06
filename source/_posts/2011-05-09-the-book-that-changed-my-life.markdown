@@ -21,7 +21,7 @@ basic into our brand new computer on christmas eve:
 20 goto 10
 ```
 
-![C64 Manual](http://bitboxer.de/wp-content/uploads/399px-C64-Handbuch3.jpeg) 
+![C64 Manual](/images/2011-05-09-the-book-that-changed-my-life/399px-C64-Handbuch3.jpeg) 
 
 Actually the first lines of basic I entered into the c64 were from "Fix and
 Foxy", a German magazine for kids. But after entering the few examples from

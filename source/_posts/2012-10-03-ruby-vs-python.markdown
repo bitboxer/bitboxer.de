@@ -9,7 +9,7 @@ categories:
 - Development
 ---
 
-![](http://bitboxer.de/wp-content/uploads/ruby-vs-python.png)
+![](/images/2012-10-03-ruby-vs-python/ruby-vs-python.png)
 
 Ruby and Python. Two languages. Two communities. Both have a similar target: to
 make software development better. Better than Java, better than PHP and better

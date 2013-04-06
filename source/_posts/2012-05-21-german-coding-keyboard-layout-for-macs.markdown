@@ -9,7 +9,7 @@ categories:
 - Software
 ---
 
-![](http://bitboxer.de/wp-content/uploads/aeoeue.jpg)
+![](/images/2012-05-21-german-coding-keyboard-layout-for-macs/aeoeue.jpg)
 
 Besides talking about ruby and other stuff on the
 [sigint](http://bitboxer.de/2012/05/20/sigint-2012/) I also talked with a few

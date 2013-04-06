@@ -9,7 +9,7 @@ categories:
 - Development
 ---
 
-![ruby](http://bitboxer.de/wp-content/uploads/ruby.png)
+![ruby](/images/2011-03-18-next-ruby-and-rails-usergroup-meetup/ruby.png)
 
 The Cologne [Ruby and Rails usergroup](http://www.rurug.de) will meet on
 _Thursday, 24 March at 20:00_ at the [Coworking Cologne](http://www.coworkingcologne.de/). 

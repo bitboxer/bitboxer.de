@@ -7,7 +7,7 @@ title: Meet me @euruko !
 wordpress_id: 486
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/Bildschirmfoto-2011-05-05-um-07.02.51.png)](http://euruko2011.org)
+[![](/images/2011-05-05-meet-me-euruko/Bildschirmfoto-2011-05-05-um-07.02.51.png)](http://euruko2011.org)
 
 I will present a talk about arduino and ruby at the
 [euruko](http://euruko2011.org) this year. Hope to see you there!

@@ -11,7 +11,7 @@ tags:
 - Chrome
 ---
 
-![](http://bitboxer.de/wp-content/uploads/Bildschirmfoto-2010-04-18-um-16.04.36.png) 
+![](/images/2010-04-18-chrome-passwordmaker/Bildschirmfoto-2010-04-18-um-16.04.36.png) 
 
 There are three options to create passwords for websites:
 

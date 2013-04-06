@@ -20,7 +20,7 @@ will change soon.
 
 And this is how it looks like:
 
-[![](http://bitboxer.de/wp-content/uploads/Bildschirmfoto-2011-08-14-um-09.14.06.png)](http://hcking.de)
+[![](/images/2011-08-14-events-for-developers-around-cologne-part-ii/Bildschirmfoto-2011-08-14-um-09.14.06.png)](http://hcking.de)
 
 [Pretty, pretty, pretty .... pretty good!](http://www.youtube.com/watch?v=w8jx85_RyA8&feature=related)
 

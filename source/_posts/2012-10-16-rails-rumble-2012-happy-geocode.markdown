@@ -12,7 +12,7 @@ tags:
 - openstreetmap
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/Bildschirmfoto-2012-10-15-um-20.32.42.png)](http://happy-geoco.de)
+[![](/images/2012-10-16-rails-rumble-2012-happy-geocode/Bildschirmfoto-2012-10-15-um-20.32.42.png)](http://happy-geoco.de)
 
 Phew, what a weekend. 48 hours of pure fun at the [Rails Rumble](http://railsrumble.com/).
 Rails What?! For all of you who don't know what the Rails Rumble is: it is a

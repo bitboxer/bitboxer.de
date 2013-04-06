@@ -13,7 +13,7 @@ tags:
 
 Yesterday I needed a little progress bar for a small ruby terminal script. Something like this:
 
-![Progress](http://bitboxer.de/wp-content/uploads/progress.png)
+![Progress](/images/2010-04-21-progressbar-in-ruby-console-scripts/progress.png)
 
 Sadly I could not find one, so I had to write it myself.
 You can install it with:

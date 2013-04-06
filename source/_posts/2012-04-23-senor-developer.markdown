@@ -9,13 +9,13 @@ wordpress_id: 845
 
 My new #1 nerd shirt :) .
 
-![](http://bitboxer.de/wp-content/uploads/61e21ee28d8111e18bb812313804a181_7.jpeg)
+![](/images/2012-04-23-senor-developer/61e21ee28d8111e18bb812313804a181_7.jpeg)
 
 Thanks to [@señordeveloper](http://www.twitter.com/senordeveloper). The shirts
 can be found [here](http://senordevelopershop.spreadshirt.net/).
 
 **Update:**
 
-![](http://bitboxer.de/wp-content/uploads/e0ecda12911211e1abd61231381b6d77_7.jpeg)
+![](/images/2012-04-23-senor-developer/e0ecda12911211e1abd61231381b6d77_7.jpeg)
 
 This photo was taken by [droid boy](http://droid-boy.de) at the [advance hackathon](http://bitboxer.de/2012/04/29/wow-advance-hackathon/).

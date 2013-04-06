@@ -9,7 +9,7 @@ categories:
 - Books
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/412sgxtpoml1.jpeg)](http://www.amazon.de/gp/product/1119998956/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=1119998956) 
+[![](/images/2012-02-05-design-for-hackers-reverse-engineering-beauty/412sgxtpoml1.jpeg)](http://www.amazon.de/gp/product/1119998956/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=1119998956) 
 
 My last book review was nearly [a year ago](http://bitboxer.de/2011/03/23/javascript-the-good-parts/). 
 It's time to change that.
@@ -25,7 +25,7 @@ over fonts to color you will find everything covered in this book you need to
 design a webpage. After this you have all the basic knowledge about design. The
 next step is experimentation and learning from good looking sites.
 
-[![](http://bitboxer.de/wp-content/uploads/kunst.png)](http://www.amazon.de/gp/product/3832193855/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=3832193855) 
+[![](/images/2012-02-05-design-for-hackers-reverse-engineering-beauty/kunst.png)](http://www.amazon.de/gp/product/3832193855/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=3832193855) 
 
 Sadly the next book is only available in German, but "[Kunst. Die ganze Geschichte](http://www.amazon.de/gp/product/3832193855/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=3832193855)"
 is a good companion for the design book. It covers the complete history of art

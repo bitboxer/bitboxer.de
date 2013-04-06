@@ -10,7 +10,7 @@ categories:
 - Development
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/passionateprogrammer.png)](http://www.amazon.de/gp/product/1934356344/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=1934356344) 
+[![](/images/2011-03-19-the-passionate-programmer/passionateprogrammer.png)](http://www.amazon.de/gp/product/1934356344/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=1934356344) 
 
 The last book for this week is [The Passionate Programmer](http://www.amazon.de/gp/product/1934356344/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=1934356344)
 by [Chad Fowler](http://chadfowler.com/). 

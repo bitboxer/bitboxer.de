@@ -10,7 +10,7 @@ categories:
 - Development
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/www.amazon.jpeg)](http://www.amazon.de/gp/product/0321584104/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=0321584104)
+[![](/images/2011-03-15-eloquent-ruby/www.amazon.jpeg)](http://www.amazon.de/gp/product/0321584104/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=0321584104)
 
 At the moment I am sick at home and use the time to finally read some books
 that where on my to-do list. The first was ["Eloquent Ruby"](http://www.amazon.de/gp/product/0321584104/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=0321584104)

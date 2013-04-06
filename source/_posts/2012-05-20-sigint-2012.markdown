@@ -9,7 +9,7 @@ categories:
 - Events
 ---
 
-![](http://bitboxer.de/wp-content/uploads/IMG_0635.jpg)
+![](/images/2012-05-20-sigint-2012/IMG_0635.jpg)
 
 Another month, another [big event](http://sigint.ccc.de). It seems like Cologne
 is a real heaven for nerds right now. From my point of view its right behind

@@ -7,7 +7,7 @@ title: Moved to uberspace
 wordpress_id: 986
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/badge-white-4a3238e3a24624002ded531957438640fcbe8f7d.png)](https://uberspace.de)
+[![](/images/2012-06-17-moved-to-uberspace/badge-white-4a3238e3a24624002ded531957438640fcbe8f7d.png)](https://uberspace.de)
 
 If you can read this, you are accessing [bitboxer.de](http://bitboxer.de) on my
 new virtual server. Yeay!

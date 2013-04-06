@@ -16,7 +16,7 @@ investigate how to add a nice image when opening a new shell.
 
 My result looks like this:
 
-![](http://bitboxer.de/wp-content/uploads/Bildschirmfoto-2012-06-21-um-00.37.27.png)
+![](/images/2012-06-21-terminal-can-i-haz-nice-welcome-image/Bildschirmfoto-2012-06-21-um-00.37.27.png)
 
 Now every time I open my shell, I am greeted by the joker. How cool is that ;)
 ? You can see the code behind that in [this commit](https://github.com/bitboxer/dotfiles/commit/4db662fcddfdf73728e65bd601be26b08977446b). 

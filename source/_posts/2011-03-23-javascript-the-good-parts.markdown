@@ -10,7 +10,7 @@ categories:
 - Development
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/javascript_the_goodparts.jpeg)](http://www.amazon.de/gp/product/0596517742/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=0596517742) 
+[![](/images/2011-03-23-javascript-the-good-parts/javascript_the_goodparts.jpeg)](http://www.amazon.de/gp/product/0596517742/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=0596517742) 
 
 Another week, another book. [JavaScript: The Good Parts](http://www.amazon.de/gp/product/0596517742/ref=as_li_ss_tl?ie=UTF8&tag=wannawork-21&linkCode=as2&camp=1638&creative=19454&creativeASIN=0596517742).
 But I can't recommend this book. Imagine your worst teacher. The guy who could

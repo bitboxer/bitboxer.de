@@ -10,7 +10,7 @@ categories:
 - Events
 ---
 
-[![](http://bitboxer.de/wp-content/uploads/20120930-IMG_0963.jpg)](http://bitboxer.de/wp-content/uploads/20120930-IMG_0963.jpg)
+[![](/images/2012-09-30-rails-girls-cologne/20120930-IMG_0963.jpg)](http://bitboxer.de/wp-content/uploads/20120930-IMG_0963.jpg)
 
 I love the Rails Community. It's one of the best things that happened to me in
 the last few years. There is only one thing I could criticize: the lack of
@@ -34,7 +34,7 @@ wanted to participate. There are tons of girls out there who are interested.
 They just don't know how to start. And whom to ask. Or to put this in a movie
 quote: "if you build it, they will come".
 
-[![](http://bitboxer.de/wp-content/uploads/IMG_0959-300x300.jpg)](http://bitboxer.de/wp-content/uploads/IMG_0959.jpg)
+[![](/images/2012-09-30-rails-girls-cologne/IMG_0959-300x300.jpg)](http://bitboxer.de/wp-content/uploads/IMG_0959.jpg)
 
 Friday started with a small installation party. Every girl installed Ruby and
 the editor on their machines. And for everyone who got hungry, there was a
