@@ -36,7 +36,7 @@ embed code that vimeo is giving you:
 Do you see the `allowFullScreen`? That's a [boolean attribute](http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#boolean-attributes).
 Yes, it is legal HTML code, but would break any XML parser.
 
-Long story short: never ever parse HTML with an XML parser that can't handle that.
+Long story short: never ever parse HTML with a XML parser that can't handle that.
 
 So, what does a good static site generator blog framework look for me?
 
