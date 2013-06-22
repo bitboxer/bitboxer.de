@@ -34,8 +34,8 @@ Java.
 
 **Address:**  
 Bodo Tasche  
-Bergstr. 1  
-50739 Köln  
+Richard-Sorge-Str. 58  
+10249 Berlin  
 Germany
 
 **EMail/Jabber:**  
