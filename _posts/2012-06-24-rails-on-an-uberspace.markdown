@@ -16,7 +16,7 @@ is an entry in the [Uberspace Wiki](http://uberspace.de/dokuwiki/cool:rails)
 for using Rails, but that one is using FastCGI and no RVM, so I had to find a
 way to install passenger on my own. This is how I did it.
 
-<!-- more -->
+
 
 **Installing passenger**
 

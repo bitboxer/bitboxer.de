@@ -20,7 +20,7 @@ how to learn vim. Both have one thing in common: if you don't use it, you don't
 learn it ;) . Besides that it's a philosophical question what way is better. It
 depends on you what way works best for you.
 
-<!-- more -->
+
 
 **Bottom up**
 

@@ -25,7 +25,7 @@ people visited the conference and it never felt crowded. You always found a
 table to hack on or a place in the conference rooms to watch the lectures. Even
 for the very popular lectures. I loved it. You can already count me in for the
 next one!
-<!-- more -->
+
 
 Luckily the [FEM](https://fem.tu-ilmenau.de/) captured all talks. If you missed the conference, you can watch all talks online. Sadly (or luckily, depending on the english skills of the person giving the talk ;) ) some of the talks are in German.
 

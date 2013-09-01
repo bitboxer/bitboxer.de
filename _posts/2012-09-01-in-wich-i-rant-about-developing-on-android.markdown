@@ -27,7 +27,7 @@ Android devs and the conversation always went like this:
 **Me:** Do you use the graphical gui editor?    
 **Other:** No, that thing is broken, you have to edit the xml files by hand.    
 **Me:** WTF?!
-<!-- more -->
+
 
 Strangely most Android devs find it totally okay for their IDE to be
 completely broken. Xcode might not be the best IDE, but at least the

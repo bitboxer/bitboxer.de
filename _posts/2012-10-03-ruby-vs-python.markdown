@@ -18,7 +18,7 @@ the last question I can say: none is better. Both camps are awesome and do tons
 of great stuff. But for the first question the answer is longer. And I hope to
 provide that in this little article.
 
-<!-- more -->
+
 
 Is the difference in the toolset around the language? No, I don't think so.
 Both have good package managers, tons of libraries for all kind of stuff and a

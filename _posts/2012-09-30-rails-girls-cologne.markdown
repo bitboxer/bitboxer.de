@@ -24,7 +24,7 @@ And please don't get fooled by the girlish look. That look is only
 demonstrating that they don't want to teach you rails in a boring way. The
 event should be fun. And in an relaxed atmosphere.
 
-<!-- more -->
+
 
 The first reaction I am getting when talking about this is "but where do you
 get all the girls?!". Luckily this is not a problem. The Cologne event had over
