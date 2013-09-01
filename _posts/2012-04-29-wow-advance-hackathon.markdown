@@ -10,7 +10,7 @@ categories:
 ---
 
 [![](/images/2012-04-29-wow-advance-hackathon/advance_hackathon.png)](https://www.facebook.com/photo.php?fbid=370360986333575&set=a.370357079667299.77339.195052203864455&type=3&theater)
-Photo (c) ADVANCE Conference
+Photo &copy; ADVANCE Conference
 
 Wow, THAT was a great weekend. The [Advance
 Hackathon](http://hackathon.advance-conference.com/) was a complete success.
