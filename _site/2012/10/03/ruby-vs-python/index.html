@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bitboxer - Ruby -vs- Python</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+        <!-- Normalize the css -->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- No jquery, no fun :) -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <!-- Adjust font size -->
+        <script src="/script/flowtype.js"></script>
+
+        <script src="/script/main.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Rosario:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-954244-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+           })();
+        </script>
+        
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <div class="gravatar"><a href="http://bodotasche.de"><img src="/css/gravatar.png" alt="bodos gravatar"></a></div>
+              <h1 class="title"><a href="http://bodotasche.de">Bitboxer</a></h1>
+              <div class="menu">
+                <a class="extra" href="http://bitboxer.de">hacking</a>
+                <a class="extra" href="http://blog.wannawork.de">private life</a>
+              </div>
+            </div>
+
+            <div class="content">
+  <h2 class='headline'>Ruby -vs- Python</h2>
+  <p class="meta">03 Oct 2012</p>
+
+  <div class="post">
+  <p><img src="/images/2012-10-03-ruby-vs-python/ruby-vs-python.png" alt=""></p>
+
+<p>Ruby and Python. Two languages. Two communities. Both have a similar target: to
+make software development better. Better than Java, better than PHP and better
+for everyone. But where is the difference? And what language is &quot;better&quot;? For
+the last question I can say: none is better. Both camps are awesome and do tons
+of great stuff. But for the first question the answer is longer. And I hope to
+provide that in this little article.</p>
+
+<!-- more -->
+
+<p>Is the difference in the toolset around the language? No, I don&#39;t think so.
+Both have good package managers, tons of libraries for all kind of stuff and a
+few decent web frameworks. Both promote test driven development. On the
+language side one is whitespace sensitive, the other isn&#39;t. Is that so
+important? Maybe a little, but I think there is something else that is way more
+important. The culture. </p>
+
+<p>It all started with a stupid python troll at the
+<a href="http://sigint.ccc.de/">Sigint</a> that wanted to troll our
+<a href="http://colognerb.de">cologne.rb</a> booth. To be prepared for the next troll
+attack I started to investigate Python. For that I talked with a lot of Python
+guys and wrote a few little things in Python to get a feel for the language and
+the ecosystem. Luckily at the <a href="http://froscon.org">FrOSCon</a> our Ruby booth was
+right next to the <a href="http://wiki.python.de/pycologne/">pycologne</a> folks and we
+talked a lot about the differences. During that time I got the feeling that I
+know what is different in the culture of both parties. Last month I had the
+opportunity to test my theory in real life. The
+<a href="http://colognerb.de">cologne.rb</a> and the <a href="http://djangocologne.de">django cologne</a> 
+folks did a joined meetup. And I took the opportunity to test my theory. And it
+got confirmed by lots of the Python people.</p>
+
+<p>Okay, now what is the difference in the culture? It is pretty easy. Python
+folks are really conservative and afraid of change, Ruby folks love the new
+shiny stuff even if it breaks older things. It&#39;s that simple. But it has huge
+consequences. One you can see for example in the adaption of Ruby 1.9 vs Python
+3. Both new versions did tons of breaking changes. A lot of code needed changes
+to run on the new plattform. In the Ruby world the transition went pretty
+quick. In the Python world it is very troublesome. Some Python people even say
+that Python 3 is broken and all energy should be focused on the 2.x-branch of
+the language. The Ruby community saw the opportunities. The Python community
+only saw the update problems. Yes, there have been update problems in the Ruby
+world, but we found an easy way to fix this:
+<a href="http://isitruby19.com/">isitruby19.com</a>. A simple plattform that showed if the
+gem is ready for 1.9. And if it wasn&#39;t and the gem was important, it got fixed
+with pull requests or something similar. And the problems went away fast.</p>
+
+<p>Both models of thinking have pros and cons. The Python world is more stable,
+you can update your django installation without much troubles. But that also
+means new technology is only added very slowly. The Ruby world loves changes.
+So much that most of the &quot;new stuff&quot; in the Python world was tested in the Ruby
+world first. We love changes so much that the Rails core is build around that
+idea. You can easily change nearly everything and extend everything. Most of
+the new stuff the Rails Core Team is testing right now for version 4 is
+available as plugin for Rails 3. This is pretty interesting if you love new
+things, love change, and love playing around with stuff. If you don&#39;t and hate
+the idea of breaking changes, you maybe are better suited with the Python way.
+But don&#39;t be afraid of breaking changes. They are all pretty well documented in
+the release guides. It&#39;s not voodoo.</p>
+
+<p>I for myself love the Ruby mindset. Something like Rails or Asset Pipelines or
+all the other things would not be possible if we are stuck with &quot;no, don&#39;t
+change that, it works pretty well that way&quot;. Someone has to be the leader.
+Someone has to play around with new ideas. Yes, some ideas won&#39;t fly, some are
+removed pretty quickly. But at least we tried them. Yes, I know that some
+people prefer the conservative way. If you consider yourself to be like that,
+you should at least try Python. I stay with Ruby.</p>
+
+  </div>
+
+  <div class="disqus">
+    <div id="disqus_thread">
+      <a></a><p></p>
+    </div>
+    <script type="text/javascript">
+    var disqus_shortname = 'bitboxercodingblog'; 
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+</div>
+
+
+          </div>
+        </div>
+
+    </body>
+</html>

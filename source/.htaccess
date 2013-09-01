@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule ^feed http://bitboxer.de/atom.xml [R=301]

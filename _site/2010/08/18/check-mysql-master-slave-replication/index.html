@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bitboxer - Check MySQL Master-Slave replication</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+        <!-- Normalize the css -->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- No jquery, no fun :) -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <!-- Adjust font size -->
+        <script src="/script/flowtype.js"></script>
+
+        <script src="/script/main.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Rosario:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-954244-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+           })();
+        </script>
+        
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <div class="gravatar"><a href="http://bodotasche.de"><img src="/css/gravatar.png" alt="bodos gravatar"></a></div>
+              <h1 class="title"><a href="http://bodotasche.de">Bitboxer</a></h1>
+              <div class="menu">
+                <a class="extra" href="http://bitboxer.de">hacking</a>
+                <a class="extra" href="http://blog.wannawork.de">private life</a>
+              </div>
+            </div>
+
+            <div class="content">
+  <h2 class='headline'>Check MySQL Master-Slave replication</h2>
+  <p class="meta">18 Aug 2010</p>
+
+  <div class="post">
+  <p>A lot of <a href="http://railslab.newrelic.com/scaling-rails">guides</a> explain that you
+can use MySQL master-slave replication to scale your database performance. But
+nobody explains how to keep the database instances in synch. MySQL replications
+are very shaky and tend to break and mess up stuff very easily. From my
+standpoint the whole replication scheme looks like a smart hack into the MySQL
+system.</p>
+
+<p>Till today I used some self written scripts to check our systems. Nobody told
+me that there was a perfect toolchain for this problem already existing:
+<a href="http://www.maatkit.org/">Maatkit</a>. Maatkit offers a few commandline tools that
+help you to keep the slaves in synch with your master.</p>
+
+<p>Install it using brew:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">brew install maatkit
+</code></pre></div>
+<p>Check tables for differences :</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mk-table-checksum h=HOSTMASTER,u=USERMASTER,p=PASSWORDMASTER h=HOSTSLAVE,u=USERSLAVE,p=PASSWORDSLAVE -d DATABASE | mk-checksum-filter
+</code></pre></div>
+<p>And after you found differences you can even use Maatkit to repair those tables:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mk-table-sync --execute --sync-to-master h=SLAVEIP,u=USER,p=PASSWORD,D=DATABASE,t=TABLE
+</code></pre></div>
+<p>Besides repairing damaged tables Maatkit helps you to check if the slave
+replication is still working.
+<a href="http://www.maatkit.org/doc/mk-heartbeat.html">Mk-heartbeat</a> updates a
+heartbeat table in the master database and checks if the slave database has
+been updated. I have written a small script that wraps the heartbeat check and
+sends a mail if the slave replication has stopped.</p>
+
+<p>More documentation can be found <a href="http://www.maatkit.org/doc/">here</a> and a few
+examples in <a href="http://www.scribd.com/doc/15014708/Make-Your-Life-Easier-with-Maatkit">this presentation</a>.</p>
+
+<p>And yes, using couchdb would make this toolchain obsolete :) .</p>
+
+  </div>
+
+  <div class="disqus">
+    <div id="disqus_thread">
+      <a></a><p></p>
+    </div>
+    <script type="text/javascript">
+    var disqus_shortname = 'bitboxercodingblog'; 
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+</div>
+
+
+          </div>
+        </div>
+
+    </body>
+</html>
