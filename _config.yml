@@ -1,1 +1,13 @@
-theme/_config.yml
+name: Bitboxer
+disqus_short_name: bitboxercodingblog
+google_analytics_tracking_id: UA-954244-11
+
+markdown: redcarpet
+pygments: true
+timezone: Europe/Berlin
+
+paginate: 30
+paginate_path: "/page/:num"
+
+permalink: /:year/:month/:day/:title/
+emoji_dir: /css/emoji
