@@ -33,7 +33,7 @@ minutes I tried it. They show how webhosting should be done.
 * A complete ssh interface with everything that is important to me
   preconfigured. Starting from [htop](http://htop.sourceforge.net/) to
   [Midnight Commander](http://www.gnu.org/software/mc/) everything was there.
-* Good performance (at least on the server I am running this on ;) )
+* Good performance (at least on the server I am running this on :wink: )
 * Adding a new Mail Address is just one entry in the .qmail away
 * They are open about the used [tech](http://uberspace.de/tech)
 * The [wiki](http://uberspace.de/dokuwiki/) has tons of easy to understand

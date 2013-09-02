@@ -16,7 +16,7 @@ emails. On a mac it looks like this:
 [![](/images/2012-04-19-important-email-lessons-part-1-priority/Bildschirmfoto-2012-04-19-um-06.06.41.png)](/images/2012-04-19-important-email-lessons-part-1-priority/Bildschirmfoto-2012-04-19-um-06.06.41.png)
 
 But what is it good for? If you think it is as a hint for the reader to explain
-how important this mail is, you are wrong ;) .
+how important this mail is, you are wrong :wink: .
 
 This is a "pro active spam filter". In the beginning of email, software
 developers tried to find a way to distinguish emails by self-important persons
@@ -37,6 +37,6 @@ a certain amount, the person is considered to be an egomaniac and his mails
 will be sent to the bottom of the reading list.
 
 I can't live without this. But don't tell any manager/user/customer. It's a
-secret that saves my ass regularly ;) .
+secret that saves my ass regularly :wink: .
 
 _This article is a translated post I wrote a [few years ago](http://blog.wannawork.de/2007/04/21/wichtige_lektion_zum_thema_email_1_prior/)._

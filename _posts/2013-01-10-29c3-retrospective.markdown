@@ -27,7 +27,7 @@ for the very popular lectures. I loved it. You can already count me in for the
 next one!
 
 
-Luckily the [FEM](https://fem.tu-ilmenau.de/) captured all talks. If you missed the conference, you can watch all talks online. Sadly (or luckily, depending on the english skills of the person giving the talk ;) ) some of the talks are in German.
+Luckily the [FEM](https://fem.tu-ilmenau.de/) captured all talks. If you missed the conference, you can watch all talks online. Sadly (or luckily, depending on the english skills of the person giving the talk :wink: ) some of the talks are in German.
 
 Here is my list of talks you should not miss:
 

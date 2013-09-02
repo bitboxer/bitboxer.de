@@ -18,4 +18,4 @@ There will be tons of different topics to hack on. A list of all proposals can
 be found on
 [Github](https://github.com/AdvanceHackathon/Hackathon/wiki/Projektvorschlaege-ADVANCE-HACKATHON).
 Sadly it is fully booked, but I don't think that anybody would throw you out if
-you come by ;) .
+you come by :wink: .

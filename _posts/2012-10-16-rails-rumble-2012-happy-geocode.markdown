@@ -18,7 +18,7 @@ Phew, what a weekend. 48 hours of pure fun at the [Rails Rumble](http://railsrum
 Rails What?! For all of you who don't know what the Rails Rumble is: it is a
 contest for Rails developers. Implement an awesome idea in 48 hours and win
 prizes while doing so. Awesome, right? Out of the 500 teams who participated,
-around 300 got a working version of their idea...well, mostly working ;) .
+around 300 got a working version of their idea...well, mostly working :wink: .
 
 Our idea was to create a working geocoder for
 [OpenStreetMap](http://www.openstreetmap.org). A geocoder can reference an

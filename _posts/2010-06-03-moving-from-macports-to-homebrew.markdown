@@ -51,7 +51,7 @@ sudo rm -rf ~/.macports
 ```
 
 Alternatively you can move those directories to another place and delete them
-if everything is okay (if you don't trust your Timemachine ;) ).
+if everything is okay (if you don't trust your Timemachine :wink: ).
 
 After that you should remove the `/opt/local/bin`  from your `$PATH`.
 

@@ -31,7 +31,7 @@ Android devs and the conversation always went like this:
 
 Strangely most Android devs find it totally okay for their IDE to be
 completely broken. Xcode might not be the best IDE, but at least the
-GUI Editor is working perfectly ;) . And even worse: if the GUI editor
+GUI Editor is working perfectly :wink: . And even worse: if the GUI editor
 would have worked as it would have ment to be, it would be a complete
 usability fuck up. Why? Because Google decided to go the complete Java
 way, which can be described as this:
@@ -108,7 +108,7 @@ pure amount of idiots in the Android developer scene. Or to be fair: the
 amount of idiots posting their so called solutions on StackOverflow. If
 you search for Objective-C or Ruby stuff, you have a few morons that post
 worst practices. But compared to the huge amount of morons posting in
-the Android world I am living in a pretty nice place ;) .
+the Android world I am living in a pretty nice place :wink: .
 
 In the end I managed to create an app that was decent enough to show it on the IFA.
 Go see it on the Samsung booth :smile: . Basically it is an remote for your putpat.tv app on the

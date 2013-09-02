@@ -17,7 +17,7 @@ keystrokes to get my things done. The only problem when switching to vim is to
 learn the vim way. It is not that easy for a beginner to get a hang on that
 different modes vim is presenting you. Basically there are two approaches on
 how to learn vim. Both have one thing in common: if you don't use it, you don't
-learn it ;) . Besides that it's a philosophical question what way is better. It
+learn it :wink: . Besides that it's a philosophical question what way is better. It
 depends on you what way works best for you.
 
 **Bottom up**

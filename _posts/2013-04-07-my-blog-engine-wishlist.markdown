@@ -50,7 +50,7 @@ Like this:
 * Possibility to overwrite parts of the theme (HTML, CSS, ...)
 * Live preview with a local server
 * Deploy via RSync and Github
-* The layout should be rendered via Sass/Haml or CSS/Erb or ... (just make it pluggable ;) )
+* The layout should be rendered via Sass/Haml or CSS/Erb or ... (just make it pluggable :wink: )
 * Can understand Timezones and doesn't render new URLs when I am in a different time zone.
 * I18n support
 
