@@ -20,8 +20,6 @@ how to learn vim. Both have one thing in common: if you don't use it, you don't
 learn it ;) . Besides that it's a philosophical question what way is better. It
 depends on you what way works best for you.
 
-
-
 **Bottom up**
 
 Use a basic vim with no modification, or with as less modification as possible.
@@ -43,6 +41,8 @@ those plugins. The benefit of this is that your vim already has tons of syntax
 highlighting and other stuff onboard and you just dive into it. The downside of
 this approach is that you might get distracted and confused by all those
 plugins and what they offer.
+
+**Practice, practice, practice**
 
 Whatever method you choose, you have to learn a lot of stuff. I would advise
 you to use [this interactive learning tool](http://www.openvim.com/tutorial.html) 
