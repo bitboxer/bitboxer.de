@@ -111,6 +111,6 @@ worst practices. But compared to the huge amount of morons posting in
 the Android world I am living in a pretty nice place ;) .
 
 In the end I managed to create an app that was decent enough to show it on the IFA.
-Go see it on the Samsung booth :) . Basically it is an remote for your putpat.tv app on the
+Go see it on the Samsung booth :smile: . Basically it is an remote for your putpat.tv app on the
 Samsung TV. Developing the communication between the tv and the android app was
 really easy and I hope we will transform that into a full app in the near future.

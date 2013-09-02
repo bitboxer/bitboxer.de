@@ -47,7 +47,7 @@ minutes I tried it. They show how webhosting should be done.
 And now one of the best parts: the pricing. It's up to you. The minimum price
 is 1€ per uberspace per month. It's advised that you pay around 5-10€. I have
 decided to pay 16€ for the service. And it's worth every penny of it. Why 16€?
-That was the price I payed at Host Europe :) . After moving a few more domains
+That was the price I payed at Host Europe :smile: . After moving a few more domains
 to uberspace, I will increase that even more. If you like something, you should
 show it.
 
@@ -70,4 +70,4 @@ Some tech facts:
   [node.js](http://uberspace.de/dokuwiki/development:nodejs) supported
 
 If you have more questions about [Uberspace](https://uberspace.de) just ask
-them :) .
+them :smile: .

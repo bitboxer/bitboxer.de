@@ -26,7 +26,7 @@ Using MacPorts? You should really think about moving to
     ruby.
 
 Moving from MacPorts to Homebrew sounds a little bit scary. MacPorts has tons
-of compiled stuff on your system. But you can do this. Trust me :) .
+of compiled stuff on your system. But you can do this. Trust me :smile: .
 
 First, uninstall MacPorts:
 

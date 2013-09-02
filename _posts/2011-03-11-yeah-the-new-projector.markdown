@@ -12,7 +12,7 @@ categories:
 Thanks to everyone who [donated money](http://bitboxer.de/2011/03/09/a-video-projector-for-cowoco/)
 for the video projector.
 
-Here it is, in it's full glory :) :
+Here it is, in it's full glory :smile: :
 
 [![CoWoCo Cologne Projector](http://farm6.static.flickr.com/5217/5518143748_565de09262.jpg)](http://www.flickr.com/photos/wannawork/5518143748/)
 

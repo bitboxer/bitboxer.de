@@ -34,4 +34,4 @@ make
 ./icat ~/joker.png > ~/.dotfiles/logo.ascii
 ```
 
-And now you have to find an image that you want to use :) .
+And now you have to find an image that you want to use :smile: .

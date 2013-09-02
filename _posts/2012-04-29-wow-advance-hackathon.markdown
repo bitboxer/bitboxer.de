@@ -27,7 +27,7 @@ by [Pamela Perniss](http://www.pernipa.eu/) was a nice surpise, too!
 And the food was fucking brilliant. I don't want to know how much weight I have
 gained through that weekend :o . And the barista(!!) made perfect coffee: 
 
-<blockquote class="twitter-tweet"><p>Das ist ein _verdammt_ leckerer Kaffee :) <a href="https://twitter.com/search/%23ah12">#ah12</a></p>&mdash; Tobias (@l_ama) <a href="https://twitter.com/l_ama/status/196534309815980033">April 29, 2012</a></blockquote>
+<blockquote class="twitter-tweet"><p>Das ist ein _verdammt_ leckerer Kaffee :smile: <a href="https://twitter.com/search/%23ah12">#ah12</a></p>&mdash; Tobias (@l_ama) <a href="https://twitter.com/l_ama/status/196534309815980033">April 29, 2012</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>Our team ([Lucas](https://twitter.com/moonbeamlabs), [Timo](https://twitter.com/#captainhagbard), [Tobias](http://twitter.com/l_ama) and myself) worked on adding new features to [hcking.de](http://hcking.de). We
 
 * added a mobile layout

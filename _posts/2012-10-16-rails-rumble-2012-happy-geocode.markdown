@@ -24,7 +24,7 @@ Our idea was to create a working geocoder for
 [OpenStreetMap](http://www.openstreetmap.org). A geocoder can reference an
 address like "Bergstr. 1, 50789 Köln" to a point on a map. There are a few
 geocoders available for the [OpenStreetMap](http://www.openstreetmap.org), but
-sadly they have tons of problems. Ours does not :) . You can find it at
+sadly they have tons of problems. Ours does not :smile: . You can find it at
 [happy-geoco.de](http://happy-geoco.de).
 
 Please [vote for it](http://railsrumble.com/entries/210-happy-geocode).

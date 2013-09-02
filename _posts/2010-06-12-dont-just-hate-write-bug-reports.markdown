@@ -35,7 +35,7 @@ even get stuff for being nice and helpful. Early Betas to test, some goodies or
 information about coming features.
 
 You can still rate that app in two days and say that the customer support is
-awful. But at least you have more to write than "this is shit" :) .
+awful. But at least you have more to write than "this is shit" :smile: .
 
 And for god's sake don't use _#fail_ for minor mistakes. I have seen a lot of
 "the button xy in that app is on the left, not on the right #fail"-kind of

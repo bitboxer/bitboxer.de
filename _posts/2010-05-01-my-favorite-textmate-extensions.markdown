@@ -20,7 +20,7 @@ editor? Just try the 30 day trial version and you will see it's worth it.
 The theme I am using at the moment is the Railscast Theme by Ryan Bates. You
 can find it in the about section of his
 [Railscasts](http://railscasts.com/about). Dark background and nice font
-colors. When you look at the code the whole day, it should look good :) . Don't
+colors. When you look at the code the whole day, it should look good :smile: . Don't
 forget to download the [Bitstream Vera Font](http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/).
 
 **Ackmate**
@@ -39,7 +39,7 @@ Need better project support including features like git? Use
 
 **Github Bundle**
 
-Speaking about git. What about github? Yes, there's a bundle for that :) .
+Speaking about git. What about github? Yes, there's a bundle for that :smile: .
 [DrNic's github bundle](http://github.com/drnic/github-tmbundle). 
 
 **Ruby On Rails Bundle**

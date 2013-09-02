@@ -52,4 +52,4 @@ sends a mail if the slave replication has stopped.
 More documentation can be found [here](http://www.maatkit.org/doc/) and a few
 examples in [this presentation](http://www.scribd.com/doc/15014708/Make-Your-Life-Easier-with-Maatkit).
 
-And yes, using couchdb would make this toolchain obsolete :) .
+And yes, using couchdb would make this toolchain obsolete :smile: .

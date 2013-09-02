@@ -28,7 +28,7 @@ I switched to Chrome, I couldn't use that anymore. Searching in the chrome
 extension library showed one extension that used the passwordmaker hashing
 algorithm, but sadly that one was a bad joke. It simply wrapped a html page
 into a chrome extension. It was barely usable. A perfect opportunity to learn
-how to write extensions for chrome :) . If you want a good chrome password
+how to write extensions for chrome :smile: . If you want a good chrome password
 generator, you can now find my version in the chrome extension library.
 
 [Install it now](https://chrome.google.com/extensions/detail/ocjkdaaapapjpmipmhiadedofjiokogj).

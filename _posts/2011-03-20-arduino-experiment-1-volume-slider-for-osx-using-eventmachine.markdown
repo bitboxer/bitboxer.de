@@ -63,7 +63,7 @@ Arduino isn't transmitting data to it. We need a little program that runs on
 the Arduino and computes the input and sends a new volume to the serial port.
 That code is a little bit longer because it has to reduce the jitter from the
 data. You don't want the volume to constantly switch between 50% and 52%, am I
-right :) ?
+right :smile: ?
 
 ``` cpp
 // analog pin used to connect the potentiometer

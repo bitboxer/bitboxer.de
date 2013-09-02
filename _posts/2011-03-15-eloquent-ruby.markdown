@@ -31,7 +31,7 @@ that certain way to do it. I have read it in one day and didn't learn much
 while doing so. But it was a good reminder on how and why we Ruby Developers do
 the stuff we do. And it was a nice read nevertheless. Russ is a  talented and
 very funny author. I would definitively read a book written by him even if it's
-about fly-fishing :) . Even better: he [reacts on tweets](https://twitter.com/#!/russolsen/status/47727509785149441)
+about fly-fishing :smile: . Even better: he [reacts on tweets](https://twitter.com/#!/russolsen/status/47727509785149441)
 about his book.
 
 Strong buying advice for everybody who just started to learn ruby or wants to

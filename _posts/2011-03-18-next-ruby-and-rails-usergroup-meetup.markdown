@@ -16,4 +16,4 @@ _Thursday, 24 March at 20:00_ at the [Coworking Cologne](http://www.coworkingcol
 
 We will have a talk by Jan Lühr about JRuby and an open mike session
 afterwards. If you want to talk to ruby developers, show your newest work or
-just have a beer with some great people, you have to be there :) .
+just have a beer with some great people, you have to be there :smile: .

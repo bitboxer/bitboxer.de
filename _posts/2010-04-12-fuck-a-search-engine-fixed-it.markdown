@@ -17,7 +17,7 @@ I love to test new web search engines. Every few months I try to use a new one
 for a few hours.  Mostly just to check if finally someone made something that
 creates results that are equal or better than Google's. Yes, I hate the Google
 monopoly and I use Gmail, Google Calendar and fucking every other service they
-offer (except for Buzz...that one sucks monkey balls :) ). BUT I only use
+offer (except for Buzz...that one sucks monkey balls :smile: ). BUT I only use
 those because they are the best services, not because I love Google that much.
 
 The first query I do is always my name. I know all pages I have written on and
@@ -35,7 +35,7 @@ stores that sell "s.Oliver Bags".  Not on Duck Duck go. They found him. Just
 compare the results for yourself [on Google](http://www.google.com/search?&q=oliver+tasche)
 or on [Duck Duck go](http://duckduckgo.com/?q=oliver+tasche).
 
-Maybe I just found my new search engine :) .
+Maybe I just found my new search engine :smile: .
 
 **Update:** I had a small issue and asked them about it and got an answer from
 [the founder](http://www.gabrielweinberg.com/) of Duck Duck go himself within a

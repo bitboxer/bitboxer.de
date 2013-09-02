@@ -16,7 +16,7 @@ tags:
 A little over a week ago I posted this on twitter:
 
 > First day of switching from textmate to vim. Let's see if I still use macvim
-> next week :) . Updated my dotfiles:
+> next week :smile: . Updated my dotfiles:
 > [http://bit.ly/bFuAoi](http://bit.ly/bFuAoi)
 
 Today I am still using Vim. Am I a better developer now? Hell no. Choosing the

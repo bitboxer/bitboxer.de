@@ -7,7 +7,7 @@ title: Señor Developer
 wordpress_id: 845
 ---
 
-My new #1 nerd shirt :) .
+My new #1 nerd shirt :smile: .
 
 ![](/images/2012-04-23-senor-developer/61e21ee28d8111e18bb812313804a181_7.jpeg)
 
