@@ -1,6 +1,7 @@
 name: Bitboxer
 disqus_short_name: bitboxercodingblog
 google_analytics_tracking_id: UA-954244-11
+url: http://bitboxer.de
 
 markdown: redcarpet
 pygments: true
