@@ -51,7 +51,7 @@ you could have the plugin only filter ads on certain sites. But I didn't want
 to do that manually. So I forked the plugin and added that feature. The fork
 can be found here:
 
-[https://github.com/bitboxer/charma_adblockplus_chrome](https://github.com/bitboxer/charma_adblockplus_chrome)
+[https://github.com/bitboxer/charma\_adblockplus\_chrome](https://github.com/bitboxer/charma_adblockplus_chrome)
 
 If you clone that repo and load the plugin into your chrome, you can activate
 the blacklist mode in the last tab of the settings panel. After that the
