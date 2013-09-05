@@ -32,7 +32,7 @@ deaf universities in the world.
 
 If you see people signing on the street, it is okay to look. If you are curious, just go to them and 
 try to communicate with them. [Raul](http://raul.de/leben-mit-behinderung/10-dinge-die-alle-eltern-ihren-kindern-uber-behinderungen-beibringen-sollten/) 
-posted a nice little post (in german) on how to speak to kids about stuff like this.
+wrote a nice little article (in german) on how to speak to kids about stuff like this.
 
 But it is **never** okay to laugh about the fact that they are deaf. 
 Never do that.
