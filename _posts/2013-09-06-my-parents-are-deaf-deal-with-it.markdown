@@ -30,11 +30,11 @@ Or listen to [Episode 55](http://99percentinvisible.org/episode/episode-50-deafs
 99% invisible that talks about the construction of a building for one of the biggest
 deaf universities in the world.
 
-If you see people signing on the street it is okay to look. If you are curious, just go to them and 
+If you see people signing on the street, it is okay to look. If you are curious, just go to them and 
 try to communicate with them. [Raul](http://raul.de/leben-mit-behinderung/10-dinge-die-alle-eltern-ihren-kindern-uber-behinderungen-beibringen-sollten/) 
 posted a nice little post (in german) on how to speak to kids about stuff like this.
 
-But what is **never** okay is to laugh about the fact that they are deaf. 
+But it is **never** okay to laugh about the fact that they are deaf. 
 Never do that.
 
 If I use this sentence: "I talked with my parents about it" and you begin
