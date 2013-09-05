@@ -13,8 +13,6 @@ made my day.
 Do I like [Octopress](http://octopress.org)? Yes and no. Yes, because now I 
 can write my stuff in Markdown. No, because Octopress feels weird. 
 
-<!-- More -->
-
 * To install plugins, I have to manually copy ruby files into my blog and 
   add them to my repo. If I want to update them, I have to do that again.
 * If the plugin needs stylesheets to do it's job, I have to copy those
