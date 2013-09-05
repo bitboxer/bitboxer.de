@@ -25,7 +25,7 @@ depends on you what way works best for you.
 Use a basic vim with no modification, or with as less modification as possible.
 No Rails plugin, no special syntax highlighting sauce. If you feel comfortable
 enough in vim, you add one plugin at a time. Most people start with the plugins
-that Tim Pope is offering on [his github account](github.com/tpope/). The
+that Tim Pope is offering on [his github account](http://github.com/tpope/). The
 benefit of this is that you focus on the basic vim commands and don't get
 distracted by the stuff that is delivered by plugins. The downside is that you
 won't get to see the full potential of vim at first. You have to wait till you
@@ -34,7 +34,7 @@ are able to install plugins and configure your vim.
 **Top down**
 
 Use a fully loaded vim with tons of modifications. If you want to go this way
-you definitely should use [Janus](github.com/carlhuda/janus). That's the best
+you definitely should use [Janus](http://github.com/carlhuda/janus). That's the best
 vim plugin distribution right now. Learn the basic movement commands and than
 check the plugin list that is delivered with janus and try to use and learn
 those plugins. The benefit of this is that your vim already has tons of syntax
