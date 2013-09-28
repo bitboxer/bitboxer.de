@@ -13,15 +13,16 @@ Last week I migrated a few projects to
 [Uberspace](http://bitboxer.de/2012/06/17/moved-to-uberspace/). Some of them
 are rails projects and I had to find a good way to run them on Uberspace. There
 is an entry in the [Uberspace Wiki](http://uberspace.de/dokuwiki/cool:rails)
-for using Rails, but that one is using FastCGI and no RVM, so I had to find a
+for using Rails, but that one is using FastCGI, so I had to find a
 way to install passenger on my own. This is how I did it.
-
-
 
 **Installing passenger**
 
-First I installed [RVM](https://rvm.io/rvm/install/) and configured it. After
-that I had to install passenger:
+First you have to change the ruby version and add the ``--user-install`` flag to your
+rubygems settings. For details on this please see the [Uberspace Wiki](https://uberspace.de/dokuwiki/development:ruby).
+And don't forget to read the bundler paragraph as well :wink: .
+
+After that I had to install passenger:
 
 ```
 gem install passenger
