@@ -30,7 +30,7 @@ passenger-install-nginx-module
 ```
 
 This will install passenger and builds a nginx with the passenger module
-included. When asked for a location for nginx, answer that with `~/nginx`.
+included. When asked for a location for nginx, answer that with `/home/USERNAME/nginx`.
 
 Now nginx and passenger are installed. Next stop is configuring nginx to run on
 the uberspace. Open the `~/nginx/conf/nginx.conf` and add this at the top:
