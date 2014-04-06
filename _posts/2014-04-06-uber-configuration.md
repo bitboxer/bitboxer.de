@@ -50,7 +50,7 @@ other computers that don't use your current setup.
 Do I think that you should never change the default setting of your system? No.
 But you need to think about the implication of each change you do on your system.
 
-For me it comes down to four basic rules.
+For me it comes down to four basic questions.
 
 **Has this change implications for my pair?**
 
