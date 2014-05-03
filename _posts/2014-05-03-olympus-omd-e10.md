@@ -50,11 +50,11 @@ The list of features is quite impressive, too. From the gorgeous 3" tilting moni
 the awesome remote control via an iPhone app. Yes, you can see the image of the viewfinder
 on your iPhone using an app by Olympus.
 
-And it makes extremely nice pictures, too. Especially if you consider the price of that
+And it makes extremely nice pictures. Especially if you consider the price of that
 little thing. You can easily compare the result with cameras that cost 500€ more than
 this gem of a camera.
 
-This was one of the first test shots from me.
+This was one of the first test shots:
 
 ![MacBook Pro](/images/2014-05-03-olympus-omd-em10/macbookpro.jpg)
 
