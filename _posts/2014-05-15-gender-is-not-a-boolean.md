@@ -4,13 +4,11 @@ date: 2014-05-15 22:00
 layout: post
 slug: gender-is-not-a-boolean
 title: Gender is not a boolean
+image: /images/2014-05-15-gender-is-not-a-boolean/gender.jpg
+copyright: "([cc-by-sa 2.0](https://creativecommons.org/licenses/by/2.0/) by [mxmstryo](https://secure.flickr.com/photos/mxmstryo/4652458500))"
 categories:
 - gender
 ---
-
-![Restroom Sign](/images/2014-05-15-gender-is-not-a-boolean/gender.jpg)
-([cc-by-sa 2.0](https://creativecommons.org/licenses/by/2.0/) by [mxmstryo](https://secure.flickr.com/photos/mxmstryo/4652458500))
-
 Choose your favorite color:
 
 * Eggshell

@@ -7,11 +7,9 @@ title: Über configuration or how to drive your pair insane
 categories:
 - configuration
 - pairing
+image: /images/2014-04-06-uber-configuration/toolbox.jpg
+copyright: "([cc-by-nc-sa 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/) by [dk_spook](https://secure.flickr.com/photos/dk_spook/2421009077))"
 ---
-
-![A toolbox](/images/2014-04-06-uber-configuration/toolbox.jpg)
-([cc-by-nc-sa 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/) by [dk_spook](https://secure.flickr.com/photos/dk_spook/2421009077))
-
 
 A lot of us love to configure our tools. It makes us
 super efficient. At least we hope it does. Sometimes it's just

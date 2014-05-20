@@ -6,10 +6,9 @@ slug: journeyman-years
 title: Journeyman years
 categories:
 - craftsmanship
+image: /images/2014-03-22-journeyman_years/journeyman.jpg
+copyright: "([cc-by-nc-sa 2.0](http://creativecommons.org/licenses/by-nc-nd/2.0/) by [sharpals](http://flickr.com/photos/sharpals/7043828775/))"
 ---
-
-![A journeyman](/images/2014-03-22-journeyman_years/journeyman.jpg)
-([cc-by-nc-sa 2.0](http://creativecommons.org/licenses/by-nc-nd/2.0/) by [sharpals](http://flickr.com/photos/sharpals/7043828775/))
 
 A lot of programmers think of programming as a
 [craft](http://devblog.avdi.org/2014/02/10/the-passion-gospel/). Me included.
