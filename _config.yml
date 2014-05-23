@@ -4,7 +4,7 @@ disqus_short_name: bitboxercodingblog
 url: http://bitboxer.de
 
 markdown: redcarpet
-pygments: true
+highlighter: true
 timezone: Europe/Berlin
 
 paginate: 30
