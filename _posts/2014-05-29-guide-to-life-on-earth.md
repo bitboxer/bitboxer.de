@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2014-05-15 22:00
+date: 2014-05-29 16:00
 layout: post
 slug: guide-to-life-on-earth
 title: An Astronaut's Guide to Life on Earth
@@ -12,7 +12,7 @@ categories:
 ---
 Today a [German Astronaut](http://www.esa.int/Our_Activities/Human_Spaceflight/Blue_dot/ESA_astronaut_Alexander_Gerst_arrives_at_Space_Station) arrived on the ISS.
 And he will be there till November. But how do you become an astronaut?
-What does it mean to life on the Space Station?
+What does living in the Space Station feel like?
 
 Luckily there is someone who wrote a book about all this. Chris Hadfield. If 
 that name doesn't ring a bell, than maybe the fact that he was the astronaut who
