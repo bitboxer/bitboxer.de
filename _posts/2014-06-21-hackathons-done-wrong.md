@@ -29,10 +29,10 @@ have to do anything. They just come to you.
 
 # Competition Competition Competition
 
-Hackathons were ment to be places where people sit together, work on
+Hackathons were meant to be places where people sit together, work on
 stuff and share their knowledge. But if you attach a huge amount of money
 to the #1 price, the knowledge sharing is lost. Why do you want to share
-stuff if you will loose the competition because of that? The guy that
+stuff if you will lose the competition because of that? The guy that
 comes to your table could be an evil spy from another team that will
 grab the price from you if you share too much.
 
@@ -46,7 +46,7 @@ should be on the fun, not on the winning.
 Ever noticed how hard it is to get women interested in hackathons? It is
 because of this.
 
-# Sleeping is for loosers
+# Sleeping is for losers
 
 A hackathon should not promote 48h coding sessions. "Don't worry, we have energy drinks!"
 is totally wrong. It's unhealthy, your code will be shit, your mood pretty bad and
