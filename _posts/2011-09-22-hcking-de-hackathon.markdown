@@ -9,10 +9,10 @@ categories:
 - Development
 ---
 
-Lucas and I want to speed up the development on hcking.de a little bit. And for
-that we will do an all weekend hacking event called "**hcking.de hackathon**"
+Lucas and I want to speed up the development on hacken.in a little bit. And for
+that we will do an all weekend hacking event called "**hacken.in hackathon**"
 on the weekend of **8th/9th october**. It will be a weekend with coding, pizza,
 Club Mate and lots of fun.
 
 Do you want to participate? Register for the event today! Details can be found
-on [hcking.de](http://hcking.de/events/53-hcking-de-hackathon).
+on [hacken.in](http://hacken.in/events/53-hcking-de-hackathon).
