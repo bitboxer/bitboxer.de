@@ -31,10 +31,10 @@ have to do anything. They just come to you.
 
 Hackathons were meant to be places where people sit together, work on
 stuff and share their knowledge. But if you attach a huge amount of money
-to the #1 price, the knowledge sharing is lost. Why do you want to share
+to the #1 prize, the knowledge sharing is lost. Why do you want to share
 stuff if you will lose the competition because of that? The guy that
 comes to your table could be an evil spy from another team that will
-grab the price from you if you share too much.
+grab the prize from you if you share too much.
 
 And adding aggressive, testosterone driven wording is not very helpful either.
 
@@ -73,7 +73,7 @@ So what is my ideal hackathon?
 
 * More than one company involved, even better: community driven
 * Sleeping rules
-* No big prices
+* No big prizes
 * Encourage knowledge sharing, e.g. with lightning talks
 * Code of Conduct and a friendly atmosphere
 
