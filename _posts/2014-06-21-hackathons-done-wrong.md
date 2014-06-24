@@ -79,3 +79,16 @@ So what is my ideal hackathon?
 
 If I should name an example, it would be the [Advance Hackathon](https://bitboxer.de/2012/04/29/wow-advance-hackathon/).
 
+# Update
+
+The [nerdkunde](http://nerdkunde.de) has a really nice discussion about this
+topic. If you understand German, you should [listen to episode 31](http://nerdkunde.de/nk031.html).
+
+One of their conclusions is that there are two types of events. Hack competitions and hackathons.
+And since the hackathon label is used a lot for the hack competitions we should rebrand
+the hackathons that use the guidelines in this article to community hack days.
+
+And to the sleeping paragraph: I totally understand that not everyone wants to
+sleep. But at least give people the possibility to sleep in a quiet room.
+Don't pear pressure people into not sleeping.
+
