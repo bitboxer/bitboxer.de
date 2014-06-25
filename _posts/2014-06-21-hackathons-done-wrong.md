@@ -90,5 +90,5 @@ the hackathons that use the guidelines in this article to community hack days.
 
 And to the sleeping paragraph: I totally understand that not everyone wants to
 sleep. But at least give people the possibility to sleep in a quiet room.
-Don't pear pressure people into not sleeping.
+Don't peer pressure people into not sleeping.
 
