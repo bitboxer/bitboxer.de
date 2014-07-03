@@ -19,7 +19,7 @@ on sunday :( . The next time I will plan with more time afterwards.
 
 If you have missed my talk, you can find the slides here:
 
-<object id="__sse8141645" width="510" height="426"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=slideshare-110529093211-phpapp01&#038;stripped_title=endless-fun-with-arduino-and-eventmachine&#038;userName=bitboxer" /> <param name="allowFullScreen" value="true"/> <param name="allowScriptAccess" value="always"/> <embed name="__sse8141645" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=slideshare-110529093211-phpapp01&#038;stripped_title=endless-fun-with-arduino-and-eventmachine&#038;userName=bitboxer" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="510" height="426"></embed> </object>
+<script async class="speakerdeck-embed" data-id="68c8d160e5270131e1bf4ab20097e045" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 If you haven't done yet, please rate my talk
 [here](http://speakerrate.com/talks/7676-endless-fun-with-arduino-and-eventmachine)
