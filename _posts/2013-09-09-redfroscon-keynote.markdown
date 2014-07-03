@@ -16,7 +16,7 @@ Be warned: that video is in German :wink: .
 The slides are pretty readable on the video, but you if you have problems, 
 you can read them here:
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/25545593" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+<script async class="speakerdeck-embed" data-id="022cb070e5270131e1c14ab20097e045" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 All other videos that have been recorded on the Froscon can be found on the
 [media.cc.de](http://media.ccc.de/browse/conferences/froscon/2013/) server. I hadn't time to 
