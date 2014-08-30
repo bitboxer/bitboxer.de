@@ -24,6 +24,4 @@ bike lanes. And because of that biking there isn't fun. Berlin on the other side
 has lots of huge streets. At least in the eastern part (where I am most of the time).
 And you can see that in the video. Lots of bikers in the city.
 
-Yes, it could be improved in a lot of places. For example some car drivers have
-problems to realize that they share the road and some bikers don't think they
-have to stop at a red light. But it's on a good way into the right direction.  
+Yes, it could be improved in a lot of places. But it's on a good way into the right direction.  
