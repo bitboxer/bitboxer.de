@@ -79,7 +79,7 @@ concepts that they don't understand (yet). After the router we added
 controllers, than views and templates and after that models.
 
 And since the core concepts are relatively similar to Rails, we will be able to
-do the switch to Rails after we trained everything. Our students will know how
+do the switch to Rails (if we want to ;) ) after we trained everything. Our students will know how
 MVC works by focusing on one part at a time. Really awesome.
 
 So this is what we did so far. What do you think? How do you teach ruby to
