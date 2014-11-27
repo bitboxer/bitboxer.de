@@ -27,7 +27,7 @@ common one: they try to parse HTML as XML. Why this is a problem? Just look at t
 embed code that vimeo is giving you:
 
 ``` html
-<iframe src="http://player.vimeo.com/video/16287115" width="650" height="366" 
+<iframe src="//player.vimeo.com/video/16287115" width="650" height="366" 
   frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 ```
 
