@@ -63,11 +63,12 @@ noise, adjust the volume and much more. This is very time consuming and not that
 a beginner. Luckily you don't have to do it yourself. Just upload your track to [Auphonic](http://auphonic.com)
 and let them deal with it.
 
-To release your podcast you have three options:
+To release your podcast you have four options:
 
 * Wordpress with the [podlove podcast publisher](http://podlove.org/podlove-podcast-publisher/)
 * Simple blog (like Jekyll) and use [Soundcloud](http://help.soundcloud.com/customer/portal/articles/1209292-can-i-podcast-with-soundcloud-) for hosting
-* Do everything on your own and create the RSS feed with your own program. One example for this is the [Nerdkunde](https://github.com/nerdkunde/website) podcast
+* Use a hoster that is specialized in podcast, for example [podigee](https://www.podigee.com)
+* Do everything on your own and create the RSS feed with your own program.
 
 After that you need to register your podcast in [iTunes](https://www.apple.com/itunes/podcasts/specs.html). Most
 of the podcast clients use the iTunes database as source for their libraries.
