@@ -30,7 +30,7 @@ I spent most of the time talking to people, hacking in our little assembly calle
 Thanks to the rubytown we finally released the new design for [hacken.in](http://hacken.in)!
 Besides that I also participated in a Podcast joint venture you can listen to [here](http://geekstammtisch.de/#GST036).
 
-There where way too much things going on during the conference and I could only
+There were way too much things going on during the conference and I could only
 watch a handful of talks. But luckily all talks have been recorded and are
 available online. Here is my list of talks I would recommend to watch:
 
