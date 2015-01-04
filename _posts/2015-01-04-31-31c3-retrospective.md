@@ -47,7 +47,7 @@ courses in North Korea.
 This talk is a nice example why extremism is dangerous. Even with software. Richard Stallman has
 some very radical views in this talk. For example if you write closed sourced software, it would be
 better for you and the society if you stop right now and collect welfare money. And don't get
-me started on how small he drew the linux in his slides and how big the GNU :wink:.
+me started on how small he drew the Linux in his slides and how big the GNU :wink:.
 
 [Video](http://media.ccc.de/browse/congress/2014/31c3_-_6123_-_en_-_saal_1_-_201412291130_-_freedom_in_your_computer_and_in_the_net_-_richard_stallman.html)
 
@@ -73,7 +73,7 @@ This talk demonstrates faults in the smartcard payment and how to exploit it.
 # Reconstructing narratives
 
 In his talk [last year](http://media.ccc.de/browse/congress/2013/30C3_-_5713_-_en_-_saal_2_-_201312301130_-_to_protect_and_infect_part_2_-_jacob.html),
-Jacob Applebaum revealed some findings from the Snowden Docuemnts. This talk is a continuation
+Jacob Applebaum revealed some findings from the Snowden documents. This talk is a continuation
 of the last talk with new findings.
 
 [Video](http://media.ccc.de/browse/congress/2014/31c3_-_6258_-_en_-_saal_1_-_201412282030_-_reconstructing_narratives_-_jacob_-_laura_poitras.html)
@@ -81,7 +81,7 @@ of the last talk with new findings.
 # SS7: Locate. Track. Manipulate.
 
 SS7 is the backend communication system for the mobile phone companies. Sadly it's highly
-insecure and exploitable. Here you lern what is possible with it right now.
+insecure and exploitable. Here you learn what is possible with it right now.
 
 [Video](http://media.ccc.de/browse/congress/2014/31c3_-_6531_-_en_-_saal_6_-_201412272300_-_ss7map_mapping_vulnerability_of_the_international_mobile_roaming_infrastructure_-_laurent_ghigonis_-_alexandre_de_oliveira.html)
 
@@ -117,7 +117,7 @@ exploitable bugs.
 # Thunderstrike: EFI bootkits for Apple MacBooks
 
 The Thunderbold port can be used to own your machine. In a way that is not easily detectable
-or removeable. If this creates nightmares for you, than you should not watch this talk :wink:.
+or removable. If this creates nightmares for you, than you should not watch this talk :wink:.
 
 [Video](http://media.ccc.de/browse/congress/2014/31c3_-_6128_-_en_-_saal_1_-_201412291830_-_thunderstrike_efi_bootkits_for_apple_macbooks_-_trammell_hudson.html)
 
@@ -138,4 +138,4 @@ talk if you are interested in the finer details of the language used in politica
 
 Did I miss something? If yes please leave it in the comments below.
 
-Ps: all the videos are also available on youtube, but please use the [official ccc account](https://www.youtube.com/user/mediacccde).
+Ps: all the videos are also available on Youtube, but please use the [official ccc account](https://www.youtube.com/user/mediacccde).
