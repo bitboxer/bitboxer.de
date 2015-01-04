@@ -12,7 +12,7 @@ copyright: "[CC-BY 2.0 Der Robert](https://www.flickr.com/photos/der_robert/1611
 
 The [31c3](https://events.ccc.de/congress/2014/wiki/Main_Page). What an awesome
 way to end the year 2014. For all of you who don't know what the 31c3 was: a
-conference organized by the [chaos computer club](http://www.ccc.de), Europe's
+conference organized by the [Chaos Computer Club](http://www.ccc.de), Europe's
 largest collective of hackers. Four days with over 10.000 people and talks on
 technology, society and utopia.
 
