@@ -3,7 +3,7 @@ comments: true
 date: 2015-01-09 22:00
 layout: post
 slug: statemachines
-title: Introduction to statemachines
+title: Introduction to state machines
 categories:
 - talk
 - presentation
@@ -12,7 +12,7 @@ categories:
 Yesterday I talked about [state machines](https://en.wikipedia.org/wiki/Finite-state_machine)
 on the [Berlin Ruby Usergroup](http://berlin.onruby.de).
 
-**Introduction to Statemachines**
+**Introduction to state machines**
 
 Rails has this nice little feature called [Enums](http://edgeapi.rubyonrails.org/classes/ActiveRecord/Enum.html). The introduction example is something like this:
 
