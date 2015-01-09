@@ -67,7 +67,7 @@ To release your podcast you have four options:
 
 * Wordpress with the [podlove podcast publisher](http://podlove.org/podlove-podcast-publisher/)
 * Simple blog (like Jekyll) and use [Soundcloud](http://help.soundcloud.com/customer/portal/articles/1209292-can-i-podcast-with-soundcloud-) for hosting
-* Use a hoster that is specialized in podcast, for example [podigee](https://www.podigee.com)
+* Use a hoster that is specialized in podcasting, for example [podigee](https://www.podigee.com)
 * Do everything on your own and create the RSS feed with your own program.
 
 After that you need to register your podcast in [iTunes](https://www.apple.com/itunes/podcasts/specs.html). Most
