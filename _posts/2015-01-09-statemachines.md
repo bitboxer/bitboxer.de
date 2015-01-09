@@ -16,9 +16,11 @@ on the [Berlin Ruby Usergroup](http://berlin.onruby.de).
 
 Rails has this nice little feature called [Enums](http://edgeapi.rubyonrails.org/classes/ActiveRecord/Enum.html). The introduction example is something like this:
 
-    class Conversation < ActiveRecord::Base
-        enum status: [ :active, :archived ] 
-    end
+```ruby
+class Conversation < ActiveRecord::Base
+  enum status: [ :active, :archived ]
+end
+```
 
 And I think this is dangerous. States should be dealed with in a state machine. Why you ask? Because state changes usually have conditions attached to them. Only archive if ... . If you want to model something like that with enums, you end up with a horrible version of a state machine.
 
