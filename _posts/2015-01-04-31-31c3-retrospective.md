@@ -136,6 +136,15 @@ talk if you are interested in the finer details of the language used in politica
 
 [Video](http://media.ccc.de/browse/congress/2014/31c3_-_6264_-_de_-_saal_1_-_201412271245_-_wir_beteiligen_uns_aktiv_an_den_diskussionen_-_martin_haase_maha.html)
 
+# What Ever Happened to Nuclear Weapons?
+
+A really good overview about the history of nuclear weapons. Explaining some of the physics
+and politics behind the most dangerous explosive weapon known to mankind.
+
+[Video](http://media.ccc.de/browse/congress/2014/31c3_-_6121_-_en_-_saal_2_-_201412291715_-_what_ever_happened_to_nuclear_weapons_-_michael_buker.html)
+
 Did I miss something? If yes please leave it in the comments below.
 
 Ps: all the videos are also available on Youtube, but please use the [official ccc account](https://www.youtube.com/user/mediacccde).
+
+
