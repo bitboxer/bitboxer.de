@@ -24,7 +24,7 @@ free to ping me [on twitter](http://twitter.com/bitboxer).
 The german mac keyboard layout is problematic if you want to code. Things like {
 [ ] } are hard to reach. Lots of developers I know switched to a US layout
 because of that. I tried. But it's not for me. I hated to relearn the layout of
-my keyboard. Because of that I compromised. I swapped some keys on the german
+my keyboard. Because of that I did a trade-off. I swapped some keys on the german
 layout in favour of the brackets. You can see my current layout in [this github
 repo](https://github.com/bitboxer/de-coding.keylayout). If you want to create
 your own layout, install
