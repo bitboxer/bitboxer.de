@@ -25,7 +25,7 @@ me. Why should I read all the stuff out there when I just could get the most
 important news of the week? This freed lots of time that I could use for
 other things.
 
-Today my RSS reader has under 50 subscriptions, where most of them only post something once a month. A handful of them are still news sites. Sites I really enjoy reading on a daily basis. The rest is done through those newsletters. Every Sunday morning I grab a hot chocolate and open the newsletter folder of my email app and start reading them. And after 30 minutes I am done and up to date again.
+Today my RSS reader has under 50 subscriptions, most of them only post something once a month. A handful of them are still news sites. Sites I really enjoy reading on a daily basis. The rest is done through those newsletters. Every Sunday morning I grab a hot chocolate and open the newsletter folder of my email app and start reading them. And after 30 minutes I am done and up to date again.
 
 Another positive side effect: I'm not lured into reading some comments
 discussing the links on reddit or hacker news. Most times reading those comments
