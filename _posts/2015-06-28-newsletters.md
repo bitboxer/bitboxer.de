@@ -36,7 +36,7 @@ Here is the list of newsletters I'm currently subscribed to:
 * [Ruby Weekly](http://rubyweekly.com/)
 * [Html5 Weekly](http://html5weekly.com/)
 * [Javascript Weekly](http://javascriptweekly.com/)
-* [Hakernewsleter](http://www.hackernewsletter.com/)
+* [Hakernewsletter](http://www.hackernewsletter.com/)
 * [Changelog](https://changelog.com/weekly/)
 * [iOS Dev Weekly](https://iosdevweekly.com/)
 * [Neues aus der Zukunft](https://neues-aus-der-zukunft.de)
