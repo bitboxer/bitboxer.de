@@ -8,7 +8,7 @@ categories:
 - travelling
 - vacation
 image: /images/2015-10-27-digital-traveller/headline.jpg
-copyright: [CC-BY 2.0 Moyan Brenn](https://www.flickr.com/photos/aigle_dore/17670344740/in/photolist-sVt8Sd-bysngG-dBd9xh-yiTTYZ-mRuRZ4-getU6Y-4AVTHA-ihzwAL-sD8nh-8LeC4c-5QQDx3-9MHbb1-4VomSg-dNFayy-c1cmn-h9HaG-dHvVhD-5eutgu-5euPnG-87nANu-Fp2RT-4fkVjd-unkxYY-a2CXs-pv2np6-a7Me6-4qiTbp-oUiDHv-rEwaKA-9pzB2M-86b94J-2pEjci-fQ1iQp-8VP71B-j5CJ9e-8ok5f3-5UjreP-aTHS8M-oPJrT6-4qBpy2-yPSBev-aGHiY-6mF4qP-6mEZMD-cRo8d3-9SAFUH-9SgMdk-9SgLWk-9SAG34-9RgvFN)
+copyright: [CC-BY 2.0 Moyan Brenn](https://www.flickr.com/photos/aigle_dore/17670344740)
 ---
 10 years ago you could spot tourists on the street by their heavy usages of
 maps. Today this is nearly gone. Most tourists use their phone to find their
