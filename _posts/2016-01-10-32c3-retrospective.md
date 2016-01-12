@@ -11,7 +11,7 @@ image: /images/2015-01-04-31c3-retrospective/cch.jpg
 copyright: "[CC-BY 2.0 Der Robert](https://www.flickr.com/photos/der_robert/16112469081)"
 ---
 It is now a tradition for me to spent the last days of the year with fellow
-nerds on the chaos computer congress in Hamburg.  And as [last
+nerds on the chaos communication congress in Hamburg.  And as [last
 year](/2015/01/04/31-31c3-retrospective/) I spent lots of time in the
 [RubyTown](https://events.ccc.de/congress/2015/wiki/Assembly:Rubytown) assembly
 and wandering around talking to people.
