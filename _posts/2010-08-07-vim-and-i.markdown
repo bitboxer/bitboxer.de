@@ -59,7 +59,7 @@ What I love about Vim:
 
 If you want to start using MacVim, you should definitely look at my
 [dotfiles](http://github.com/bitboxer/dotfiles) or at least look at my
-[vim delicious bookmarks](http://delicious.com/bodum/vim).
+[vim pinboard bookmarks](https://pinboard.in/u:bitboxer/t:vim).
 
 But is it the ideal editor? No. Not for me. But it's close enough. What would
 my ideal editor look like? Something like this:

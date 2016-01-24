@@ -168,4 +168,4 @@ there is a good [documentation](http://arduino.cc/en/Guide/HomePage) about it
 Connect a potentiometer to +5, GND and Pin 2 and after that it should look
 something like this:
 
-More links around Arduino can be found in my [delicious account](http://www.delicious.com/bitboxer/arduino).
+More links around Arduino can be found in my [pinboard account](https://pinboard.in/u:bitboxer/t:arduino).

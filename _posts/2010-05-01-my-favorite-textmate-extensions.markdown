@@ -50,4 +50,4 @@ Besides that it adds tons of shortcuts. Whatever you will need for RoR
 development, you will find it in there.
 
 If you want to keep track of all chrome extensions I use, you can subscribe to
-my[ links on Delicious tagged as Textmate](http://delicious.com/bodum/textmate).
+my[ links on Pinboard tagged as Textmate](https://pinboard.in/u:bitboxer/t:textmate).

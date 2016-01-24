@@ -65,7 +65,7 @@ help you finding a route in lots of cities, but I found it really practical to
 have a map of the train system with me. My solution is to download the maps as
 PDF and adding them to my dropbox. Luckily the app has an option to mark files
 as offline viewable. A list of links to cities I visited can be found in my
-[del.icio.us](https://delicious.com/bitboxer/linienplan) account.
+[pinboard](https://pinboard.in/u:bitboxer/t:linienplan) account.
 
 ## Maps maps maps
 
