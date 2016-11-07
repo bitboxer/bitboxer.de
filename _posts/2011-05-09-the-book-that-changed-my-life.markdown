@@ -39,3 +39,10 @@ It ignited a fire that is still burning inside me and hopefully will burn a few
 more decades.
 
 What was your book that changed everything?
+
+**Ps:** This is me on that first night with the C-64. The folder next to me is all
+the stuff from the "Fix and Foxy" magazine I collected in the months before.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is me, typing basic on a computer for the first time in my life. Would love to tell that boy what an awesome journey this night starts. <a href="https://t.co/y5xrlKcb19">pic.twitter.com/y5xrlKcb19</a></p>&mdash; Bodo Tasche 🔭 (@bitboxer) <a href="https://twitter.com/bitboxer/status/794119340169818112">November 3, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
