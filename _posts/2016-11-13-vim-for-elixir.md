@@ -65,7 +65,7 @@ Plug 'tpope/vim-projectionist'
 ```
 
 I really love working with [vim-rails](https://github.com/tpope/vim-rails), and this is
-the same thing for elixir. It gives you methods to navigate to controllers, models,
+the same thing for phoenix. It gives you methods to navigate to controllers, models,
 channels and other files with commands like `:Emodel {name}`.
 
 ## [Alchemist.vim](https://github.com/slashmili/alchemist.vim)
