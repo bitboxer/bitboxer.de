@@ -24,7 +24,7 @@ easy to have support for tons of programming languages inside of vim. You won't
 need to find out the package for a certain language, this plugin has them all.
 And the best part of it is that it loads the language support on demand.
 
-## [vim-gutentags](https://ludovicchabant/vim-gutentags)
+## [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 
 ```vim
 Plug 'ludovicchabant/vim-gutentags'
