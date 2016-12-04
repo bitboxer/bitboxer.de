@@ -17,6 +17,6 @@ new adventures. I already have plans for the next year, but I can't announce
 them just yet. First I will do a small sabbatical till march and enjoy
 my life.
 
-Currently bitcrowd is searching for Ruby/Elixir developers right now. Ping
+Bitcrowd is searching for Ruby/Elixir developers right now. Ping
 [info@bitcrowd.net](mailto:info@bitcrowd.net) if you are interested. It's a
 really unique place with lots of smart people working on fun projects.
