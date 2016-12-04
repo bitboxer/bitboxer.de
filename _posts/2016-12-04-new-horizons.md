@@ -17,6 +17,9 @@ new adventures. I already have plans for the next year, but I can't announce
 them just yet. First I will do a small sabbatical till march and enjoy
 my life.
 
+I am really thankful for the last 3 years. I learned a lot and worked on amazing
+projects with great people. It was a really great ride and will miss it a lot.
+
 Bitcrowd is searching for Ruby/Elixir developers right now. Ping
 [info@bitcrowd.net](mailto:info@bitcrowd.net) if you are interested. It's a
 really unique place with lots of smart people working on fun projects.
