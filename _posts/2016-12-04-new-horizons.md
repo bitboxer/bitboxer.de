@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2016-12-04 20:00:00
+date: 2016-12-04 18:00:00
 layout: post
 slug: new-horizons
 title: "New Horizons"
