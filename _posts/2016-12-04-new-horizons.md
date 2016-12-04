@@ -14,7 +14,7 @@ really surprising to you: I quit.
 Yes, I quit bitcrowd. Effective immediately. And yes, I still love the company
 and everyone involved. Sometimes it's just time to move on. To search for
 new adventures. I already have plans for the next year, but I can't announce
-them just yet. But at first I will do a small sabbatical till march and enjoy
+them just yet. First I will do a small sabbatical till march and enjoy
 my life.
 
 Currently bitcrowd is searching for Ruby/Elixir developers right now. Ping
