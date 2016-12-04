@@ -2,3 +2,4 @@ _site
 .sass-cache
 .pygments-cache
 .bundle
+.jekyll-metadata
