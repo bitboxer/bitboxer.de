@@ -1,0 +1,3 @@
+RewriteEngine on
+Redirect 301 /2014/03/22/journeyman_years /2014/03/22/journeyman-years
+Redirect 301 /2014/03/22/journeyman_years/index.html /2014/03/22/journeyman-years/index.htmL
