@@ -25,7 +25,7 @@ about. Describe the target audience and what you will offer them. In short:
 don't forget to pitch the conf to potential visitors. But please keep it
 brief. Nobody will read your 3000 word essay about the last 20 years.
 
-## Visitor details
+## Venue details
 
 Have a dedicated page with information for visitors. This should include a
 detailed description of the venue and how to reach it. Don't forget to
