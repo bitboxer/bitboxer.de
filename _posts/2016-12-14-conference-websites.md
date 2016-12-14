@@ -99,3 +99,6 @@ important topic for me. Please read [this](https://modelviewculture.com/pieces/a
 article and try to follow it. I rarely drink alcohol and would love to have
 more conferences to actually care about people who don't drink coffee or beer
 :wink:.
+
+[This](https://github.com/erikr/lessobviouschecklist) Github page is also a nice
+follow up on more details for running a conference.
