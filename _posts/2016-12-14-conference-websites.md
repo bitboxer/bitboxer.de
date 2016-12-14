@@ -82,7 +82,7 @@ enforce it.
 Have a dedicated page for this and link it prominently on your website. Explain
 what you offer. For example a live transcription, a quiet room or how
 wheelchair accessible the venue is. Don't forget to add an email address on
-that page for further questions. Everyones needs are different and with this
+that page for further questions. Everyone's needs are different and with this
 you show that you care for your visitors.
 
 ## Additional Information
