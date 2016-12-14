@@ -89,7 +89,7 @@ you show that you care for your visitors.
 
 If you offer other services to your visitors, advertise it clearly. For example
 childcare or translation services. The more information you give your visitors,
-the most likely they will feel welcome and buy a ticket.
+the more likely they will feel welcome and buy a ticket.
 
 ## Bonus: the alcohol
 
