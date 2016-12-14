@@ -3,7 +3,7 @@ comments: true
 date: 2016-12-13 12:50:00
 layout: post
 slug: conference-websites
-title: "Conference Websites Checklist"
+title: "Conference Website Checklist"
 categories:
 - conference
 - website
