@@ -24,6 +24,7 @@ over 20 years old. Start with a small description what your conference is
 about. Describe the target audience and what you will offer them. In short:
 don't forget to pitch the conf to potential visitors. But please keep it
 brief. Nobody will read your 3000 word essay about the last 20 years.
+And don't forget the dates :wink:.
 
 ## Venue details
 
