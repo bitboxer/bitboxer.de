@@ -7,6 +7,7 @@ title: 32c3 retrospective
 categories:
 - 32c3
 - ccc
+- chaos communication congress
 image: /images/2015-01-04-31c3-retrospective/cch.jpg
 copyright: "[CC-BY 2.0 Der Robert](https://www.flickr.com/photos/der_robert/16112469081)"
 ---
