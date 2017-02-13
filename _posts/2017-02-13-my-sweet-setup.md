@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2017-02-13 18:00:00
+date: 2017-02-13 17:00:00
 layout: post
 slug: sweet-setup
 title: "My sweet setup"
