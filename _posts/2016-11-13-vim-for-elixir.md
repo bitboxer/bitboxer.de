@@ -79,6 +79,6 @@ Together with [deoplete](https://github.com/Shougo/deoplete.nvim) this opens up 
 world of tab completions. It exposes module and method definitions to your fingertips.
 This is one of the things that are really hard to do for languages like ruby.
 
-[![asciicast](https://asciinema.org/a/9uupb79bp90p9ji4jbfolvzuk.png)](https://asciinema.org/a/9uupb79bp90p9ji4jbfolvzuk)
+<script type="text/javascript" src="https://asciinema.org/a/9uupb79bp90p9ji4jbfolvzuk.js" id="asciicast-9uupb79bp90p9ji4jbfolvzuk" async></script>
 
 My complete neovim config can be found [in my dotfiles repo](https://github.com/bitboxer/dotfiles/blob/master/tilde/config/nvim/init.vim).
