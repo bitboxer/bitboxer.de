@@ -18,7 +18,7 @@ application and it works fine as is. If you need to touch the code regularly,
 you have to change something. But what? And how?
 
 Usually the reason for that jQuery spaghetti code is that nobody in the team
-is able to write good Javascript. Just switching the bad jQuery code with
+is able to write good maintainable Javascript. Just switching the bad jQuery code with
 bad React code will not help anybody. Paying an expert to replace the code
 to use a modern Javascript framework will not help either. Your team needs to
 get the knowledge to maintain the app and add new features.
@@ -41,7 +41,8 @@ basically why you probably ended up in the current situation.
 If your developers don't like Javascript at all and don't want to learn a modern
 framework, just remove it. In 99% of the cases there is no actual reason
 why you have that javascript in the first place. Most of it can be done with
-[unpoly](https://unpoly.com/) anyway.
+[unpoly](https://unpoly.com/) and some CSS animations. Browsers are pretty good
+nowadays for 80% of the old school jQuery use cases.
 
 ## Change the team structure
 
