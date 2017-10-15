@@ -39,7 +39,7 @@ basically why you probably ended up in the current situation.
 ## Throw out the Javascript
 
 If your developers don't like Javascript at all and don't want to learn a modern
-framework, just remove it. In 99% of the cases there is no actual reason
+framework, just remove it. In lots of the cases there is no actual reason
 why you have that javascript in the first place. Most of it can be done with
 [unpoly](https://unpoly.com/) and some CSS animations. Browsers are pretty good
 nowadays for 80% of the old school jQuery use cases.
