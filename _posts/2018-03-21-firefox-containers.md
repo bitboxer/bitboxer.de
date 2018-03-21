@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2018-03-21 08:00:00
+date: 2018-03-21 06:00:00
 layout: post
 slug: firefox-containers
 title: "Cookies in Containers"
