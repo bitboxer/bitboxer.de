@@ -1,4 +1,5 @@
 ---
+locale: en
 comments: true
 date: 2014-10-26 20:00:00
 layout: post
