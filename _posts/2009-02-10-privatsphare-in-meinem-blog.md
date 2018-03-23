@@ -52,8 +52,5 @@ deiner Person zusammenbasteln.
 Solltest du dies nicht wollen, solltest du auf jeder Seite, die Gravatar nutzt,
 eine andere Mail-Adresse für deinen Kommentar eintragen.
 
-Für Kommentare wird [Disqus](http://disqus.com) benutzt. Alle Kommentare werden
-dort gespeichert.
-
 Das war es, was hier passiert. Ich hoffe, jetzt ist das wirklich klar. Bei
 weiteren Fragen verlinke ich einfach auf diesen Eintrag :smile: .
