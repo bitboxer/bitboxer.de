@@ -1,4 +1,5 @@
 ---
+locale: en
 layout: post
 title: "My parents are deaf - deal with it"
 date: 2013-09-06T00:19:23+02:00

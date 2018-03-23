@@ -1,4 +1,5 @@
 ---
+locale: en
 layout: post
 title: "My RedFrog Conf 2013 Keynote"
 date: 2013-09-09T15:22:23+02:00

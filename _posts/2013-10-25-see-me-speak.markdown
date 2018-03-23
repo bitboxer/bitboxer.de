@@ -1,4 +1,5 @@
 ---
+locale: en
 layout: post
 title: "Rails Rumble 2013: See Me Speak"
 date: 2013-10-25T22:00

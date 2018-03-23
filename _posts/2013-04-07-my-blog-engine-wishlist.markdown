@@ -1,4 +1,5 @@
 ---
+locale: en
 layout: post
 title: "My blog framework wishlist"
 date: 2013-04-07T09:27:43+02:00
