@@ -64,3 +64,7 @@ it with `xsel -b`.
 
 Small warning: you should only enable the X11 to trusted servers. Never allow
 it for servers you don't have under your own control.
+
+**Update:** If you also use tmux inside of your vagrant box, you might need
+the [tmux-yank](https://github.com/tmux-plugins/tmux-yank) plugin to make it
+all work inside of your shell.
