@@ -40,7 +40,7 @@ Never do that.
 
 If I use this sentence: "I talked with my parents about it" and you begin
 to laugh and can't stop and say something like: "haha, you can't talk with
-them, they are deaf", you are a **fucking moron**. I can talk with them. 
+them, they are deaf", you are a **fucking idiot**. I can talk with them. 
 It is called sign **language**. Language as in **LANGUAGE**. 
 I skype with them on a regular basis. And If I say to you that this behaviour
 is not okay, it is not okay to just say this is not your fault that I felt 
@@ -50,7 +50,7 @@ And now a sane person would think: why would anyone do something like that.
 Exactly. Sadly situations like this happend to me with three different persons in 
 the last few months. Sadly those persons are in the programming community. This 
 is the reason why I write this in english. The strange thing is that I never
-had that kind of reaction from hackers. Only from morons on the street. Hackers
+had that kind of reaction from hackers. Only from idiots on the street. Hackers
 are somewhat more open to this stuff. Never had someone say "my grandpa would have put your
 parents into a gas chamber" in the hacker scene. Sadly I had that kind of reactions.
 Luckily only a few times. And till now not from a hacker. The typical reaction from 

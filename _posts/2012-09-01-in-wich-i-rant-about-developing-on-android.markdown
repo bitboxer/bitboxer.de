@@ -107,8 +107,8 @@ around. Oh boy. World of pain.
 The biggest problem I had as a guy who tried to learn the stuff was the
 pure amount of idiots in the Android developer scene. Or to be fair: the
 amount of idiots posting their so called solutions on StackOverflow. If
-you search for Objective-C or Ruby stuff, you have a few morons that post
-worst practices. But compared to the huge amount of morons posting in
+you search for Objective-C or Ruby stuff, you have a few idiots that post
+worst practices. But compared to the huge amount of idiots posting in
 the Android world I am living in a pretty nice place :wink: .
 
 In the end I managed to create an app that was decent enough to show it on the IFA.
