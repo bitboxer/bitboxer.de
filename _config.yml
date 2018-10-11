@@ -14,4 +14,4 @@ emoji_dir: /css/emoji
 
 exclude: ["deploy.sh", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
-gems: ["jekyll-paginate", "jekyll-sass-converter", "jekyll-sitemap"]
+plugins: ["jekyll-paginate", "jekyll-sass-converter", "jekyll-sitemap"]
