@@ -1,1 +1,1 @@
-theme/README.md
+This is the code behind [bitboxer.de](https://bitboxer.de).
