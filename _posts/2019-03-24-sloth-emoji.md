@@ -1,7 +1,7 @@
 ---
 locale: en
 comments: true
-date: 2019-03-24 08:00:00
+date: 2019-03-24 00:00:00
 layout: post
 slug: how-to-create-an-emoji
 title: "How to create an emoji"
