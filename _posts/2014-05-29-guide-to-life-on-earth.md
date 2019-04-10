@@ -27,7 +27,7 @@ with the Barenaked Ladies:
 Yes, he can sing and play a guitar. And even better: he can explain the most
 complicated thing in a way that everyone can understand it.
 
-<img src=" /images/2014-05-29-guide-to-life-on-earth/book.jpg"/>
+[![Book cover of "An Astronauts Guide To Life On Earth](/images/2014-05-29-guide-to-life-on-earth/book.jpg)](https://www.amazon.de/Astronauts-Guide-Life-Earth/dp/1447259947/)
 
 You can feel his passion and joy in being an astronaut in every page of that book. If you
 haven't read it, you really need to.
@@ -39,7 +39,7 @@ you are prepared, you can "work the problem". Something we as developers should 
 more. Think about the possible problems before deploying a big new feature. Have plans
 when the catastrophe strikes you. That leads to more confidence and less stress.
 
-Go buy it.
+[Go buy it](https://www.amazon.de/Astronauts-Guide-Life-Earth/dp/1447259947/).
 
 And now Chris Hadfield shows what happens if you wring a washcloth in space:
 
