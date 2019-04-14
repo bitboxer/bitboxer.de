@@ -73,3 +73,6 @@ Show it to a few friends. And if you don't know someone who could proof read it,
 reach out to usergroups or twitter. There will be someone who wants to proofread
 it for you. And if you don't find one: [contact me](http://bodo.tasche.me).
 
+# Update:
+
+A nice twitter thread with some nice resources by VM (Vicky) Brasseur can be found [here](https://twitter.com/vmbrasseur/status/1117218125726961664).
