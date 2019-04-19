@@ -23,7 +23,7 @@ very archaic. But the motivation behind that idea is something we should adapt.
 
 For me it comes down to one basic rule: don't stay in a company for more than
 a few years. Learn as much as possible from your current company and give back
-as much back as you can. If you have the feeling that you stopped learning new
+as much as you can. If you have the feeling that you stopped learning new
 stuff or get bored, switch. And even if you like your job, you should consider
 switching after a few years. Often you only realize that you were bored in your
 job after you switched to another one.
