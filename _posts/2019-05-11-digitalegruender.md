@@ -9,9 +9,9 @@ categories:
   - podcast
 ---
 
-I was recently interviewed in German by [Simon Frey](https://www.simon-frey.eu/) for his [DigitaleGründer.de](https://digitalegruender.de)
-Podcast.
+I was recently interviewed in German by [Simon Frey](https://www.simon-frey.eu/)
+for his [DigitaleGründer.de](https://digitalegruender.de) Podcast.
 
-You can list to it here:
+You can listen to it here:
 
 [![Profile Picture of Bodo Tasche](/images/2019-05-11-digital/bodo_tasche-398x398.png)](https://digitalegruender.de/allgemein/mit-hilfe-des-prototyp-funds-euer-herzensprojekt-umsetzen-mit-bodo-tasche-von-signdict/)
