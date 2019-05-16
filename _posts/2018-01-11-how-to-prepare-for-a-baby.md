@@ -8,8 +8,6 @@ title: "How to prepare for a baby"
 categories:
 - parenting
 ---
-*(I am currently organising a meeting for fathers\*, if you want to join, please fill out [this form](https://bodo2.typeform.com/to/wpZymA))*
-
 Some of you might have noticed that something happened in my life. I got a baby.
 Here I want to give a couple of tips that I found very helpful. Maybe you will find
 a few of the things helpful, too.
@@ -58,7 +56,7 @@ recommend a couple of them that I found really helpful:
   ([Android](https://play.google.com/store/apps/details?id=de.gesundheitbb.clbirth),
   [iPhone](https://itunes.apple.com/de/app/baby-berlin-app/id976204677?l=en&mt=8)).
   This is the most important one if you are living in Berlin. It has a checklist
-  what you need to to before and after the birth. It also has links and addresses
+  what you need to do before and after the birth. It also has links and addresses
   for everything you need to do. Really good if you don’t want to get lost in the
   German bureaucracy. This app is also in English.
 * [Ovia Pregnancy App](https://www.ovuline.com/#ovia-pregnancy-app). There are
@@ -127,5 +125,3 @@ If you want to listen to my girlfriend talking in german about her experience
 being pregnant, you can listen to [episode 20 of
 Kleinercast](http://kleinerdrei.org/2017/10/kleinercast-20-sex-drugs-und-weite-roecke-mythos-schwangerschaftsfreuden/).
 
-
-I am currently organising a meeting for fathers\*, if you want to join, please fill out [this form](https://bodo2.typeform.com/to/wpZymA).
