@@ -59,6 +59,8 @@ recommend a couple of them that I found really helpful:
   what you need to do before and after the birth. It also has links and addresses
   for everything you need to do. Really good if you don’t want to get lost in the
   German bureaucracy. This app is also in English.
+* [embryotox](https://www.embryotox.de/) to check if you can
+  use certain medicine while pregnant.
 * [Ovia Pregnancy App](https://www.ovuline.com/#ovia-pregnancy-app). There are
   several pregnancy tracker apps. I tried a couple of them and this is what I
   kept using. Nice articles about the current progress of your unborn.
