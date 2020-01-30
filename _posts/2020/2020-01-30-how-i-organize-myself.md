@@ -1,7 +1,7 @@
 ---
 locale: en
 comments: true
-date: 2020-02-02 00:00:00
+date: 2020-01-30 00:00:00
 layout: post
 slug: how-i-organize-myself
 title: "How I organize myself"
