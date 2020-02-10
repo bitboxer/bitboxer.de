@@ -30,8 +30,8 @@ Being a freelancer and father made me realize that I need to have a better overv
 is going and how I could optimize my money flow.
 
 * [Harvest](https://www.getharvest.com/) — tracking my time and creating invoices. Simple interface and gives me exactly what I need.
-* [YNAB](https://www.youneedabudget.com/) — tracking my money and where I spent it. Removes lots of the once-a-year payment surprises and other issues I ran into over the years.
-* [Kontist](https://kontist.com/) — I am using this to only use the money I really own and have separate buckets for the taxes I have to pay as a freelancer. 
+* [YNAB](https://ynab.com/referral/?ref=CJ5q1a8zBut1Tez6&utm_source=customer_referral) — tracking my money and where I spent it. Removes lots of the once-a-year payment surprises and other issues I ran into over the years.
+* [Kontist](https://kontist.com/r/bodoN6C) — I am using this to only use the money I really own and have separate buckets for the taxes I have to pay as a freelancer. 
 * [MoneyMoney](https://moneymoney-app.com/) — I have a couple of bank accounts and this manages them all really nicely. I also created an [exporter to YNAB](https://github.com/bitboxer/moneymoney-ynab). 
 
 # News and links
