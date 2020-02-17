@@ -2,6 +2,7 @@
 locale: en
 comments: true
 date: 2020-01-30 00:00:00
+updated: 2020-02-16 00:00:00
 layout: post
 slug: how-i-organize-myself
 title: "How I organize myself"
@@ -19,7 +20,7 @@ This is the most important aspect. Managing the to-dos is crucial for me to alwa
 do next. These are the tools that I use:
 
 * [OmniFocus](https://www.omnigroup.com/omnifocus) — of all of the tools I am using, this is the most important one. I will have to do a follow up on how I manage everything in here. It basically contains everything that I plan to do in the next decade or so 😉. 
-* [Wunderlist](https://wunderlist.com/) — Sadly I cannot share things in OmniFocus with my wife. We use good old Wunderlist to share our shopping list and other items. There is nothing as reliable and easy to use as this little outdated tool.
+* [Microsoft ToDo](https://todo.microsoft.com) — Sadly I cannot share things in OmniFocus with my wife. We use good Microsoft To Do to share our shopping list and other items. There is nothing as reliable and easy to use as this little tool.
 * [Fantastical](https://flexibits.com/fantastical) — all my appointments are in here.
 * [Bear](https://bear.app/) — Every idea for a blog post and all things that are longer than 2 lines of text land in here. I link from OmniFocus to the documents in Bear if needed.
 * [Octobox](https://octobox.io/) — all GitHub notifications in one place. With this it's easy to see what I still have to work on. With its filter I can easily select a client or library I need or want to spend some time on. I go through them hourly and archive everything without the need to take action.
@@ -49,8 +50,7 @@ to stay current with these tools.
 Most of the things above are rather serious things, but you also need downtime to relax and refuel. These tools help me find the best thing to read/watch to relax.
 
 * [Goodreads](https://www.goodreads.com/) — I put every book that I plan to read into here and check what I want to read next. After I am finished reading a book I rate it to remember if I liked something and why.
-* [JustWatch](https://www.justwatch.com/) — When I see an interesting show or movie I instantly put it in here. That way I can see what is in cinema right now or from where I can stream it if we want to have a movie night on the couch.
-* [IMDb](https://www.imdb.com/) — helps me remember if I have seen something and how I liked it. I also created an [RSS feed](/2019/04/15/imdb-rss/) to convert those ratings into machine-readable format.
+* [Letterboxd](https://letterboxd.com/) - When I see an interesting show or movie I instantly put it in here. That way I can see what is in cinema right now or from where I can stream it if we want to have a movie night on the couch. It also helps me remember if I have seen something and how I liked it.
 
 I am a heavy user of the share extension framework in iOS and MacOS. For example to move things to pocket with the pocket app. Make sure that you understand how it works and sort it according to your needs. [Wishlephant](https://wishlephant.com/browser-extensions) also has an iOS shortcut so that I can easily add items that are open in my web browser to a wish list.
 
