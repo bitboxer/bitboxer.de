@@ -40,7 +40,7 @@ I don't have tons of tags. I am trying to limit them to just the minimum that I 
 
 Lots of my items have defer dates attached to them. That signals me that these are not important for now and I delay the action on them days or weeks into the future. Future me has to deal with them.
 
-Due dates are only assigned to items that really have a due date. I will not add fake dates to make things important. I am using the next tag for that.
+Due dates are only assigned to items that really have a due date (see [here](https://learnomnifocus.com/tutorials/best-practice-due-dates/) why). I will not add fake dates to make things important. I am using the next tag for that.
 
 # Views
 
