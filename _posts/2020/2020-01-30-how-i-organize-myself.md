@@ -19,7 +19,7 @@ Here I want to show what I am using and why.
 This is the most important aspect. Managing the to-dos is crucial for me to always know what I should
 do next. These are the tools that I use:
 
-* [OmniFocus](https://www.omnigroup.com/omnifocus) — of all of the tools I am using, this is the most important one. I will have to do a follow up on how I manage everything in here. It basically contains everything that I plan to do in the next decade or so 😉. 
+* [OmniFocus](https://www.omnigroup.com/omnifocus) — of all of the tools I am using, this is the most important one. I will have to do a follow up on how I manage everything in here. It basically contains everything that I plan to do in the next decade or so 😉. More details [in this post](/2020/02/23/omnifocus/).
 * [Microsoft ToDo](https://todo.microsoft.com) — Sadly I cannot share things in OmniFocus with my wife. We use good Microsoft To Do to share our shopping list and other items. There is nothing as reliable and easy to use as this little tool.
 * [Fantastical](https://flexibits.com/fantastical) — all my appointments are in here.
 * [Bear](https://bear.app/) — Every idea for a blog post and all things that are longer than 2 lines of text land in here. I link from OmniFocus to the documents in Bear if needed.
