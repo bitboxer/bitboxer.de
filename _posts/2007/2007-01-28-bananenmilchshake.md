@@ -34,4 +34,4 @@ werden.
 
 Schnell und lecker.
 
-Dieses Rezept ist auch im [Rezeptewiki verfügbar](http://rezeptewiki.org/wiki/Vanille-Bananenmilchshake).
+Dieses Rezept ist auch im [Koch-Wiki verfügbar](http://kochwiki.org/wiki/Vanille-Bananenmilchshake).

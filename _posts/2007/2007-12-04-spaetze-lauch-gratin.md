@@ -37,4 +37,4 @@ Die Auflauf-Form mit Butter ausstreichen und dort abwechselnd Spätzle-Lauch und
 den Käse einschichten. Als oberste Schicht das Crème fraîche auftragen. Das
 ganze im auf 200° Grad vorgeheizten Ofen 20-25 Minuten backen.
 
-Dieses Rezept ist auch im [Rezeptewiki verfügbar](http://rezeptewiki.org/wiki/Sp%C3%A4tzle-Lauch-Auflauf).
+Dieses Rezept ist auch im [Koch-Wiki verfügbar](http://kochwiki.org/wiki/Sp%C3%A4tzle-Lauch-Auflauf).

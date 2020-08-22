@@ -32,4 +32,4 @@ zusammen kochen.
 
 Lecker und schnell. Und das mal wieder ohne Maggi :D .
 
-Dieses Rezept ist auch im [Rezeptewiki verfügbar](http://www.rezeptewiki.org/wiki/Gnocchi-Tomaten-Lauchpfanne).
+Dieses Rezept ist auch im [Koch-Wiki verfügbar](http://www.kochwiki.org/wiki/Gnocchi-Tomaten-Lauchpfanne).

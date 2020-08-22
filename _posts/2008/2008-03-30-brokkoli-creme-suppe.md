@@ -46,4 +46,4 @@ Suppe dekorieren.
 
 Und wer jetzt noch Brokkoli-Suppe aus der Tüte macht ist selber schuld :wink: .
 
-Dieses Rezept ist auch im [Rezeptewiki verfügbar](http://www.rezeptewiki.org/wiki/Brokkoli-Cremesuppe).
+Dieses Rezept ist auch im [Koch-Wiki verfügbar](http://www.kochwiki.org/wiki/Brokkoli-Cremesuppe).

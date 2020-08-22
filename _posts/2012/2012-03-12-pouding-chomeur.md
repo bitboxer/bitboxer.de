@@ -48,4 +48,4 @@ _Für die Soße:_
 
 Yammi!
 
-(Das Rezept gibt es auch im [Rezeptewiki](http://www.rezeptewiki.org/wiki/Pouding_Ch%C3%B4meur))
+(Das Rezept gibt es auch im [Koch-Wiki](http://www.kochwiki.org/wiki/Pouding_Ch%C3%B4meur))
