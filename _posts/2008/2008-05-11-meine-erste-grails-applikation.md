@@ -12,7 +12,7 @@ tags:
 
 Ich habe letzte Woche in der Firma meine erste Grails-Applikation deployed. War
 keine sehr komplexe Anwendung, nur ein paar Formulare und Listen, aber gut
-genug für einen ersten Test in [Grails](http://grails.codehaus.org/).
+genug für einen ersten Test in [Grails](http://grails.org/).
 
 Grails hat, genauso wie [Rails](http://www.rubyonrails.org), als Kern-Paradigma
 "Convention over Configuration". Auf Deutsch gesagt legt Grails fest, wo welche
