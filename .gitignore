@@ -3,3 +3,5 @@ _site
 .pygments-cache
 .bundle
 .jekyll-metadata
+.jekyll-cache
+.themes

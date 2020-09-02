@@ -2,16 +2,14 @@ name: Bitboxer
 title: Bitboxer - hacking
 url: https://bitboxer.de
 
-markdown: redcarpet
-highlighter: pygments
 timezone: Europe/Berlin
 
 paginate: 30
 paginate_path: "/page/:num"
 
 permalink: /:year/:month/:day/:title/
-emoji_dir: /css/emoji
+emoji_dir: /assets/images/emoji
 
-exclude: ["deploy.sh", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["deploy.sh", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "theme", "Makefile", "config.ru"]
 
 plugins: ["jekyll-paginate", "jekyll-sitemap", "jekyll-loading-lazy"]
