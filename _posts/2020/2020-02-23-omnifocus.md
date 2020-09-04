@@ -6,6 +6,9 @@ layout: post
 slug: omnifocus
 title: "Omnifocus and I"
 categories:
+image: "/images/2020-02-23/notebook.jpg"
+image_description: A laptop in the bag, an opened notebook with a pen in the front.
+copyright: Photo by <a href="https://unsplash.com/@nickmorrison?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nick Morrison</a>
 ---
 In the last [post](/2020/01/30/how-i-organize-myself/) I promised that I will explain how I use [OmniFocus](https://www.omnigroup.com/omnifocus). Hopefully you get some interesting new ideas after reading this.
 

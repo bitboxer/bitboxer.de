@@ -6,6 +6,9 @@ layout: post
 slug: coworking-parents
 title: "Coworking for parents"
 categories: coworking, project
+image: "/images/2020-06-11/coworking.jpg"
+description: "a sofa in the front, a large desk with lots of chairs in the back"
+copyright: Photo by <a href="https://unsplash.com/@cowomen?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">CoWomen</a> 
 ---
 My wife is currently opening a coworking space for parents called [little village](https://littlevillage.berlin/) and because of that, I investigated the topic a lot in the last couple of months. 
 
