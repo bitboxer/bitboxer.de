@@ -9,7 +9,7 @@ categories:
   - podcast
 ---
 
-I was recently interviewed in German by [Simon Frey](https://www.simon-frey.eu/)
+I was recently interviewed in German by [Simon Frey](https://simon-frey.com/)
 for his [DigitaleGründer.de](https://digitalegruender.de) Podcast.
 
 You can listen to it here:
