@@ -9,6 +9,7 @@ categories:
 - setup
 - apps
 image: "/images/2017-02-13/my-workplace.jpg"
+image_description: "A computer sitting on a desk, a mechanical keyboard in front and two candles to each side."
 copyright: "CC-BY-NC-SA 2.0 Bodo Tasche"
 ---
 This week [the sweet setup](http://thesweetsetup.com) published an

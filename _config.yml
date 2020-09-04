@@ -4,7 +4,7 @@ url: https://bitboxer.de
 
 timezone: Europe/Berlin
 
-paginate: 30
+paginate: 9
 paginate_path: "/page/:num"
 
 permalink: /:year/:month/:day/:title/
