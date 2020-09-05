@@ -7,6 +7,9 @@ slug: papiberlin
 title: "PapiBerlin.de"
 categories:
   - fatherhood
+image: "/images/2019-11-23/dad.jpg"
+image_description: A dad holding his kid and kissing it on the cheek.
+copyright: Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a>
 ---
 This month my little one has her second birthday. A lot has happened in
 those two years. Sadly I didn't know enough fathers that shared my values

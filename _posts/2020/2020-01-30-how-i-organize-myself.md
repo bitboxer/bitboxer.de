@@ -6,7 +6,9 @@ updated: 2020-02-16 00:00:00
 layout: post
 slug: how-i-organize-myself
 title: "How I organize myself"
-categories:
+image: "/images/2020-01-30/organizer.jpg"
+image_description: An open calendar notebook with a pencil on top of it and a cup of coffe next to it.
+copyright: Photo by <a href="https://unsplash.com/@hope_house_press_leather_diary_studio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hope House Press - Leather Diary Studio</a> 
 ---
 Over the last decade I started to organize my life a lot. My goal was to never forget important dates and have an overview about what is happening and what I should do next. I am not perfect at it, and living with a 2-year-old kid definitely made me more unreliable than before, but I am trying every day to be better at it.
 

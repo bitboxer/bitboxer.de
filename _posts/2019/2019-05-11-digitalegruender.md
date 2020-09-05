@@ -7,6 +7,9 @@ slug: digitalegruender
 title: "Podcast interview with Digitalegründer.de"
 categories:
   - podcast
+image: "/images/2014-07-27-podcasting/equipment.jpg"
+image_description: Three podcasting headphones on a table, a computer with recording software next to it.
+image_hidden: true
 ---
 
 I was recently interviewed in German by [Simon Frey](https://simon-frey.com/)

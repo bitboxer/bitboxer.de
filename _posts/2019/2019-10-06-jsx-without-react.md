@@ -8,8 +8,10 @@ title: "JSX without React"
 categories:
   - react
   - javascript
+image: "/images/2019-10-06/jsx.jpg"
+image_description: A screenshot of a source code file with JSX code.
+copyright: Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ferenc Almasi</a>
 ---
-
 For me [JSX](https://reactjs.org/docs/introducing-jsx.html) is the part of React that makes developing with it a real treat. Yes, the functional nature, the state and lifecycle management are really nice, too, but JSX makes it all come together in a great way. The effortless integration of HTML inside of JavaScript just makes it one of the best experiences writing a web frontend.
 
 ```javascript

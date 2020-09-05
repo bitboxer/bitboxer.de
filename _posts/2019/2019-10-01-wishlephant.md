@@ -7,8 +7,11 @@ slug: wishlephant
 title: "Wishlephant - an easy shareable wishlist"
 categories:
   - project
+image: "/images/2019-10-01/presents.jpg"
+image_description: Wrapped presents, next to it a scissor and a wrapping band
+copyright: Image by <a href="https://pixabay.com/users/yvettefang0604-7280322/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2998593">Yvette Fang</a>
+image_hidden: true
 ---
-
 Last month [Anika](http://twitter.com/langziehohr) and I published a little
 project we had been working on for the last 9 months:
 [wishlephant](https://wishlephant.com).
