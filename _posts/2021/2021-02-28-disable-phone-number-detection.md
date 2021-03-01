@@ -30,3 +30,5 @@ For iOS/Safari you have to add this meta attribute:
 See the [Apple Developer documentation](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html#//apple_ref/doc/uid/TP40008193-SW1) for details.
 
 It seems the list of stuff you have to add to a page to make it work smoothly everywhere gets longer and longer by every year.
+
+A rather complete list of things you could put into the header can be found on [htmlhead.dev](https://htmlhead.dev/).
