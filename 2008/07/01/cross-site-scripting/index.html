@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - Cross-Site Scripting</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head-without-image">
+      <h1 class="headline">Cross-Site Scripting</h1>
+      <time datetime="2008-07-01T21:33:28.000+0200">01 Jul 2008</time>
+    </div>
+    
+
+    <div class="post">
+      <p>Okay, damit auch der letzte Programmierer es rafft, mal hier ein kleiner Exkurs
+zum Thema Hacken von Webseiten.</p>
+
+<p>Es gibt etwas, das man bei Webseiten echt vermeiden sollte: Eingaben von
+Nutzern ungefiltert wieder auf der Webseite auszugeben. Zum Beispiel den Text,
+der in einem Eingabefeld eingegeben wird, direkt auf der Seite darstellen mit:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
+<span class="k">echo</span> <span class="s2">"Die Suche nach "</span> <span class="mf">.</span> <span class="nv">$suchbegriff</span> <span class="mf">.</span><span class="s2">" hat leider keinen Treffer ergeben"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>Warum man das nicht darf? Ganz einfach. Wenn man nun in dem Eingabefeld
+folgendes eingibt:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span><span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">XSS</span><span class="dl">"</span><span class="p">);</span><span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>wird auf der Webseite folgendes Stück HTML erzeugt:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Die Suche nach <span class="nt">&lt;script&gt;</span><span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">XSS</span><span class="dl">"</span><span class="p">);</span><span class="nt">&lt;/script&gt;</span> hat leider keinen Treffer ergeben
+</code></pre></div></div>
+
+<p>Und das führt dazu, dass dieser Code ausgeführt wird. Der Nutzer sieht also
+diese Alert-Box.</p>
+
+<p>Alert-Boxen sind natürlich noch harmlos, aber man kann hier so gut wie alles
+unterbringen. Zum Beispiel kann man so die Seite eines Web-Shops so umbauen,
+dass der Nutzer denkt, er wäre noch auf der Seite von dem Betreiber, aber in
+Wirklichkeit gibt er seine Kreditkarten-Daten gerade auf einer anderen Seite
+ein.</p>
+
+<p>Das ganze ist also höchst gefährlich!</p>
+
+<p>Der Fix dazu ist aber verflucht einfach:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span> 
+<span class="k">echo</span> <span class="s2">"Die Suche nach "</span> <span class="mf">.</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$suchbegriff</span><span class="p">,</span><span class="no">ENT_QUOTES</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">" hat leider keinen Treffer ergeben"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p>Dies führt dazu, das die &gt; und &lt; durch &gt; und &lt; ersetzt werden und der
+Code nicht mehr ausgeführt werden kann.</p>
+
+<p>Ihr werdet erschreckt sein, welche gut besuchten Internetseiten diese Fehler
+aufweisen. Gebt einfach mal:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span><span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">XSS</span><span class="dl">"</span><span class="p">);</span><span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>in ein paar Suchfeldern von Webseiten ein, Ihr werdet überrascht sein, wie
+viele dumme Idioten anscheinend für die Erstellung von Webseiten verantwortlich
+sind!</p>
+
+<p>Bei <a href="http://de.wikipedia.org/wiki/Cross-Site_Scripting">Wikipedia</a> gibt’s einen
+auch einen Artikel mit weiteren verlinkten Texten zu dem Thema.</p>
+
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

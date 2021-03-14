@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - Meine Terminal-Settings</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head-without-image">
+      <h1 class="headline">Meine Terminal-Settings</h1>
+      <time datetime="2009-08-04T11:41:37.000+0200">04 Aug 2009</time>
+    </div>
+    
+
+    <div class="post">
+      <p><em>Achtung, Coder-Content nur für Linux/Mac-Terminal Geeks :smile:</em></p>
+
+<p>Ryan Bates (der <a href="http://railscasts.com/">Railscasts</a>-Typ :wink: ) hat vor einiger
+Zeit seine Einstellungen für sein Terminal auf <a href="http://github.com/ryanb/dotfiles/">Github hochgeladen</a>
+und mir somit einen anstoß geben, dies ebenfalls zu tun.</p>
+
+<p>Meine Einstellungen basieren auf denen von Ryan, allerdings ohne die
+Unterstützung für Bash. Diese war nicht wirklich ausgereift und ZSH ist eh viel
+besser :smile: . Mein Fork findet sich <a href="http://github.com/bodo/dotfiles/">hier</a>.</p>
+
+<p>Momentan habe ich nur Kleinigkeiten verbessert und Maven Tab-Completion
+hinzugefügt, aber an den Settings arbeite ich jetzt laufend :smile: .</p>
+
+<p>Um meine Settings zu nutzen, muss zuerst ZSH aktiviert werden:</p>
+
+<p><code class="language-plaintext highlighter-rouge">chsh -s /bin/zsh</code></p>
+
+<p>ZSH sollte man unbedingt ausprobieren, alleine schon wg. der viel besseren
+Tab-Vervollständigung.</p>
+
+<p>Jetzt kann man meine Settings installieren:</p>
+
+<p><code class="language-plaintext highlighter-rouge"> git clone git://github.com/bodo/dotfiles ~/.dotfiles cd ~/.dotfiles rake install</code></p>
+
+<p>Am besten schaut man sich vorher mal die Settings an, die ich gewählt habe.
+Insbesondere die Dateien  <em>gitconfig</em> und <em>zsh/config</em>.</p>
+
+<p>Mal sehen, wenn ich die Tage nochmal Zeit habe, werde ich das ganze so
+anpassen, das es für Mac und Linux out-of-the-box funktioniert. Einige Pfade
+sind momentan noch Mac-Spezifisch.</p>
+
+<p><strong>Update:</strong> Und jetzt funktionieren die Settings auf Linux UND Mac. Die
+OS-Spezifischen Sachen sind nun in .zsh/osspecific/ ausgelagert .</p>
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

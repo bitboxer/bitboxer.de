@@ -1,3 +1,0 @@
-[submodule "theme"]
-	path = theme
-	url = git@github.com:bitboxer/jekyll-theme-bitboxer.git

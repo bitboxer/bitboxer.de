@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - The jQuery legacy code team smell</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head-without-image">
+      <h1 class="headline">The jQuery legacy code team smell</h1>
+      <time datetime="2017-10-14T18:00:00.000+0200">14 Oct 2017</time>
+    </div>
+    
+
+    <div class="post">
+      <p>In the last couple of years I had lots of discussions with people about one
+specific topic: what do you do with jQuery spaghetti code in legacy
+applications. We all have been there in one point of our career. For me the
+answer was pretty straight forward. There are three ways out of it. None of
+them is easy, but the result will hopefully be worth it. There is only
+one reason not to fix this problem: nobody needs to touch that part of the
+application and it works fine as is. If you need to touch the code regularly,
+you have to change something. But what? And how?</p>
+
+<p>Usually the reason for that jQuery spaghetti code is that nobody in the team
+is able to write good maintainable Javascript. Just switching the bad jQuery code with
+bad React code will not help anybody. Paying an expert to replace the code
+to use a modern Javascript framework will not help either. Your team needs to
+get the knowledge to maintain the app and add new features.</p>
+
+<p>It basically boils down to the following solutions:</p>
+
+<h2 id="teach-them-good-javascript">Teach them good Javascript</h2>
+
+<p>If you have a team of so called “full stack developers” where everyone is
+supposed to write the frontend and the backend part of the application, figure
+out a way that those developers are actually able to write frontend code.
+Get someone to teach them a modern Javascript framework and have that person
+available for at least a couple of months for code reviews. Getting everyone
+up to modern standards will cost you a bit, but it is worth it. Just pointing
+them to StackOverflow without someone to guide the team will not work. This is
+basically why you probably ended up in the current situation.</p>
+
+<h2 id="throw-out-the-javascript">Throw out the Javascript</h2>
+
+<p>If your developers don’t like Javascript at all and don’t want to learn a modern
+framework, just remove it. In lots of the cases there is no actual reason
+why you have that javascript in the first place. Most of it can be done with
+<a href="https://unpoly.com/">unpoly</a> and some CSS animations. Browsers are pretty good
+nowadays for 80% of the old school jQuery use cases.</p>
+
+<h2 id="change-the-team-structure">Change the team structure</h2>
+
+<p>If you really need to have some features in Javascript and your current
+developers don’t want to touch Javascript, add Javascript developers to the
+team. Make sure that all team members communicate well with each other and
+understand what the different needs for each other are. The most important
+part for you will be to make sure everyone works well together.</p>
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - Ruby on Rails auf Deutsch</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head-without-image">
+      <h1 class="headline">Ruby on Rails auf Deutsch</h1>
+      <time datetime="2007-05-05T11:35:21.000+0200">05 May 2007</time>
+    </div>
+    
+
+    <div class="post">
+      <p>Es gibt zwar schon einige Anleitungen, wie man Ruby On Rails
+internationalisiert, die waren mir aber alle ein wenig zu kryptisch. Deswegen
+hier mal meine eigene Version…</p>
+
+<p>RoR kann auf die weit verbreitete GetText-Bibliothek zugreifen. Ihr habt
+bestimmt schon mal .po-Dateien irgendwo rumliegen gesehen. Diese werden wir
+gleich selber bearbeiten :smile: .</p>
+
+<p><strong>gettext-bin installieren</strong></p>
+
+<p>Dieser erste Schritt ist speziell nur für den Mac, da dort die gettext-bin
+Utils nicht vorhanden sind, sprich: die Tools, die wir gleich brauchen werden,
+sind noch nicht vorhanden. Linux-Nutzer können diesen normalerweise getrost
+überspringen.</p>
+
+<p>Als erstes sollte <a href="http://fink.sourceforge.net/doc/users-guide/index.php">fink installiert werden</a>.
+Sobald dieses installiert ist, kann gettext-bin installiert werden. Dazu einfach ein Terminal
+öffnen und folgendes eingeben:</p>
+
+<p><code class="language-plaintext highlighter-rouge">fink install gettext-bin</code></p>
+
+<p>Jetzt sollten die GetText-Tools installiert sein. Um das zu testen, einfach
+folgendes in dem Terminal eingeben:</p>
+
+<p><code class="language-plaintext highlighter-rouge">msgmerge --help</code></p>
+
+<p>Danach sollte folgende Ausgabe erscheinen:</p>
+
+<p><code class="language-plaintext highlighter-rouge">no input files given Try </code>msgmerge –help’ for more information.`</p>
+
+<p>Bravo. gettext-bin ist nun installiert und wir können mit der eigentlichen
+Arbeit beginnen.</p>
+
+<p><strong>GetText in Ruby einrichten</strong></p>
+
+<p>Als nächstes müssen wir nun das Ruby-GetText-System einrichten. Dazu im
+Terminal folgendes eingeben:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo gem install gettext</code></p>
+
+<p>Jetzt erscheint folgende Frage:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Select which gem to install for your platform (i686-darwin8.9.1)
+ 1. gettext 1.9.0 (mswin32)
+ 2. gettext 1.9.0 (ruby)
+ 3. gettext 1.8.0 (mswin32)
+ 4. gettext 1.8.0 (ruby)
+ 5. Skip this gem
+ 6. Cancel installation
+&gt;
+</code></pre></div></div>
+
+<p>Wir wählen natürlich Nummer 2.</p>
+
+<p><strong>Das RoR Projekt vorbereiten</strong></p>
+
+<p>Als letzter Schritt muss nun das jeweilige Projekt mit den GetText-Fähigkeiten
+ausgerüstet werden. Dazu muss eine Datei namens <em>lib/tasks/gettext.rake</em>
+erzeugt werden mit folgendem Inhalt:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Added for Ruby-GetText-Package</span>
+
+<span class="n">desc</span> <span class="s2">"Create mo-files for L10n"</span> 
+<span class="n">task</span> <span class="ss">:makemo</span> <span class="k">do</span> 
+  <span class="nb">require</span> <span class="s1">'gettext/utils'</span>
+  <span class="no">GetText</span><span class="p">.</span><span class="nf">create_mofiles</span><span class="p">(</span><span class="kp">true</span><span class="p">,</span> <span class="s2">"po"</span><span class="p">,</span> <span class="s2">"locale"</span><span class="p">)</span> 
+<span class="k">end</span>
+
+<span class="n">desc</span> <span class="s2">"Update pot/po files to match new version."</span>
+<span class="n">task</span> <span class="ss">:updatepo</span> <span class="k">do</span> <span class="nb">require</span>
+  <span class="s1">'gettext/utils'</span> <span class="no">GetText</span><span class="p">.</span><span class="nf">update_pofiles</span><span class="p">(</span><span class="s2">"APPLIKATION"</span><span class="p">,</span>
+  <span class="no">Dir</span><span class="p">.</span><span class="nf">glob</span><span class="p">(</span><span class="s2">"{app,lib}/**/*.{rb,rhtml}"</span><span class="p">),</span> <span class="s2">"APPLIKATION 1.2.0"</span><span class="p">)</span> 
+<span class="k">end</span> 
+</code></pre></div></div>
+
+<p>Bitte statt APPLIKATION den Namen der eigenen RoR-Applikation einsetzen. Dabei
+die Versionsnummer auch passend abändern. Dieser Name und die Version sind
+wichtig für die Übersetzungs-Dateien.</p>
+
+<p>Ab nun kennt rake zwei weitere Befehle speziell für GetText.</p>
+
+<p>In der Datei <em>app/controllers/application.rb</em> müssen jetzt noch zwei Zeilen
+ergänzt werden, danach ist alles fertig für die erste Benutzung.</p>
+
+<p>Am Anfang der Datei: <code class="language-plaintext highlighter-rouge">require 'gettext/rails'</code></p>
+
+<p>Nach der class-Zeile: <code class="language-plaintext highlighter-rouge">init_gettext "APPLIKATION"</code></p>
+
+<p>Und bitte hier APPLIKATION ersetzen durch den Namen, der in der gettext.rake
+definiert wurde.</p>
+
+<p><strong>Erster Test</strong></p>
+
+<p>Um nun zu testen, ob alles wirklich funktioniert, öffnet bitte eine der
+.rhtml-Dateien und fügt dort folgende Zeile hinzu:</p>
+
+<p><code class="language-plaintext highlighter-rouge">_("Hello World!")</code></p>
+
+<p>Im Terminal müsst Ihr nun</p>
+
+<p><code class="language-plaintext highlighter-rouge">rake updatepo</code></p>
+
+<p>aufrufen. Dies erzeugt die Datei po/APPLIKATION.pot. Um nun den Text ins
+deutsche zu übersetzen, kopiert die Datei einfach nach po/de/APPLIKATION.po.</p>
+
+<p>Wenn Ihr nun die Datei öffnet, werdet Ihr sehen, das rake schon so einiges in
+die Datei eingetragen hat. Jedes Feld jedes Model wurde schon vorgesehen für
+die Übersetzung. Praktisch, oder?</p>
+
+<p>Aber wir wollen ja eigentlich als ersten Schritt nur das Hello World
+übersetzen. Sucht die Zeile msgid “Hello World!”.  Das ist die ID des folgenden
+Strings. Der folgende String ist allerdings noch leer: msgstr “”. Einfach in
+die “” das benötige Hallo Welt einsetzen und die Datei speichern.</p>
+
+<p>Nachdem wir nun die Übersetzung geschrieben haben, müssen die po-Dateien noch
+in das .mo-Format umgewandelt werden. Das erledigt folgendes Kommando:</p>
+
+<p><code class="language-plaintext highlighter-rouge">rake makemo</code></p>
+
+<p>Startet nun euren Rails-Server und schaut euch eure Seite an. Der Text wurde
+nun übersetzt. Alle Fehlermeldungen für Formulare sind nun auch schon
+automatisch übersetzt. Praktisch, oder?</p>
+
+<p><strong>Übersetzung im täglichen Leben</strong></p>
+
+<p>Ab jetzt ist’s alles ganz einfach. Überall, wo Text übersetzt werden sollte,
+einfach <em>(“Text”) eingeben. Um die neuen Texte in die vorhandenen .po-Dateien
+einzufügen, einfach _rake updatepo</em> eingeben und schon wird das Feld
+hinzugefügt. Keine Angst, die vorhandenen Texte werden dabei nicht verändert.</p>
+
+<p><strong>Weitere interessante Seiten</strong></p>
+
+<ul>
+  <li>Das GetText-Rails Beispiel, zu finden hier:
+<code class="language-plaintext highlighter-rouge">/usr/local/lib/ruby/gems/1.8/gems/gettext-1.9.0/samples/rails</code>
+</li>
+  <li><a href="http://www.yotabanana.com/hiki/ruby-gettext-howto.html?ruby-gettext-howto">GetText Übersetzungs-Howto</a></li>
+  <li><a href="http://manuals.rubyonrails.com/read/chapter/105#page298">GetText im Rails-Manual</a></li>
+</ul>
+
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

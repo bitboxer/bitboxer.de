@@ -1,1 +1,989 @@
-theme/atom.xml
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Bitboxer - hacking]]></title>
+  <link href="https://bitboxer.de/atom.xml" rel="self"/>
+  <link href="https://bitboxer.de/"/>
+  <updated>2021-03-14T14:21:16+01:00</updated>
+  <id>https://bitboxer.de/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Three things your API for mobile apps should have]]></title>
+    <link href="https://bitboxer.de/2021/03/14/three-things-you-mobile-api-should-have/"/>
+    <updated>2021-03-14T01:00:00+01:00</updated>
+    <id>https://bitboxer.de/2021/03/14/three-things-you-mobile-api-should-have</id>
+    <content type="html"><![CDATA[<p>Every time I join a team as a freelancer I check a couple of things during my initial code review. Some are quite common, like:</p>
+
+<ul>
+  <li>Is the onboarding document and README still up to date?</li>
+  <li>Are the tests green?</li>
+  <li>How much do they test?</li>
+</ul>
+
+<p>…and many more.</p>
+
+<p>Besides all those rather common checks I also check a few things regarding the design of the API (if the project has one). Most of the time there are some important things missing. For example, the following three things.</p>
+
+<h2 id="decline-too-old-clients">Decline too old clients</h2>
+
+<p>You always want to be able to see the version and type of your clients. It’s nice to have for statistics, but also gets important if you want to introduce API breakage. You need a defined API response to force users to update the app. The app should get a return value that triggers a “Hey, this app needs an update to continue working“ screen. How you implement it depends on your API design.</p>
+
+<h2 id="maintenance-mode">Maintenance mode</h2>
+
+<p>You need a way to communicate a maintenance mode to your clients. The client then should show a warning or disable the app. Ideally, the app could continue to work, but that depends on what the app is about. As a bonus, you could show a message how long this maintenance will take, or show updates if this is an unexpected maintenance (for example because the <a href="https://www.reuters.com/article/us-france-ovh-fire-idUSKBN2B20NU">servers are on fire</a>). Alternatively, link to a status page with further updates.</p>
+
+<h2 id="communicate-with-the-users">Communicate with the users</h2>
+
+<p>This is more optional than the two things above, but I found it rather useful. Build a way to communicate news to the users. Maybe as news section within the app, a popup dialog for urgent messages or something that fits your app design better. Having the possibility to inform about maintenance windows and to stay connected to your users reduces the bad reviews by <strong>a lot</strong>. Just make sure the news are not too spammy.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New project: Hier Baut Berlin]]></title>
+    <link href="https://bitboxer.de/2021/03/06/hier-baut-berlin/"/>
+    <updated>2021-03-06T01:00:00+01:00</updated>
+    <id>https://bitboxer.de/2021/03/06/hier-baut-berlin</id>
+    <content type="html"><![CDATA[<p>A couple of years ago I was lucky to be in the first round of the <a href="https://prototypefund.de/">Prototype Fund</a> and was able to build <a href="https://signdict.org">SignDict</a>. A German sign language dictionary that now has around 88,500 unique visitors a month and is one of the leading sign dictionaries in Germany.</p>
+
+<p>I couldn’t believe my luck when I got accepted to the 9th round with another project. Starting this month I will be working on a project called <a href="http://hierbautberlin.de">Hier Baut Berlin</a> while being paid by the German government.</p>
+
+<p>So, what does it do? It will help you see what the city of Berlin is doing in your local neighborhood. After you opened the site and specified a location, it will show you all construction projects and other things that the city
+has planned or is building in your area at the moment. Additionally, you can also subscribe to that neighborhood and will be notified via email when new entries have been added.</p>
+
+<p>From now on, I will post progress reports every two weeks on the blog at <a href="https://blog.hierbautberlin.de">blog.hierbautberlin.de</a>.</p>
+
+<p>If you want you can also follow all updates on <a href="https://twitter.com/HierBautBerlin">Twitter</a> or <a href="https://github.com/hierbautberlin/website">GitHub</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disable iOS/IE phone number detection]]></title>
+    <link href="https://bitboxer.de/2021/02/28/disable-phone-detection/"/>
+    <updated>2021-02-28T01:00:00+01:00</updated>
+    <id>https://bitboxer.de/2021/02/28/disable-phone-detection</id>
+    <content type="html"><![CDATA[<p>If you have a website with a lot of text on it, you might discover that iOS and Internet Explorer will sometimes add links when they think they discovered a phone number.</p>
+
+<p>A lot of the time the detection is wrong and might even destroy a bit of the layout of the page.</p>
+
+<p>To fix this you have to add some attributes to the page to disable the automatic format detection.</p>
+
+<p>For IE you have to add the <code class="language-plaintext highlighter-rouge">x-ms-format-detection</code> attribute and set it to <code class="language-plaintext highlighter-rouge">none</code> in the <code class="language-plaintext highlighter-rouge">html</code> header, like so:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">x-ms-format-detection=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/x-ms-format-detection">MDN</a> for details.</p>
+
+<p>For iOS/Safari you have to add this meta attribute:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"format-detection"</span> <span class="na">content=</span><span class="s">"telephone=no"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>See the <a href="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html#//apple_ref/doc/uid/TP40008193-SW1">Apple Developer documentation</a> for details.</p>
+
+<p>It seems the list of stuff you have to add to a page to make it work smoothly everywhere gets longer and longer by every year.</p>
+
+<p>A rather complete list of things you could put into the header can be found on <a href="https://htmlhead.dev/">htmlhead.dev</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA["Your eReader is not authorized" on Kobo devices]]></title>
+    <link href="https://bitboxer.de/2020/07/23/kobo-drm/"/>
+    <updated>2020-07-23T02:00:00+02:00</updated>
+    <id>https://bitboxer.de/2020/07/23/kobo-drm</id>
+    <content type="html"><![CDATA[<p>I really love my Kobo eReader. Cheaper than Amazon, I can put epubs on it and buy ebook at every store that is not called “Amazon”. Most ebooks are just watermarked and don’t have any DRM attached to them ♡. You can even lend epubs from your local library using awesome services like <a href="https://overdrive.com">OverDrive</a>.</p>
+
+<p>There is just one problem. If you own a Kobo eReader you might have seen this:</p>
+
+<blockquote>
+  <p>Your eReader is not authorized to open this book. Because you previously deauthorized your eReader, you need to reimport the book using ADE“</p>
+</blockquote>
+
+<p>After that point you are not able to add any book from your library to it. My
+solution to this was to hard reset the device. Luckily there is another
+workaround. A disclaimer first: I really love most Adobe products, but the Adobe
+Digital Edition is 🤬. It’s totally unclear to me why that software is in this
+state and why this is the only DRM solution for ebooks outside the Amazon walled
+garden nowadays.</p>
+
+<p>So how do you fix this problem? Like this:</p>
+
+<ol>
+  <li>Delete the not working ebook</li>
+  <li>Connect the kobo with your computer and leave it plugged in.</li>
+  <li>Start the Adobe Digital Editions App on your Mac</li>
+  <li>Delete the not working book from your ADE, you will need to re-download the <code class="language-plaintext highlighter-rouge">.asm</code> file again later.</li>
+  <li>Remove the authorization of your eReader</li>
+  <li>Remove the authorization on ADE (Help -&gt; Erase Authorization)</li>
+  <li>Go to your library and fetch a <strong>different book</strong>. Yes you have to find a totally different book than the book that is not working.</li>
+  <li>Open it in ADE, it will ask you to re-authorize it.</li>
+  <li>Re-Authorize your eReader</li>
+  <li>Import the new book to the eReader</li>
+  <li>Open the book on your eReader and check that it is working</li>
+  <li>Download the book that was not working from your library and add it to ADE. This is really important. Do not re-import your existing .asm file. You need a new one.</li>
+  <li>Add it to your eReader</li>
+  <li>Done</li>
+</ol>
+
+<p>I am writing this down to remember these steps when I have to do them again 😉.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Coworking for parents]]></title>
+    <link href="https://bitboxer.de/2020/06/11/coworking-parents/"/>
+    <updated>2020-06-11T02:00:00+02:00</updated>
+    <id>https://bitboxer.de/2020/06/11/coworking-parents</id>
+    <content type="html"><![CDATA[<p>My wife is currently opening a coworking space for parents called <a href="https://littlevillage.berlin/">little village</a> and because of that, I investigated the topic a lot in the last couple of months.</p>
+
+<p>Parents have different needs than other people. They have kids. And if the kid is too young for a kindergarten or you couldn’t manage to get a spot yet, you still need a place to work. These places are the ideal solution. Work on your stuff and your kid is in safe hands near you.</p>
+
+<p>What was missing was a page with an overview of all coworking places all around the world. Luckily I already had a huge list of places and just needed to put them on a map. With the awesome little power tool that is <a href="https://jekyllrb.com/">jekyll</a> it was relatively easy to build.</p>
+
+<p>Please see for yourself: <a href="https://coworkingforparents.org/map">coworkingforparents.org</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Omnifocus and I]]></title>
+    <link href="https://bitboxer.de/2020/02/23/omnifocus/"/>
+    <updated>2020-02-23T01:00:00+01:00</updated>
+    <id>https://bitboxer.de/2020/02/23/omnifocus</id>
+    <content type="html"><![CDATA[<p>In the last <a href="/2020/01/30/how-i-organize-myself/">post</a> I promised that I will explain how I use <a href="https://www.omnigroup.com/omnifocus">OmniFocus</a>. Hopefully you get some interesting new ideas after reading this.</p>
+
+<p>The most important thing for me: if I want to remember something as a to do, I will put it into OmniFocus. No matter what it is. To make things easier I have several projects to sort them into.</p>
+
+<p>Most of the time I just quickly add it and sort it later using the Inbox of OmniFocus. Every other day I will open the inbox and check the things in there. Sometimes it is not needed anymore and I delete it but most of the time I sort it into the correct projects/tags and assign due and defer dates to it.</p>
+
+<p>Let’s start with the projects I have.</p>
+
+<h1 id="projects">Projects</h1>
+
+<p>I create a project for everything that has more than 2 to dos attached to it. Yes, that means I have a lot of projects, but it makes filtering for things way easier if you store it correctly.</p>
+
+<p>Additionally, I have projects that are containers for more general things like:</p>
+
+<ul>
+  <li>Things I lent to other people (books, money, …)</li>
+  <li>Things I have preordered and wait for them to be shipped (Kickstarter and other similar platforms)</li>
+  <li>Packaging lists for vacations, festivals and other occasions. I use them as a template and create new ones based on them for specific vacations. That way I won’t forget important things. If I do, I put them into the master list to remember them the next time.</li>
+  <li>Reoccurring to dos. I have a separate list for to dos that I have to do regularly. Swapping filters, tires, cleaning items that only need cleaning twice a year</li>
+  <li>Birthdays. This is a really nice one. I have a project for buying presents. Those to dos are scheduled once a year two weeks before the actual birthday. That way I will never forget to buy something. Saved me a lot of headaches already 🤣.</li>
+  <li>My project to try out things again later. More details about that <a href="/2014/04/20/try-it-again/">here</a>.</li>
+</ul>
+
+<h1 id="tags">Tags</h1>
+
+<p>I don’t have tons of tags. I am trying to limit them to just the minimum that I need. Somehow I cannot work with too many at the same time.</p>
+
+<ul>
+  <li>People. I have tags for people to signal me that either that person has to do something or I have to do something for her/him.</li>
+  <li>Some places like the hardware store. OmniFocus notifies me if I am close to it and that makes me remember to buy certain things there.</li>
+  <li>Next. This tag is for things that are important and need to be done soonish.</li>
+</ul>
+
+<h1 id="defer--due">Defer / Due</h1>
+
+<p>Lots of my items have defer dates attached to them. That signals me that these are not important for now and I delay the action on them days or weeks into the future. Future me has to deal with them.</p>
+
+<p>Due dates are only assigned to items that really have a due date (see <a href="https://learnomnifocus.com/tutorials/best-practice-due-dates/">here</a> why). I will not add fake dates to make things important. I am using the next tag for that.</p>
+
+<h1 id="views">Views</h1>
+
+<p>For a long time I thought I don’t need custom views. After reading how a couple of people are using them, for example <a href="http://uncorrected.net/using-omnifocus-to-shape-your-day/">here</a>, I realized that custom views are the last missing piece to make OmniFocus really great for me.</p>
+
+<p>This is the view I am using 90% of the time I am in OmniFocus:</p>
+
+<p><img src="/images/2020-02-23-omnifocus/views.png" alt="My OmniFocus today view" /></p>
+
+<p>It is called my “today” view and shows everything that is due soon, flagged or has the tag “next” attached to it. This will filter out all items I don’t need today. I only see what is important for the day.</p>
+
+<p>And this concludes how I use OmniFocus. If you have other suggestions, feel free to ping me! I always love to improve my workflow.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How I organize myself]]></title>
+    <link href="https://bitboxer.de/2020/01/30/how-i-organize-myself/"/>
+    <updated>2020-01-30T01:00:00+01:00</updated>
+    <id>https://bitboxer.de/2020/01/30/how-i-organize-myself</id>
+    <content type="html"><![CDATA[<p>Over the last decade I started to organize my life a lot. My goal was to never forget important dates and have an overview about what is happening and what I should do next. I am not perfect at it, and living with a 2-year-old kid definitely made me more unreliable than before, but I am trying every day to be better at it.</p>
+
+<p>That lead to a nice list of tools that work hand in hand to give me every information that I need when I need it.</p>
+
+<p>Here I want to show what I am using and why.</p>
+
+<h1 id="to-dos">To-dos</h1>
+
+<p>This is the most important aspect. Managing the to-dos is crucial for me to always know what I should
+do next. These are the tools that I use:</p>
+
+<ul>
+  <li><a href="https://www.omnigroup.com/omnifocus">OmniFocus</a> — of all of the tools I am using, this is the most important one. I will have to do a follow up on how I manage everything in here. It basically contains everything that I plan to do in the next decade or so 😉. More details <a href="/2020/02/23/omnifocus/">in this post</a>.</li>
+  <li><a href="https://todo.microsoft.com">Microsoft ToDo</a> — Sadly I cannot share things in OmniFocus with my wife. We use good Microsoft To Do to share our shopping list and other items. There is nothing as reliable and easy to use as this little tool.</li>
+  <li><a href="https://flexibits.com/fantastical">Fantastical</a> — all my appointments are in here.</li>
+  <li><a href="https://bear.app/">Bear</a> — Every idea for a blog post and all things that are longer than 2 lines of text land in here. I link from OmniFocus to the documents in Bear if needed.</li>
+  <li><a href="https://octobox.io/">Octobox</a> — all GitHub notifications in one place. With this it’s easy to see what I still have to work on. With its filter I can easily select a client or library I need or want to spend some time on. I go through them hourly and archive everything without the need to take action.</li>
+</ul>
+
+<h1 id="money">Money</h1>
+
+<p>Being a freelancer and father made me realize that I need to have a better overview where my money
+is going and how I could optimize my money flow.</p>
+
+<ul>
+  <li><a href="https://www.getharvest.com/">Harvest</a> — tracking my time and creating invoices. Simple interface and gives me exactly what I need.</li>
+  <li><a href="https://ynab.com/referral/?ref=CJ5q1a8zBut1Tez6&amp;utm_source=customer_referral">YNAB</a> — tracking my money and where I spent it. Removes lots of the once-a-year payment surprises and other issues I ran into over the years.</li>
+  <li><a href="https://kontist.com/r/bodoN6C">Kontist</a> — I am using this to only use the money I really own and have separate buckets for the taxes I have to pay as a freelancer.</li>
+  <li><a href="https://moneymoney-app.com/">MoneyMoney</a> — I have a couple of bank accounts and this manages them all really nicely. I also created an <a href="https://github.com/bitboxer/moneymoney-ynab">exporter to YNAB</a>.</li>
+</ul>
+
+<h1 id="news-and-links">News and links</h1>
+
+<p>Staying up to date with what’s up in technology and politics could be a full time job. I try
+to stay current with these tools.</p>
+
+<ul>
+  <li><a href="https://github.com/swanson/stringer">Stringer</a> — this is my self hosted RSS aggregator. It fetches around 100 feeds right now.</li>
+  <li><a href="https://www.reederapp.com/">Reeder</a> — the web interface of Stringer is nice, but Reeder makes it way more comfortable to quickly read the articles or save them for later in Pocket.</li>
+  <li><a href="https://getpocket.com/">Pocket</a> — my read it later pile. I really try to keep it short. It’s at 34 articles right now.</li>
+  <li><a href="https://pinboard.in">Pinboard</a> — if I found something that I want to keep I tag it and store it in pinboard. Currently it has 2.132 bookmarks in it.</li>
+</ul>
+
+<h1 id="books-and-other-media">Books and other media</h1>
+
+<p>Most of the things above are rather serious things, but you also need downtime to relax and refuel. These tools help me find the best thing to read/watch to relax.</p>
+
+<ul>
+  <li><a href="https://www.goodreads.com/">Goodreads</a> — I put every book that I plan to read into here and check what I want to read next. After I am finished reading a book I rate it to remember if I liked something and why.</li>
+  <li><a href="https://letterboxd.com/">Letterboxd</a> - When I see an interesting show or movie I instantly put it in here. That way I can see what is in cinema right now or from where I can stream it if we want to have a movie night on the couch. It also helps me remember if I have seen something and how I liked it.</li>
+</ul>
+
+<p>I am a heavy user of the share extension framework in iOS and MacOS. For example to move things to pocket with the pocket app. Make sure that you understand how it works and sort it according to your needs. <a href="https://wishlephant.com/browser-extensions">Wishlephant</a> also has an iOS shortcut so that I can easily add items that are open in my web browser to a wish list.</p>
+
+<p>This now concludes my long list of tools that I use to organize myself. If you have questions or suggestions regarding my workflow <a href="mailto:bodo@tasche.me">email me</a> or <a href="https://twitter.com/bitboxer">sent me a tweet</a> 👋,</p>
+
+<p>Looking for other tools that I am using? I did a <a href="https://thesweetsetup.com/bodo-tasches-mac-iphone-setup/">sweet setup interview</a> in 2017 that might be interesting for you.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PapiBerlin.de]]></title>
+    <link href="https://bitboxer.de/2019/11/23/papiberlin/"/>
+    <updated>2019-11-23T01:00:00+01:00</updated>
+    <id>https://bitboxer.de/2019/11/23/papiberlin</id>
+    <content type="html"><![CDATA[<p>This month my little one has her second birthday. A lot has happened in
+those two years. Sadly I didn’t know enough fathers that shared my values
+how to raise a kid. Fathers that are active, know important concepts like
+mental load and want to share the workload and time with the kid evenly between
+all people who are involved in raising the kid.</p>
+
+<p>I am now trying to change that with a community I created called <a href="https://papiberlin.de">Papi Berlin</a>.
+If you are a father and meet the description above, feel free to join our
+<a href="https://papiberlin.de/pages/slack">slack</a> or register for our <a href="https://papiberlin.de/newsletter">newsletter</a>. Starting in January 2020 we try to meet regularly.</p>
+
+<p>Also if you are in the phase of becoming a dad, I will offer a course/workshop
+to talk about all the things that you might want to know as a father. Register
+for it <a href="https://papiberlin.de/pages/beginner-kurs">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JSX without React]]></title>
+    <link href="https://bitboxer.de/2019/10/06/jsx-without-react/"/>
+    <updated>2019-10-06T02:00:00+02:00</updated>
+    <id>https://bitboxer.de/2019/10/06/jsx-without-react</id>
+    <content type="html"><![CDATA[<p>For me <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a> is the part of React that makes developing with it a real treat. Yes, the functional nature, the state and lifecycle management are really nice, too, but JSX makes it all come together in a great way. The effortless integration of HTML inside of JavaScript just makes it one of the best experiences writing a web frontend.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">h1</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">greeting</span><span class="dl">"</span><span class="o">&gt;</span>
+    <span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="o">!</span>
+  <span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Sadly for my <a href="https://wishlephant.com">current side project</a> React was not a great fit. I wanted something smaller. Something that could progressively enhance the website. It was important that everything also works without JavaScript and loaded fast. React was a no go for me.</p>
+
+<p>I tried a few things and decided to give <a href="https://stimulusjs.org/">Stimulus</a> a chance. After a few hours I realized I really wanted to use JSX inside of my new project, too. But how?</p>
+
+<p>Luckily there already was <a href="https://github.com/bitboxer/jsx-no-react">a little library</a> that did just that: adding JSX capabilities to projects without React. It was just a small tech demo, but I was able to add a couple of missing features with just a few lines of code. After two PRs the maintainer <a href="https://github.com/oefd/">Terry</a> allowed me to take over the project and it now lives inside of <a href="https://github.com/bitboxer/jsx-no-react">my GitHub account</a> 😍.</p>
+
+<p>How does it look like?</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Controller</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">stimulus</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">jsxElem</span><span class="p">,</span> <span class="p">{</span> <span class="nx">render</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">jsx-no-react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">class</span> <span class="kd">extends</span> <span class="nx">Controller</span> <span class="p">{</span>
+  <span class="nx">connect</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="nx">Stimulus</span> <span class="nx">version</span> <span class="k">of</span> <span class="k">this</span> <span class="nx">element</span>
+    <span class="o">&lt;</span><span class="sr">/div&gt;, this.element</span><span class="se">)</span><span class="err">;
+</span>  <span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Isn’t that nice? Jump over to the <a href="https://github.com/bitboxer/jsx-no-react/blob/master/README.md">readme</a> to see how you can add it to your own projects.</p>
+
+<p>How it works? That’s not as complicated as it might seem. Turns out that you
+just need a <a href="https://babeljs.io/docs/en/babel-plugin-transform-react-jsx">babel plugin</a> that transforms your JSX tree into a method call. Babel
+transforms the example from the beginning into this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span>
+  <span class="dl">'</span><span class="s1">h1</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">{</span><span class="na">className</span><span class="p">:</span> <span class="dl">'</span><span class="s1">greeting</span><span class="dl">'</span><span class="p">},</span>
+  <span class="dl">'</span><span class="s1">Hello, world!</span><span class="dl">'</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>The only part missing is the implementation of that method. The implementation is <a href="https://github.com/bitboxer/jsx-no-react/blob/master/src/module.js">pretty straight forward</a>.</p>
+
+<p>After building my project with it I have to say that I really love the mixture of Stimulus and JSX.</p>
+
+<p>If you want to see the end result or ever wanted to have a platform neutral wishlist outside of Amazon, feel free to give <a href="http://wishlephant.com">Wishlephant</a> a try.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Wishlephant - an easy shareable wishlist]]></title>
+    <link href="https://bitboxer.de/2019/10/01/wishlephant/"/>
+    <updated>2019-10-01T02:00:00+02:00</updated>
+    <id>https://bitboxer.de/2019/10/01/wishlephant</id>
+    <content type="html"><![CDATA[<p>Last month <a href="http://twitter.com/langziehohr">Anika</a> and I published a little
+project we had been working on for the last 9 months:
+<a href="https://wishlephant.com">wishlephant</a>.</p>
+
+<p>It all started because we discovered how hard it is to manage your life with a
+newborn. There are tons of things to make it easier. Apps you can use, books
+you can read. But early one we discovered that there was one thing we couldn’t
+find a good solution for. We needed help managing the list of potential gifts
+to prevent us having things we don’t need or others twice.  An Amazon list
+wasn’t an option because of the obvious reasons. None of the other existing
+solutions worked for us, so we decided to build our own.</p>
+
+<p>And this is how it looks like:</p>
+
+<p><a href="https://wishlephant.com"><img src="/images/2019-10-01-wishlephant/laptop.png" alt="a screenshot of wishlephant" /></a></p>
+
+<p>Hope you have as much fun using it as we have.</p>
+
+<p>In the next few weeks I will write about some of the things I build for this.
+A lot of that will be open sourced. Cannot wait to talk about it in more details.
+But now I have to take care of the little one.</p>
+
+<p>Ps: If you want it as a sticker of our cute little logo, <a href="https://twiter.com/bitboxer">ping me</a> :)</p>
+
+<p><img src="/images/2019-10-01-wishlephant/wishlephant_152.png" alt="the logo of wishlephant, an elephant" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Podcast interview with Digitalegründer.de]]></title>
+    <link href="https://bitboxer.de/2019/05/11/digitalegruender/"/>
+    <updated>2019-05-11T02:00:00+02:00</updated>
+    <id>https://bitboxer.de/2019/05/11/digitalegruender</id>
+    <content type="html"><![CDATA[<p>I was recently interviewed in German by <a href="https://simon-frey.com/">Simon Frey</a>
+for his <a href="https://digitalegruender.de">DigitaleGründer.de</a> Podcast.</p>
+
+<p>You can listen to it here:</p>
+
+<p><a href="https://digitalegruender.de/allgemein/mit-hilfe-des-prototyp-funds-euer-herzensprojekt-umsetzen-mit-bodo-tasche-von-signdict/"><img src="/images/2019-05-11-digital/bodo_tasche-398x398.png" alt="Profile Picture of Bodo Tasche" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IMDb RSS Feed]]></title>
+    <link href="https://bitboxer.de/2019/04/15/imdb-rss/"/>
+    <updated>2019-04-15T02:00:00+02:00</updated>
+    <id>https://bitboxer.de/2019/04/15/imdb-rss</id>
+    <content type="html"><![CDATA[<p>A couple of months ago I wrote a small tool that creates a RSS feed
+of your IMDb ratings. This comes in handy if you want to use it with
+<a href="https://ifttt.com/">IFTTT</a> or similar pipeline things. My use case is
+to import them to <a href="https://dayoneapp.com/">Day One</a> with this.</p>
+
+<p>Interested? Just go <a href="http://imdbrss.bitboxer.de/">here</a> and try it out.</p>
+
+<p>Sorry for not posting this earlier. Someone asked me about a tool like this
+and I realized I am really bad at promoting things I wrote :wink: .</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to create an emoji]]></title>
+    <link href="https://bitboxer.de/2019/03/24/how-to-create-an-emoji/"/>
+    <updated>2019-03-24T01:00:00+01:00</updated>
+    <id>https://bitboxer.de/2019/03/24/how-to-create-an-emoji</id>
+    <content type="html"><![CDATA[<p>Every year around summer new emojis appear on all of your devices. Have you
+ever thought about how that happens? And how it works out that every device
+understands them? Windows, Mac, Android, and iOS?</p>
+
+<p>The answer is simple. There is a committee for it. Of course there is. And this
+one is called the <a href="https://unicode.org">Unicode Consortium</a>.</p>
+
+<p>After listening to the <a href="https://www.macintosh.fm/episodes/emoji-1">Macintosh
+Podcast</a> episodes about how it all
+works, I got curious if I could do that, too. It turns out that it’s way easier
+than I thought it would be. All that I needed to do was to write a
+<a href="https://www.unicode.org/L2/L2018/18074-sloth-emoji-.pdf">proposal</a> and sent it
+in. Luckily I got lots of help by <a href="http://www.emojination.org/">Emojination</a>, a
+slack chat of emoji enthusiasts. They helped to put the proposal into the right
+shape (there is an official <a href="https://www.unicode.org/emoji/proposals.html">Proposal
+Format</a> you need to follow) and
+through them I found <a href="https://web.library.yale.edu/pl/kelly-blanchat">Kelly</a>.
+She made the finishing touches to my proposal that made it successful.</p>
+
+<p>After we send the proposal I just had to wait for it to go through a couple of
+voting rounds to get it accepted in a bunch of subcommittees. In total it took 4
+evenings of writing/rephrasing and 16 months of waiting.  The end result?
+The <a href="https://emojipedia.org/sloth/">sloth emoji</a>.</p>
+
+<p>So all that is between your favorite missing emoji and it appearing on your
+phone is just you writing a proposal. Do it! I am glad that I did.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[35c3 retrospective]]></title>
+    <link href="https://bitboxer.de/2019/01/21/35c3/"/>
+    <updated>2019-01-21T09:00:00+01:00</updated>
+    <id>https://bitboxer.de/2019/01/21/35c3</id>
+    <content type="html"><![CDATA[<p>And now it’s the time of the year where I post all the talks of the chaos communication
+congress that I can recommend. Due to the baby I only managed to be there for a day. Let’s see how many days I make it the next time :wink:. I didn’t watch any talks live because I focused on connecting with all the people I haven’t seen for too long. Luckily everything is online and I watched tons on my couch the last few weeks. And as always: if you think I missed an important talk, feel free to <a href="https://bodo.tasche.me">ping me</a>.</p>
+
+<h3 id="all-your-gesundheitsakten-are-belong-to-us">All Your Gesundheitsakten Are Belong To Us</h3>
+
+<p>A scary look at some of the solutions for the electronic storage of health records in germany.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9992-all_your_gesundheitsakten_are_belong_to_us">Video</a></p>
+
+<h3 id="what-the-fax">What the Fax?!</h3>
+
+<p>Hack a company network by owning a fax machine.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9462-what_the_fax">Video</a></p>
+
+<h3 id="best-of-informationsfreiheit">Best of Informationsfreiheit</h3>
+
+<p>The yearly state of the union of <a href="https://fragdenstaat.de">FragDenStaat.de</a></p>
+
+<p><a href="https://media.ccc.de/v/35c3-9507-best_of_informationsfreiheit">Video</a></p>
+
+<h3 id="venenerkennung-hacken">Venenerkennung hacken</h3>
+
+<p>One of the last not hacked biometric systems: veine recogintion</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9545-venenerkennung_hacken">Video</a></p>
+
+<h3 id="freude-ist-nur-ein-mangel-an-information">Freude ist nur ein Mangel an Information</h3>
+
+<p>Not a talk, but a nice stand up routine of <a href="https://www.nicosemsrott.de/">Nico Semsrott</a></p>
+
+<p><a href="https://media.ccc.de/v/35c3-9506-freude_ist_nur_ein_mangel_an_information">Video</a></p>
+
+<h3 id="die-dreckige-empirie">Die dreckige Empirie</h3>
+
+<p>A nice introduction into how empirical research works.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9686-die_dreckige_empirie">Video</a></p>
+
+<h3 id="du-kannst-alles-hacken--du-darfst-dich-nur-nicht-erwischen-lassen">Du kannst alles hacken – du darfst dich nur nicht erwischen lassen.</h3>
+
+<p>Short introduction into dos and don’ts when starting to learn hacking.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9716-du_kannst_alles_hacken_du_darfst_dich_nur_nicht_erwischen_lassen">Video</a></p>
+
+<h3 id="court-in-the-akten">Court in the Akten</h3>
+
+<p>Overview of two important projects of <a href="https://fragdenstaat.de">FragDenStaat</a>: <a href="OpenSchufa">OpenSchufa</a> and <a href="https://offenegesetze.de/">OffeneGesetze</a>.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9343-court_in_the_akten">Video</a></p>
+
+<h3 id="the-social-credit-system">“The” Social Credit System</h3>
+
+<p>Current state of social credit systems in China.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9904-the_social_credit_system">Video</a></p>
+
+<h3 id="lets-reverse-engineer-the-universe">Let’s reverse engineer the Universe</h3>
+
+<p>What is dark matter and how does it all work in the current models of the
+universe.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9925-let_s_reverse_engineer_the_universe">Video</a></p>
+
+<h3 id="verhalten-bei-hausdurchsuchungen">Verhalten bei Hausdurchsuchungen</h3>
+
+<p>Do you know what to do when the police is standing in front of your door and demands
+to search your apartment/hacker space? If no, this talk is a must watch. Based on the
+experience of the <a href="https://www.ccc.de/en/updates/2018/hausdurchsuchungen-bei-vereinsvorstanden-der-zwiebelfreunde-und-im-openlab-augsburg">Zwiebelfreunde</a> you will learn what to do and how to prepare for a raid.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-10018-verhalten_bei_hausdurchsuchungen">Video</a></p>
+
+<h3 id="how-medicine-discovered-sex">How medicine discovered sex</h3>
+
+<p>A brief introduction into the paradigm shifting realm of sex- and gender-sensitive medicine.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9775-how_medicine_discovered_sex">Video</a></p>
+
+<h3 id="genom-editierung-mit-crisprcas">Genom-Editierung mit CRISPR/Cas</h3>
+
+<p>Do you always wanted to understand what CRISPR is and what the limits of that
+technology is right now? This talk explains it all.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-9838-genom-editierung_mit_crispr_cas">Video</a></p>
+
+<h3 id="polizeigesetze">Polizeigesetze</h3>
+
+<p>Sadly lots of german states currently add laws that will allow the police to do
+more and potential bad stuff. This talk shows the current state of those laws.</p>
+
+<p><a href="https://media.ccc.de/v/35c3-10015-polizeigesetze">Video</a></p>
+
+<h3 id="martin-sonneborn-meine-abenteuer-im-eu-parlament">Martin Sonneborn: Meine Abenteuer im EU-Parlament</h3>
+
+<p>Sadly I haven’t found this video on the media.ccc.de server, but luckily there
+was a youtube mirror. <a href="https://en.wikipedia.org/wiki/Martin_Sonneborn">Martin Sonneborn</a> is a member of the eu parliament and here he shows what he did in the last few years.</p>
+
+<p><a href="https://www.youtube.com/watch?v=E88xurA9qis">Video</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cookies in Containers]]></title>
+    <link href="https://bitboxer.de/2018/03/21/firefox-containers/"/>
+    <updated>2018-03-21T07:00:00+01:00</updated>
+    <id>https://bitboxer.de/2018/03/21/firefox-containers</id>
+    <content type="html"><![CDATA[<p>My privacy is important to me online. Because of that
+I never surf without an <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">adblocker</a>
+and <a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/">Privacy Badger</a>.</p>
+
+<p>Lately I added another layer of privacy protection. <a href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/">Firefox Containers</a>.
+Firefox Containers started as a <a href="https://testpilot.firefox.com/experiments">Test Pilot</a> project
+and was moved to regular add on status.</p>
+
+<p>What does it do? It basically creates little information bubbles that don’t expose
+data to the other. If you don’t want amazon to follow you around on the net while
+you read the news, create a container for news reading and one for shopping on amazon.
+Everything that is put in container A does not have access to data stored in container B.
+Need a different login for a page because of work? No problem, open it in another container titled “work”.</p>
+
+<p>After I combined this with three other add ons, I had what I always wanted. A system
+that throws away most cookies after I leave the page that created them. It remembers
+cookies for specific pages, but does not leak information to those sites when I 
+surf the web.</p>
+
+<p>I created a shopping container that openes automatically when I surf to amazon.com, but
+amazon will not be able to track me when I surf on the web. Without the hassle of 
+logging in to amazon each time I visit the site.</p>
+
+<p>My browser will delete all data for 80% of the pages that I opened after I
+close the tab. Only a handful of pages are opened automatically in specific
+containers and keep their cookies.</p>
+
+<p>My additional add ons are:</p>
+
+<h2 id="switch-container"><a href="https://addons.mozilla.org/en-US/firefox/addon/switch-container/">Switch Container</a></h2>
+
+<p>This add on makes it possible to switch the container for a page you have opened. This
+helps me when I excitedly opened the page in the wrong container.</p>
+
+<h2 id="cookie-autodelete"><a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/">Cookie AutoDelete</a></h2>
+
+<p>This add on is configured to throw away every cookie. With the exception that it does
+not throw them away for specific containers.</p>
+
+<h2 id="i-dont-care-about-cookies"><a href="https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/">I don’t care about cookies</a></h2>
+
+<p>If you throw away all cookies all the time, you will see lots and lots of cookie warnings.
+Luckily this add on will prevent them from showing up.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[34c3 retrospective]]></title>
+    <link href="https://bitboxer.de/2018/01/21/34c3/"/>
+    <updated>2018-01-21T09:00:00+01:00</updated>
+    <id>https://bitboxer.de/2018/01/21/34c3</id>
+    <content type="html"><![CDATA[<p>It’s time again for my list of talks that I loved on the chaos communication
+congress. Sadly I wasn’t able to be there this year. Hopefully I will be back
+at 35c3. <a href="https://www.instagram.com/p/BcSrf1LDz_3/?taken-by=langziehohr">Someone</a> kept
+me rather busy :wink: .</p>
+
+<p>And now to the talks I saw on my couch in the few moments of free time I had.</p>
+
+<h3 id="der-pc-wahl-hack">Der PC-Wahl-Hack</h3>
+
+<p>Three weeks before the german elections the CCC published a paper highlighting problems in a software that is used to transmit  preliminary voting results. In this talk they explain what they found and what happened after they published the paper</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9247-der_pc-wahl-hack">Video</a></p>
+
+<h3 id="schreibtisch-hooligans">Schreibtisch-Hooligans</h3>
+
+<p>The yearly state of „Frag den Staat“.  Basically a must watch if you want to keep up to date on the transparency laws in Germany.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-8714-schreibtisch-hooligans">Video</a></p>
+
+<h3 id="all-computers-are-beschlagnahmt">All Computers Are Beschlagnahmt</h3>
+
+<p>The ban of Indymedia linksunten from the view of the lawyer of indymedia.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-8955-all_computers_are_beschlagnahmt">Video</a></p>
+
+<h3 id="dude-you-broke-the-future">Dude, you broke the Future!</h3>
+
+<p>A science fiction author lays out his what he thinks went wrong in the 21st century and what might come next and how we can influence it.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9270-dude_you_broke_the_future">Video</a></p>
+
+<h3 id="the-ultimate-apollo-guidance-computer-talk">The Ultimate Apollo Guidance Computer Talk</h3>
+
+<p>If you ever wanted to know what kind of computer was used to land the Apollo Missions on the moon, this talk is for you!</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9064-the_ultimate_apollo_guidance_computer_talk">Video</a></p>
+
+<h3 id="tightening-the-net-in-iran">Tightening the Net in Iran</h3>
+
+<p>How does the Internet in Iran work? What are people using and how? Really interesting view into how people deal with the „filternet.“</p>
+
+<p><a href="https://media.ccc.de/v/34c3-8900-tightening_the_net_in_iran">Video</a></p>
+
+<h3 id="qualityland">QualityLand</h3>
+
+<p>The Author of „Känguruhchroniken“ reads out of his next book „Qualityland“.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9285-qualityland">Video</a></p>
+
+<h3 id="the-internet-in-cuba-a-story-of-community-resilience">The Internet in Cuba: A Story of Community Resilience</h3>
+
+<p>A fascinating view on the network infrastructure people in Cuba are using.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-8740-the_internet_in_cuba_a_story_of_community_resilience">Video</a></p>
+
+<h3 id="die-lauschprogramme-der-geheimdienste">Die Lauschprogramme der Geheimdienste</h3>
+<p>Hans-Christian Ströbele, former Member of the German Parliament for the Green party talks about the NSA/BND investigation panel of the parliament.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9289-die_lauschprogramme_der_geheimdienste">Video</a></p>
+
+<h3 id="elektronisches-anwaltspostfach---einfach-digital-kaputt">elektronisches Anwaltspostfach - einfach. digital. kaputt</h3>
+<p>German Lawyers should have been forced to use a digital email system called beA starting in January 2018. Sadly the system is full of errors and problematic design decisions. In this talk you will see lots of them. After this talk the German Layer Association stopped the roll out.</p>
+
+<p><a href="https://media.ccc.de/v/CCCDA-elektronisches_Anwaltspostfach-einfach_digital_kaputt">Video</a></p>
+
+<h3 id="pointing-fingers-at-the-media">Pointing Fingers at ‚The Media‘</h3>
+<p>A nice analysis how the public discourse during the last election in Germany worked.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9106-pointing_fingers_at_the_media">Video</a></p>
+
+<h3 id="tiger-drucker-und-ein-mahnmal">Tiger, Drucker und ein Mahnmal</h3>
+<p>The artist collective „Zentrum für Politische Schönheit“ talks about their political art instalations of the last three years.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-8896-tiger_drucker_und_ein_mahnmal">Video</a></p>
+
+<h3 id="science-is-broken">Science is broken</h3>
+
+<p>Can we trust the scientific method? What can go wrong and how can we fix it? Really interesting talk that explains what can be improved in the current way we do science.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9055-science_is_broken">Video</a></p>
+
+<h3 id="a-hackers-guide-to-climate-change---what-do-we-know-and-how-do-we-know-it">A hacker’s guide to Climate Change - What do we know and how do we know it?</h3>
+
+<p>Ever wondered about climate change? Ever tried to convince people that it is really happening? Then this talk is for you. Amazing overview about everything related to climate change.</p>
+
+<p><a href="https://media.ccc.de/v/34c3-9184-a_hacker_s_guide_to_climate_change_-_what_do_we_know_and_how_do_we_know_it">Video</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to prepare for a baby]]></title>
+    <link href="https://bitboxer.de/2018/01/11/how-to-prepare-for-a-baby/"/>
+    <updated>2018-01-11T22:00:00+01:00</updated>
+    <id>https://bitboxer.de/2018/01/11/how-to-prepare-for-a-baby</id>
+    <content type="html"><![CDATA[<p>Some of you might have noticed that something happened in my life. I got a baby.
+Here I want to give a couple of tips that I found very helpful. Maybe you will find
+a few of the things helpful, too.</p>
+
+<h1 id="books">Books</h1>
+
+<p>Being a nerd I did what I always do when I have to prepare for something new: I
+read books. Lots of them. Some better than others. This is a list of books that
+I found helpful. The first two are in English, the other five in German.</p>
+
+<ul>
+  <li><a href="https://www.goodreads.com/book/show/13426194-mindful-birthing">Mindful Birthing: Training the Mind, Body, and Heart for Childbirth and Beyond by Nancy Bardacke</a> -
+A nice book with lots of help to relax during the pregnancy and the birth.
+I highly recommend doing a prenatal class with focus on mindfulness and
+meditation.</li>
+  <li><a href="https://www.goodreads.com/book/show/19566320-expecting-better">Expecting Better: Why the Conventional Pregnancy Wisdom is Wrong and What You Really Need to Know by Emily Oster</a> -
+Often you hear advice not to do X or to do Y. Most of them without any
+explanation why. This book goes through the most common advice you get from
+friends, relatives and doctors and explains the science behind it. The author
+tried to find studies and researched what works and what doesn’t. Really
+awesome if you want to sleep more relaxed without overthinking what you might
+do wrong.</li>
+  <li><a href="https://www.goodreads.com/book/show/859451.Babyjahre">Babyjahre: Die frühkindliche Entwicklung aus biologischer Sicht by Remo H. Largo</a> -
+This is a german classic. Nearly everyone I know had this book. It explains
+the development of your kid during the first couple of years. Reading this
+helps you understand why your kid does what.</li>
+  <li><a href="https://www.goodreads.com/book/show/34503407-don-t-worry-be-mami">Don’t worry, be Mami: Juristisches Know-how rund um Schwangerschaft, Geburt und Elternsein by Sandra Runge</a> -
+Getting a kid in Germany means you need to understand lots of bureaucracy and
+paperwork. This book explains all of it. Starting at „when do I have to tell
+it my boss“ over „how do I get the parental allowance  from the german
+government“ to what insurance you might need. Sounds like a pretty dry read,
+but luckily the author knew how to explain things in a funny and nice way.</li>
+  <li><a href="https://www.goodreads.com/book/show/25328991-babysignal---mit-den-h-nden-sprechen">babySignal - Mit den Händen sprechen by Wiebke Gericke</a> -
+Did you know that your kid can communicate with you using sign language way
+before it can speak? This book introduces „baby signs“ in a nice way.</li>
+  <li><a href="https://www.goodreads.com/book/show/32316478-das-gew-nschteste-wunschkind-aller-zeiten-treibt-mich-in-den-wahnsinn">Das gewünschteste Wunschkind aller Zeiten treibt mich in den Wahnsinn: Der entspannte Weg durch Trotzphasen by Danielle Graf</a> -
+Raising kids is never easy. This book goes through common problems during the
+mental development of your kid and how to deal with it in a non stressful way
+for you and the kid.</li>
+</ul>
+
+<h1 id="apps">Apps</h1>
+
+<p>There are tons of apps for pregnant women and families. Here I want to
+recommend a couple of them that I found really helpful:</p>
+
+<ul>
+  <li>Baby Berlin
+(<a href="https://play.google.com/store/apps/details?id=de.gesundheitbb.clbirth">Android</a>,
+<a href="https://itunes.apple.com/de/app/baby-berlin-app/id976204677?l=en&amp;mt=8">iPhone</a>).
+This is the most important one if you are living in Berlin. It has a checklist
+what you need to do before and after the birth. It also has links and addresses
+for everything you need to do. Really good if you don’t want to get lost in the
+German bureaucracy. This app is also in English.</li>
+  <li><a href="https://www.embryotox.de/">embryotox</a> to check if you can
+use certain medicine while pregnant.</li>
+  <li><a href="https://www.ovuline.com/#ovia-pregnancy-app">Ovia Pregnancy App</a>. There are
+several pregnancy tracker apps. I tried a couple of them and this is what I
+kept using. Nice articles about the current progress of your unborn.</li>
+  <li><a href="https://itunes.apple.com/de/app/labor-contraction-timer-birth/id1204868842?l=en&amp;mt=8">Contraction Timer</a>.
+You hopefully only need this app a couple of hours, but during those hours it
+is really helpful. It keeps track of the duration and interval of the
+contractions.</li>
+  <li>White noise app (rain, waves etc). Babies love white noise to fall asleep.
+There are way to many apps to highlight one here. Just make sure that you get
+one with a wide variety of sounds. Some babies like rain, some a hair dryer.
+You never know till you tried it out.</li>
+</ul>
+
+<h1 id="places-that-help-you">Places that help you</h1>
+
+<p>Getting a baby is really stressful. Luckily there are lots of places that try
+to help you during this time. Here are some that I can recommend:</p>
+
+<ul>
+  <li><a href="https://www.kobra-berlin.de/beratung-und-coaching/stolperstein-elternzeit.html">Kobra-Berlin: Stolperstein Elternzeit</a> -
+Need help with applying for parental allowance? This is the place to go.</li>
+  <li><a href="https://babylotse.charite.de/angebote/">Babylotse Charité</a> -
+The Babylotse tries to help you with all things surrounding the birth (e.g.
+paperwork, getting a midwife and more)</li>
+  <li><a href="https://neonatologie.charite.de/fuer_eltern/elternberatung/">Elternberatung: Klinik für Neonatologie - Charité</a> -
+If you know that your kid will be born with some form of complication, these
+people are super helpful. They can get you a cheaper parking ticket for the
+Charité and can get you psychological help in this stressful situation. Make
+sure to talk to them if your kid is in intensive care at the Charité.</li>
+</ul>
+
+<h1 id="important-phone-numbers">Important phone numbers</h1>
+
+<p>I added a list of important numbers to the medicine cabinet. Just to be on the
+safe side:</p>
+
+<ul>
+  <li>Police 110</li>
+  <li>emergency services 112</li>
+  <li>Doctors on call for non emergency topics 116 117</li>
+  <li>poison emergency number 030 19240</li>
+</ul>
+
+<h1 id="things-you-might-need">Things you might need</h1>
+
+<p>One of the most confusing things for me was what we needed for the baby. I talked
+with a lot of people and boiled it down to two lists:</p>
+
+<ul>
+  <li>everything you need for the <a href="https://github.com/bitboxer/parenting/blob/master/hospital_bag.md">hospital bag</a></li>
+  <li>everything you need as <a href="https://github.com/bitboxer/parenting/blob/master/basic_equipment.md">basic equipment</a></li>
+</ul>
+
+<h1 id="other-things">Other things</h1>
+
+<p>One of the most important things is to get a midwife. As soon as you know you
+are expecting, try to google for lists of midwifes and call them. Sadly it’s
+not that easy to find one, but keep calling. After a couple of tries you
+hopefully have one.  Additionally try to get a
+<a href="https://en.wikipedia.org/wiki/Doula">Doula</a>. Our was a tremendous help during
+the birth. She helped a lot and made the birth an awesome experience for us. I
+don’t know what I would have done without her. After you have both, you might
+need to start looking for a place in a kindergarten. Yes, I know this sounds a
+bit early, but sadly the waiting lists are rather long in Berlin.</p>
+
+<p>We created a handful of lists as preparation for the kid. One of them was a
+Google Spreadsheet with a list of all clothes and sizes we had for the baby.
+This helped us keep an overview what was missing.</p>
+
+<p>If you want to listen to my girlfriend talking in german about her experience
+being pregnant, you can listen to <a href="http://kleinerdrei.org/2017/10/kleinercast-20-sex-drugs-und-weite-roecke-mythos-schwangerschaftsfreuden/">episode 20 of
+Kleinercast</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Don't push to production on Day 1]]></title>
+    <link href="https://bitboxer.de/2017/10/31/push-to-production-on-day-one/"/>
+    <updated>2017-10-31T08:00:00+01:00</updated>
+    <id>https://bitboxer.de/2017/10/31/push-to-production-on-day-one</id>
+    <content type="html"><![CDATA[<p>I often see a pattern with on boarding new coworkers that I find really
+problematic. The „push to production on the first day“ rule. Lots of people in
+my twitter feed are constantly bragging that their new coworker was able to
+push something to production on day one. The idea behind is that it gives the
+new hire a great feeling of accomplishment on the first day. It should also
+demonstrates how great the company is doing on the „release often“ scale.</p>
+
+<p>I have huge problems with this. Just think how it feels to be the new person.
+You don’t know that much about all the new people you are meeting. Have a hard
+time to remember all those names. And on top of that someone is sitting next to
+you expecting you to finish a small ticket together with them to push it to
+production. For me this feels like having an important test the first day of
+school. This is the opposite of what a first day should look like for me. It
+should give the new person room to get a feeling how the company is structured,
+meet all the new coworkers,  getting comfortable. Focus on the people, not the
+code. The first day is already super stressful as it is. If you know that they
+expect you to push to production on day one just adds more unwanted pressure.</p>
+
+<p>For me an ideal first day is a nice introduction to the people you work with,
+the tons of rules the new workplace has (How do I take vacations? What do I do
+when I am sick?), and getting comfortable at your new workspace. The code
+should never be the #1 priority. It’s more important that you leave the job
+with a „I like those people I met“ feeling instead of a „I finished a small
+artificial task today“. That is exactly what Wooga did when I started my new
+job there a couple of months ago. They never expected me to be productive in
+the first couple of days. Instead we talked a lot, I could look at how the
+team is working on tickets, read lots of code to see how they work. And on day
+3 I had a nice feature pushed to production. During the whole time I felt
+valued and not pressured to do something „just because“.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The jQuery legacy code team smell]]></title>
+    <link href="https://bitboxer.de/2017/10/14/legacy-javascript/"/>
+    <updated>2017-10-14T18:00:00+02:00</updated>
+    <id>https://bitboxer.de/2017/10/14/legacy-javascript</id>
+    <content type="html"><![CDATA[<p>In the last couple of years I had lots of discussions with people about one
+specific topic: what do you do with jQuery spaghetti code in legacy
+applications. We all have been there in one point of our career. For me the
+answer was pretty straight forward. There are three ways out of it. None of
+them is easy, but the result will hopefully be worth it. There is only
+one reason not to fix this problem: nobody needs to touch that part of the
+application and it works fine as is. If you need to touch the code regularly,
+you have to change something. But what? And how?</p>
+
+<p>Usually the reason for that jQuery spaghetti code is that nobody in the team
+is able to write good maintainable Javascript. Just switching the bad jQuery code with
+bad React code will not help anybody. Paying an expert to replace the code
+to use a modern Javascript framework will not help either. Your team needs to
+get the knowledge to maintain the app and add new features.</p>
+
+<p>It basically boils down to the following solutions:</p>
+
+<h2 id="teach-them-good-javascript">Teach them good Javascript</h2>
+
+<p>If you have a team of so called “full stack developers” where everyone is
+supposed to write the frontend and the backend part of the application, figure
+out a way that those developers are actually able to write frontend code.
+Get someone to teach them a modern Javascript framework and have that person
+available for at least a couple of months for code reviews. Getting everyone
+up to modern standards will cost you a bit, but it is worth it. Just pointing
+them to StackOverflow without someone to guide the team will not work. This is
+basically why you probably ended up in the current situation.</p>
+
+<h2 id="throw-out-the-javascript">Throw out the Javascript</h2>
+
+<p>If your developers don’t like Javascript at all and don’t want to learn a modern
+framework, just remove it. In lots of the cases there is no actual reason
+why you have that javascript in the first place. Most of it can be done with
+<a href="https://unpoly.com/">unpoly</a> and some CSS animations. Browsers are pretty good
+nowadays for 80% of the old school jQuery use cases.</p>
+
+<h2 id="change-the-team-structure">Change the team structure</h2>
+
+<p>If you really need to have some features in Javascript and your current
+developers don’t want to touch Javascript, add Javascript developers to the
+team. Make sure that all team members communicate well with each other and
+understand what the different needs for each other are. The most important
+part for you will be to make sure everyone works well together.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SSH with clipboard support]]></title>
+    <link href="https://bitboxer.de/2017/08/06/ssh-with-clipboard/"/>
+    <updated>2017-08-06T17:00:00+02:00</updated>
+    <id>https://bitboxer.de/2017/08/06/ssh-with-clipboard</id>
+    <content type="html"><![CDATA[<p>This week I stopped working full time on <a href="https://signdict.org">SignDict</a> and
+started a new job at <a href="https://wooga.com">Wooga</a>. Starting a new job often
+means to adapt to new ways of working. One of the biggest changes for me is
+that from now on I am working in a VirtualBox on a Debian system. That box
+is setup using <a href="https://www.vagrantup.com/">Vagrant</a> and relies heavily on docker
+and other nice litte things.</p>
+
+<p>One of the problems I had at first was the clipboard. I wanted to have a working
+clipboard between my Mac and the ssh sessions on the virtual machines. After
+tinkering for an hour I now have a working solution. I think this
+could be valuable to others, so here it is :wink:.</p>
+
+<p>First step:</p>
+
+<p>Install <code class="language-plaintext highlighter-rouge">xorg</code> and <code class="language-plaintext highlighter-rouge">xsel</code> on your Linux boxes. If you prefer to
+do it manually run this line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install xorg xsel
+</code></pre></div></div>
+
+<p>The clipboard will use the X11 protocol. Xsel is a nice command line util that
+exposes this to you.</p>
+
+<p>After that install
+<a href="https://github.com/neovim/neovim/wiki/Installing-Neovim">Neovim</a> and add the
+following line to the config if you want to use the system clipboard for all
+operations:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set clipboard+=unnamedplus
+</code></pre></div></div>
+
+<p>Neovim uses xsel to read and write to the clipboard.</p>
+
+<p>Next up start install and start <a href="https://www.xquartz.org/">XQuartz</a>. It is important
+to start it before you open the ssh sessions. I have added it to my startup elements
+of my user on the Mac.</p>
+
+<p>If you use vagrant add this line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.ssh.forward_x11 = true
+</code></pre></div></div>
+
+<p>After that you can use <code class="language-plaintext highlighter-rouge">vagrant ssh</code> to ssh to your box and have a working
+clipboard in your Neovim on your linux boxes. You can also start the ssh client
+manually using <code class="language-plaintext highlighter-rouge">ssh -X user@ip</code> to enable the X11 protocol.</p>
+
+<p>You can also pipe to the clipboard using <code class="language-plaintext highlighter-rouge">echo "hello" | xsel -b</code> or read
+it with <code class="language-plaintext highlighter-rouge">xsel -b</code>.</p>
+
+<p>Small warning: you should only enable the X11 to trusted servers. Never allow
+it for servers you don’t have under your own control.</p>
+
+<p><strong>Update:</strong> If you also use tmux inside of your vagrant box, you might need
+the <a href="https://github.com/tmux-plugins/tmux-yank">tmux-yank</a> plugin to make it
+all work inside of your shell.</p>
+]]></content>
+  </entry>
+  
+</feed>

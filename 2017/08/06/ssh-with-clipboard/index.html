@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - SSH with clipboard support</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head-without-image">
+      <h1 class="headline">SSH with clipboard support</h1>
+      <time datetime="2017-08-06T17:00:00.000+0200">06 Aug 2017</time>
+    </div>
+    
+
+    <div class="post">
+      <p>This week I stopped working full time on <a href="https://signdict.org">SignDict</a> and
+started a new job at <a href="https://wooga.com">Wooga</a>. Starting a new job often
+means to adapt to new ways of working. One of the biggest changes for me is
+that from now on I am working in a VirtualBox on a Debian system. That box
+is setup using <a href="https://www.vagrantup.com/">Vagrant</a> and relies heavily on docker
+and other nice litte things.</p>
+
+<p>One of the problems I had at first was the clipboard. I wanted to have a working
+clipboard between my Mac and the ssh sessions on the virtual machines. After
+tinkering for an hour I now have a working solution. I think this
+could be valuable to others, so here it is :wink:.</p>
+
+<p>First step:</p>
+
+<p>Install <code class="language-plaintext highlighter-rouge">xorg</code> and <code class="language-plaintext highlighter-rouge">xsel</code> on your Linux boxes. If you prefer to
+do it manually run this line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install xorg xsel
+</code></pre></div></div>
+
+<p>The clipboard will use the X11 protocol. Xsel is a nice command line util that
+exposes this to you.</p>
+
+<p>After that install
+<a href="https://github.com/neovim/neovim/wiki/Installing-Neovim">Neovim</a> and add the
+following line to the config if you want to use the system clipboard for all
+operations:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set clipboard+=unnamedplus
+</code></pre></div></div>
+
+<p>Neovim uses xsel to read and write to the clipboard.</p>
+
+<p>Next up start install and start <a href="https://www.xquartz.org/">XQuartz</a>. It is important
+to start it before you open the ssh sessions. I have added it to my startup elements
+of my user on the Mac.</p>
+
+<p>If you use vagrant add this line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.ssh.forward_x11 = true
+</code></pre></div></div>
+
+<p>After that you can use <code class="language-plaintext highlighter-rouge">vagrant ssh</code> to ssh to your box and have a working
+clipboard in your Neovim on your linux boxes. You can also start the ssh client
+manually using <code class="language-plaintext highlighter-rouge">ssh -X user@ip</code> to enable the X11 protocol.</p>
+
+<p>You can also pipe to the clipboard using <code class="language-plaintext highlighter-rouge">echo "hello" | xsel -b</code> or read
+it with <code class="language-plaintext highlighter-rouge">xsel -b</code>.</p>
+
+<p>Small warning: you should only enable the X11 to trusted servers. Never allow
+it for servers you don’t have under your own control.</p>
+
+<p><strong>Update:</strong> If you also use tmux inside of your vagrant box, you might need
+the <a href="https://github.com/tmux-plugins/tmux-yank">tmux-yank</a> plugin to make it
+all work inside of your shell.</p>
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

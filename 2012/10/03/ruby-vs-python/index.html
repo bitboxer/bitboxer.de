@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - Ruby -vs- Python</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head-without-image">
+      <h1 class="headline">Ruby -vs- Python</h1>
+      <time datetime="2012-10-03T13:12:46.000+0200">03 Oct 2012</time>
+    </div>
+    
+
+    <div class="post">
+      <p><img src="/images/2012-10-03-ruby-vs-python/ruby-vs-python.png" alt=""></p>
+
+<p>Ruby and Python. Two languages. Two communities. Both have a similar target: to
+make software development better. Better than Java, better than PHP and better
+for everyone. But where is the difference? And what language is “better”? For
+the last question I can say: none is better. Both camps are awesome and do tons
+of great stuff. But for the first question the answer is longer. And I hope to
+provide that in this little article.</p>
+
+<p>Is the difference in the toolset around the language? No, I don’t think so.
+Both have good package managers, tons of libraries for all kind of stuff and a
+few decent web frameworks. Both promote test driven development. On the
+language side one is whitespace sensitive, the other isn’t. Is that so
+important? Maybe a little, but I think there is something else that is way more
+important. The culture.</p>
+
+<p>It all started with a stupid python troll at the
+<a href="http://sigint.ccc.de/">Sigint</a> that wanted to troll our
+<a href="http://colognerb.de">cologne.rb</a> booth. To be prepared for the next troll
+attack I started to investigate Python. For that I talked with a lot of Python
+guys and wrote a few little things in Python to get a feel for the language and
+the ecosystem. Luckily at the <a href="http://froscon.org">FrOSCon</a> our Ruby booth was
+right next to the <a href="http://wiki.python.de/pycologne/">pycologne</a> folks and we
+talked a lot about the differences. During that time I got the feeling that I
+know what is different in the culture of both parties. Last month I had the
+opportunity to test my theory in real life. The
+<a href="http://colognerb.de">cologne.rb</a> and the <a href="http://djangocologne.de">django cologne</a> 
+folks did a joined meetup. And I took the opportunity to test my theory. And it
+got confirmed by lots of the Python people.</p>
+
+<p>Okay, now what is the difference in the culture? It is pretty easy. Python
+folks are really conservative and afraid of change, Ruby folks love the new
+shiny stuff even if it breaks older things. It’s that simple. But it has huge
+consequences. One you can see for example in the adaption of Ruby 1.9 vs Python</p>
+<ol>
+  <li>Both new versions did tons of breaking changes. A lot of code needed changes
+to run on the new plattform. In the Ruby world the transition went pretty
+quick. In the Python world it is very troublesome. Some Python people even say
+that Python 3 is broken and all energy should be focused on the 2.x-branch of
+the language. The Ruby community saw the opportunities. The Python community
+only saw the update problems. Yes, there have been update problems in the Ruby
+world, but we found an easy way to fix this:
+<a href="http://isitruby19.com/">isitruby19.com</a>. A simple plattform that showed if the
+gem is ready for 1.9. And if it wasn’t and the gem was important, it got fixed
+with pull requests or something similar. And the problems went away fast.</li>
+</ol>
+
+<p>Both models of thinking have pros and cons. The Python world is more stable,
+you can update your django installation without much troubles. But that also
+means new technology is only added very slowly. The Ruby world loves changes.
+So much that most of the “new stuff” in the Python world was tested in the Ruby
+world first. We love changes so much that the Rails core is build around that
+idea. You can easily change nearly everything and extend everything. Most of
+the new stuff the Rails Core Team is testing right now for version 4 is
+available as plugin for Rails 3. This is pretty interesting if you love new
+things, love change, and love playing around with stuff. If you don’t and hate
+the idea of breaking changes, you maybe are better suited with the Python way.
+But don’t be afraid of breaking changes. They are all pretty well documented in
+the release guides. It’s not voodoo.</p>
+
+<p>I for myself love the Ruby mindset. Something like Rails or Asset Pipelines or
+all the other things would not be possible if we are stuck with “no, don’t
+change that, it works pretty well that way”. Someone has to be the leader.
+Someone has to play around with new ideas. Yes, some ideas won’t fly, some are
+removed pretty quickly. But at least we tried them. Yes, I know that some
+people prefer the conservative way. If you consider yourself to be like that,
+you should at least try Python. I stay with Ruby.</p>
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

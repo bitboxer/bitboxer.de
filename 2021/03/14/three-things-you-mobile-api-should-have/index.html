@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - Three things your API for mobile apps should have</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head">
+      <h1 class="headline">Three things your API for mobile apps should have</h1>
+      <div class="meta"><time class="dt-published" datetime="2021-03-14T01:00:00.000+0100">14 Mar 2021</time></div>
+
+      <img class="header-image" src="/images/2021-03-15-mobile-api/image.jpg" alt=" A couple of mobile phones stacked upon each other ">
+      
+      <div class="copyright">
+<p>Photo by <a href="https://unsplash.com/@halacious">HalGatewood</a>.</p>
+</div>
+      
+    </div>
+    
+
+    <div class="post">
+      <p>Every time I join a team as a freelancer I check a couple of things during my initial code review. Some are quite common, like:</p>
+
+<ul>
+  <li>Is the onboarding document and README still up to date?</li>
+  <li>Are the tests green?</li>
+  <li>How much do they test?</li>
+</ul>
+
+<p>…and many more.</p>
+
+<p>Besides all those rather common checks I also check a few things regarding the design of the API (if the project has one). Most of the time there are some important things missing. For example, the following three things.</p>
+
+<h2 id="decline-too-old-clients">Decline too old clients</h2>
+
+<p>You always want to be able to see the version and type of your clients. It’s nice to have for statistics, but also gets important if you want to introduce API breakage. You need a defined API response to force users to update the app. The app should get a return value that triggers a “Hey, this app needs an update to continue working“ screen. How you implement it depends on your API design.</p>
+
+<h2 id="maintenance-mode">Maintenance mode</h2>
+
+<p>You need a way to communicate a maintenance mode to your clients. The client then should show a warning or disable the app. Ideally, the app could continue to work, but that depends on what the app is about. As a bonus, you could show a message how long this maintenance will take, or show updates if this is an unexpected maintenance (for example because the <a href="https://www.reuters.com/article/us-france-ovh-fire-idUSKBN2B20NU">servers are on fire</a>). Alternatively, link to a status page with further updates.</p>
+
+<h2 id="communicate-with-the-users">Communicate with the users</h2>
+
+<p>This is more optional than the two things above, but I found it rather useful. Build a way to communicate news to the users. Maybe as news section within the app, a popup dialog for urgent messages or something that fits your app design better. Having the possibility to inform about maintenance windows and to stay connected to your users reduces the bad reviews by <strong>a lot</strong>. Just make sure the news are not too spammy.</p>
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

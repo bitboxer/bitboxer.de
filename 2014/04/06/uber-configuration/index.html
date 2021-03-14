@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - Über configuration or how to drive your pair insane</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head">
+      <h1 class="headline">Über configuration or how to drive your pair insane</h1>
+      <div class="meta"><time class="dt-published" datetime="2014-04-06T20:00:00.000+0200">06 Apr 2014</time></div>
+
+      <img class="header-image" src="/images/2014-04-06-uber-configuration/toolbox.jpg" alt=" sadly no description available for this image ">
+      
+      <div class="copyright">
+<p>(<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">cc-by-nc-sa 2.0</a> by <a href="https://secure.flickr.com/photos/dk_spook/2421009077">dk_spook</a>)</p>
+</div>
+      
+    </div>
+    
+
+    <div class="post">
+      <p>A lot of us love to configure our tools. It makes us
+super efficient. At least we hope it does. Sometimes it’s just
+procrastination, but in most cases we really want to achieve something. We want
+to be faster. Type less. Have more time for the important things. Don’t want to
+enter that long command again and again when we could <a href="https://github.com/r00k/dotfiles/blob/master/zsh/aliases">alias</a> it to one character. Or bind it to a keyboard shortcut.</p>
+
+<p>I can read other <a href="https://github.com/bitboxer/dotfiles">dotfiles</a> for
+hours and think about the implications of those settings to my daily
+life. My most loved section in the <a href="http://vimberlin.de">vim berlin usergroup</a>
+is the “show us your .vimrc” part.</p>
+
+<p>But there are consequences you have to think about when you change your
+configuration.</p>
+
+<p>Most of you now think of something like this:</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/laktek">@laktek</a> i don't like to change the default settings on any computer. i like to be able to start fresh with minimal fuss.</p>
+
+  <p>Chad Fowler (<a href="https://twitter.com/chadfowler">@chadfowler</a>) <a href="https://twitter.com/chadfowler/statuses/424901123045335040">January 19,
+2014</a></p>
+</blockquote>
+
+<p>There is another consequence that is even more problematic. Your pair should be able
+to use your computer (or the same shell as you) without struggling too much.
+If you change your keyboard layout to <a href="https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">dvorak</a>
+and remap every setting in your editor, you might be more efficient in what you
+do, but your pair will have problems using that highly specialized setup.</p>
+
+<p>This breaks the “keep your pair happy” rule.</p>
+
+<p>In a big way.</p>
+
+<p>Or to put it in a more egocentric perspective: you loose the ability to work on
+other computers that don’t use your current setup.</p>
+
+<p>Do I think that you should never change the default setting of your system? No.
+But you need to think about the implication of each change you do on your system.</p>
+
+<p>For me it comes down to four basic questions.</p>
+
+<p><strong>Has this change implications for my pair?</strong></p>
+
+<p>If this change is in an area I don’t touch while paring, it’s okay to add. E.g.
+Mail.app settings, (most) browser extensions etc. .</p>
+
+<p><strong>Is there a way I can do this without problems for my pair?</strong></p>
+
+<p>If the change is in an area I use while pairing, it should not interfere with
+the usual behavior. Don’t remap a command to another one that is
+doing something completely different. For example aliasing grep with ack. Usually you can
+create another “namespace” for your new way of doing things. If this is not
+possible:</p>
+
+<p><strong>Can I add a switch to deactivate this setting?</strong></p>
+
+<p>You love that new configuration that might confuse your pair? Than add a “pairing” mode where these settings are deactivated.
+But don’t forget to ask yourself:</p>
+
+<p><strong>Do I cripple myself?</strong></p>
+
+<p>This is the most important question. You should know how to use a system with
+the default settings. That means you should know how vim works before you
+configure the hell out of it. And you need to remember those ways for your
+pairing session. If you learn a new tool, always try to learn it with it’s
+default settings first. If you memorize them, you can try to optimize for
+speed. But never loose the ability to go back to those defaults.</p>
+
+<p>Some companies have company wide dotfiles. For
+example <a href="https://github.com/thoughtbot/dotfiles">thoughtbot</a>. I would call this
+a “dotfiles” by committee approach. If everyone can agree on a subset of
+setting, pairing is easy because everyone has the same setup.</p>
+
+<p>And yes, I had to learn all this the hard way. But now I am 99.5% pair
+compatible. I switched back to zsh, added a keyboard layout switcher, a way
+to start vim with a plain vanilla setup and installed Sublime.</p>
+
+<p>Sadly the reasoning above led me to the decision that I should not build a <a href="https://github.com/alevchuk/vim-clutch">vim foot pedal</a>, even though I really love the idea of having one :neckbeard:</p>
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>

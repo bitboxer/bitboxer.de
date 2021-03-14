@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bitboxer - Man pages and ruby</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/atom.xml" rel="alternate" title="Bitboxer" type="application/atom+xml">
+
+    <script src="https://kit.fontawesome.com/e39a1d799d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="/js/index.js"></script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m) {
+        a[h] =
+          a[h] ||
+          function() {
+            (a[h].q = a[h].q || []).push(arguments);
+          };
+        (o = f.createElement("script")),
+          (m = f.getElementsByTagName("script")[0]);
+        o.async = 1;
+        o.src = t;
+        o.id = "fathom-script";
+        m.parentNode.insertBefore(o, m);
+      })(document, window, "//ping.bitboxer.de/tracker.js", "fathom");
+      fathom("set", "siteId", "WMQSI");
+      fathom("trackPageview");
+    </script>
+    <!-- / Fathom -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="header--title"><a href="https://bodo.tasche.me">Bitboxer</a></h1>
+          <div class="header--menu">
+            <a class="extra" href="https://bitboxer.de">blog</a>
+            <a class="extra" href="https://bodo.tasche.me/projects">projects</a>
+            <a class="extra" href="https://bodo.tasche.me">about me</a>
+          </div>
+        </div>
+
+        <div class="content">
+  <article>
+    
+    <div class="head-without-image">
+      <h1 class="headline">Man pages and ruby</h1>
+      <time datetime="2016-11-05T21:00:00.000+0100">05 Nov 2016</time>
+    </div>
+    
+
+    <div class="post">
+      <blockquote>
+  <p>A man page is a form of software documentation usually found on a Unix or
+Unix-like operating system. Topics covered include computer programs, formal
+standards and conventions, and even abstract concepts. A user may invoke a
+man page by issuing the man command.</p>
+
+  <p>– <cite><a href="https://en.wikipedia.org/wiki/Man_page">Wikipedia</a></cite></p>
+</blockquote>
+
+<p>I love man pages. I stopped counting how many times they helped me to figure
+out what I had to do. If I try out a new command line tool, I always do
+two things:</p>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">tool -h</code> to check the brief explanation of the tool</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">man tool</code> to skim through the documentation</li>
+</ul>
+
+<p>This helps me a lot in understanding the tool. What does it offer? How
+do I have to use it and what can I expect from it?</p>
+
+<p>Sadly right now it is really problematic to ship a man page with your
+ruby command line tool. Till last month you basically only had one option:
+<a href="https://github.com/defunkt/gem-man">gem-man</a>, a gem developed by
+<a href="https://github.com/defunkt">@defunkt</a> more than 5 years ago. The way it worked
+was to add a new command to <code class="language-plaintext highlighter-rouge">gem</code> called <code class="language-plaintext highlighter-rouge">gem man</code>. And yes, you could alias it
+to <code class="language-plaintext highlighter-rouge">man</code> but it felt more like a hack than anything else. Calling a ruby programm
+just to open a regular non ruby man page sounded a bit absurd to me. Or the fact that you needed
+to remember if a tool is written in ruby to find it’s man page. Imagine
+you would have to do that for every programming language.</p>
+
+<p>But there is a better way. I wrote a gem plugin called <a href="https://github.com/bitboxer/manpages">manpages</a>
+that scans for man pages during the gem installation phase and copies the files
+to a folder that the <code class="language-plaintext highlighter-rouge">man</code> command is able to find. No more aliasing or remembering
+if a tool is based on ruby. Install a gem and call <code class="language-plaintext highlighter-rouge">man guard</code> to see it’s documentation.</p>
+
+<p>How awesome is that?</p>
+
+<p>Jump into the <a href="https://github.com/bitboxer/manpages">README.md</a> and install it now. And more importantly: if
+you have developed a command line utility in ruby, please consider adding
+a man page for it.</p>
+
+    </div>
+  </article>
+</div>
+<div class="author">
+  <div class="author--photo">
+    <img class="author--portrait" src="/assets/images/bodo.jpg" alt="Portrait photo of Bodo Tasche">
+    <div class="author--name">
+      Bodo Tasche
+    </div>
+    <div class="author--role">
+      Polyglot Developer
+    </div>
+  </div>
+
+  <div class="author--description">
+    <p>
+      I am a freelance polyglot developer and love HTML5, testing, JavaScript, Ruby and Elixir. In the last 20 years I
+      have been in lots of different roles, from Java to Elixir, from backend developer at a 3 people team in an early
+      phase startup to the CTO of a web agency. Some of my work can be seen on my <a href="https://bodo.tasche.me/projects">projects page</a>.
+    </p>
+    <p>
+      Need help developing your MVP or to add new features into your current app? Need a CTO or a front/backend
+      developer for hire? Send me an <a href="bodo@tasche.me">email</a>.
+    </p>
+  </div>
+</div>
+<footer>
+  <a href="https://github.com/bitboxer" aria-label="GitHub Profile">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://twitter.com/bitboxer" aria-label="Twitter Profile">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://speakerdeck.com/bitboxer" aria-label="Speaker Deck Profile">
+    <i class="fab fa-speaker-deck" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/bodo-tasche-644413b8/" aria-label="Linkedin Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</footer>
+      </div>
+    </div>
+  </body>
+</html>
