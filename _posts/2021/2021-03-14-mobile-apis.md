@@ -23,7 +23,7 @@ Besides all those rather common checks I also check a few things regarding the d
 
 ## Decline too old clients
 
-You always want to be able to see the version and type of your client. It’s nice to have for statistics, but also gets important if you want to introduce API breakage. You need a defined API response to force users to update the app. The app should get a return value that triggers a “Hey, this app needs an update to continue working“ screen. How you implement it depends on your API design. 
+You always want to be able to see the version and type of your clients. It’s nice to have for statistics, but also gets important if you want to introduce API breakage. You need a defined API response to force users to update the app. The app should get a return value that triggers a “Hey, this app needs an update to continue working“ screen. How you implement it depends on your API design. 
 
 ## Maintenance mode
 
